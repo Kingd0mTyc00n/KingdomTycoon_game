@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 5058008070373801858}
   - component: {fileID: 5297475189113452029}
   m_Layer: 5
-  m_Name: Fighter
+  m_Name: Hunter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
