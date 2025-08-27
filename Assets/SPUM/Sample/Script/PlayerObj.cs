@@ -29,6 +29,8 @@ public class PlayerObj : MonoBehaviour
         {
             IndexPair[state] = 0;
         }
+        //Test Random Move
+        SetMovePos(new Vector2(UnityEngine.Random.Range(-4f,4f), UnityEngine.Random.Range(-4f,4f)));
     }
     public void SetStateAnimationIndex(PlayerState state, int index = 0){
         IndexPair[state] = index;
@@ -62,6 +64,9 @@ public class PlayerObj : MonoBehaviour
         if( _disVec.sqrMagnitude < 0.1f )
         {
             _currentState = PlayerState.IDLE;
+            //Test Random Move
+            Vector2 pos = new Vector2(UnityEngine.Random.Range(-4f,4f), UnityEngine.Random.Range(-4f,4f));
+            SetMovePos(pos);
             return;
         }
         Vector3 _dirMVec = _dirVec.normalized;

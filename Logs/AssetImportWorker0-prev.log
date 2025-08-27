@@ -15,7 +15,7 @@ D:/Project/Unity/Kingdom/Village-Hunters
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59571
+63510
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/Project/Unity/Kingdom/Village-Hunters
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4140]  Target information:
+Player connection [28076]  Target information:
 
-Player connection [4140]  * "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3418663828 [EditorId] 3418663828 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-QSESO04I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [28076]  * "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 411268867 [EditorId] 411268867 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-QSESO04I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [4140] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [4140] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28076] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28076] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +75,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.88 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
 [Subsystems] Discovering subsystems at path D:/Project/Unity/6000.0.29f1/Editor/Data/Resources/UnitySubsystems
@@ -91,50 +91,50 @@ Initialize mono
 Mono path[0] = 'D:/Project/Unity/6000.0.29f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Project/Unity/6000.0.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Project/Unity/6000.0.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Project/Unity/6000.0.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Project/Unity/6000.0.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Project/Unity/6000.0.29f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003341 seconds.
-- Loaded All Assemblies, in  0.448 seconds
+Registered in 0.003850 seconds.
+- Loaded All Assemblies, in  0.395 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.378 seconds
-Domain Reload Profiling: 825ms
-	BeginReloadAssembly (162ms)
+- Finished resetting the current domain, in  0.346 seconds
+Domain Reload Profiling: 742ms
+	BeginReloadAssembly (129ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (179ms)
-		LoadAssemblies (161ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (129ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (157ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (148ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (378ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (347ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (343ms)
+		SetupLoadedEditorAssemblies (300ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (64ms)
+			InitializePlatformSupportModulesInManaged (59ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -142,8 +142,8 @@ Domain Reload Profiling: 825ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.842 seconds
-Refreshing native plugins compatible for Editor in 1.16 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.786 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
 Native extension for iOS target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -162,382 +162,302 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 (Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.914 seconds
-Domain Reload Profiling: 1756ms
-	BeginReloadAssembly (188ms)
+- Finished resetting the current domain, in  0.897 seconds
+Domain Reload Profiling: 1683ms
+	BeginReloadAssembly (181ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (559ms)
-		LoadAssemblies (381ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (520ms)
+		LoadAssemblies (349ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (298ms)
-			TypeCache.Refresh (208ms)
-				TypeCache.ScanAssembly (190ms)
-			BuildScriptInfoCaches (75ms)
+		AnalyzeDomain (280ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (177ms)
+			BuildScriptInfoCaches (71ms)
 			ResolveRequiredComponents (12ms)
-	FinalizeReload (915ms)
+	FinalizeReload (898ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (756ms)
+		SetupLoadedEditorAssemblies (741ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (557ms)
-			ProcessInitializeOnLoadMethodAttributes (113ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (533ms)
+			ProcessInitializeOnLoadMethodAttributes (123ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.36 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.22 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 204 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6251 unused Assets / (4.3 MB). Loaded Objects now: 6928.
-Memory consumption went from 171.4 MB to 167.2 MB.
-Total: 16.704100 ms (FindLiveObjects: 1.117100 ms CreateObjectMapping: 1.528600 ms MarkObjects: 9.520900 ms  DeleteObjects: 4.535200 ms)
+Unloading 6321 unused Assets / (4.3 MB). Loaded Objects now: 7001.
+Memory consumption went from 173.7 MB to 169.3 MB.
+Total: 15.845200 ms (FindLiveObjects: 1.361900 ms CreateObjectMapping: 1.712300 ms MarkObjects: 8.718900 ms  DeleteObjects: 4.049600 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 491554.835061 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TilePalette/Tile Palette.prefab
-  artifactKey: Guid(8ffd05a3dfa91764a9bfa41b8d2c9852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TilePalette/Tile Palette.prefab using Guid(8ffd05a3dfa91764a9bfa41b8d2c9852) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75fc868ce4e118cafbff05870ccd4e0e') in 0.6500294 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 161
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.732 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 4 plugins.
+Native extension for iOS target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.831 seconds
+Domain Reload Profiling: 1567ms
+	BeginReloadAssembly (202ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (454ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (184ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (831ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (631ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (485ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 2.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6320 unused Assets / (3.7 MB). Loaded Objects now: 7004.
+Memory consumption went from 143.7 MB to 140.0 MB.
+Total: 17.249400 ms (FindLiveObjects: 1.266300 ms CreateObjectMapping: 1.619200 ms MarkObjects: 9.231900 ms  DeleteObjects: 5.130200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 15.100496 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TileRule/Tree01.asset
-  artifactKey: Guid(a439b260ed14ddc45b8b9bc20fbfc35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TileRule/Tree01.asset using Guid(a439b260ed14ddc45b8b9bc20fbfc35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa70189c17a2bed3e7b26998b59a7a1b') in 0.0058349 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.854805 seconds.
-  path: Assets/03.Graphics/Isometric Water/tiles_206.asset
-  artifactKey: Guid(6f1d5fc8cd9909340959f92810e75be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Water/tiles_206.asset using Guid(6f1d5fc8cd9909340959f92810e75be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e0f65e8776847030e67583312d9a3a8') in 0.0347426 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/03.Graphics/Isometric Water/tiles_209.asset
-  artifactKey: Guid(521584097a366af41af69bcd36259e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Water/tiles_209.asset using Guid(521584097a366af41af69bcd36259e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcfc61e00601a7f19b030cb2d7cfead0') in 0.0140795 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.225843 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 0.png
-  artifactKey: Guid(784a81152824e4c4cb37430438e52cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 0.png using Guid(784a81152824e4c4cb37430438e52cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b3269aa75e8a6709e87f8841357c7db') in 0.0279368 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011212 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 1.png
-  artifactKey: Guid(5ef6a2a96cc3d824eafad91e43dd64fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 1.png using Guid(5ef6a2a96cc3d824eafad91e43dd64fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2e7bd194bab8c8550cedf1dd5afcf04') in 0.0245337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 0.png
-  artifactKey: Guid(6de652fa5d594cf47972318e470f57e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 0.png using Guid(6de652fa5d594cf47972318e470f57e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '976b3ad5780b022394c4e7b776969044') in 0.0249776 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 6.png
-  artifactKey: Guid(7ff70c242b0fc2343adc14b2d0c43ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 6.png using Guid(7ff70c242b0fc2343adc14b2d0c43ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1afdf0b99e2bbc07c5abc60019028dd') in 0.0207795 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 5.png
-  artifactKey: Guid(05b5f50493c88c64c8421ec775a502b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 5.png using Guid(05b5f50493c88c64c8421ec775a502b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30419542b975b829905506d6e4d891bf') in 0.0225764 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 6.png
-  artifactKey: Guid(1ec80d53ba8e7894c9a6786f51f2621d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 6.png using Guid(1ec80d53ba8e7894c9a6786f51f2621d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b29a20cdaa89988178b7067e736148f8') in 0.0181 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 4.png
-  artifactKey: Guid(44e4213de99f37d4b8f7dd8d0f31f6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 4.png using Guid(44e4213de99f37d4b8f7dd8d0f31f6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '350371a3953a60d6c435adcadac683af') in 0.0163465 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 3.png
-  artifactKey: Guid(424bb868cac8db64797443404b8ff562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 3.png using Guid(424bb868cac8db64797443404b8ff562) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd05c4b90b42242482b741014e46f3eb1') in 0.0178137 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.875890 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 1.png
-  artifactKey: Guid(5ef6a2a96cc3d824eafad91e43dd64fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 1.png using Guid(5ef6a2a96cc3d824eafad91e43dd64fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db25db57aca1f10974530bb0f65a0ec8') in 0.0152375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 3.png
-  artifactKey: Guid(e87f4aa2606ea7245950004ea258da6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 3.png using Guid(e87f4aa2606ea7245950004ea258da6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea3bca2a627e9a02dbd30bf05f7dda89') in 0.0118729 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 5.png
-  artifactKey: Guid(05b5f50493c88c64c8421ec775a502b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 5.png using Guid(05b5f50493c88c64c8421ec775a502b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1fc2bf57c3362df1d21d875547f4a82') in 0.0090628 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 5.png
-  artifactKey: Guid(6b9dbdb32e7974441b19122d2980d7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Small Tree 5.png using Guid(6b9dbdb32e7974441b19122d2980d7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f59eeaece8c25ecfd590f619da736dc2') in 0.0126943 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 4.png
-  artifactKey: Guid(44e4213de99f37d4b8f7dd8d0f31f6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Green Tree/Variant/Variant - Big Tree 4.png using Guid(44e4213de99f37d4b8f7dd8d0f31f6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c703a61bd0fc9bb8c04115a42495e5fd') in 0.0090602 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 203.867117 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TilePalette/Tile Palette.prefab
-  artifactKey: Guid(8ffd05a3dfa91764a9bfa41b8d2c9852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TilePalette/Tile Palette.prefab using Guid(8ffd05a3dfa91764a9bfa41b8d2c9852) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80ebd3577725b1b078c287e52d012043') in 0.0362996 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 163
-
-========================================================================
-Received Import Request.
-  Time since last request: 79.378390 seconds.
-  path: Assets/Settings/Renderer2D.asset
-  artifactKey: Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Renderer2D.asset using Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db80c9227f792d633dd8ab40b75dc3cc') in 0.001277 seconds
-Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.088509 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TileRule/Tree01.asset
-  artifactKey: Guid(a439b260ed14ddc45b8b9bc20fbfc35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Tiles/TileRule/Tree01.asset using Guid(a439b260ed14ddc45b8b9bc20fbfc35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5877755342b635ed05383341531d463f') in 0.0996836 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.826111 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant
-  artifactKey: Guid(194fa9cbfc299334585c793ea28e29ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant using Guid(194fa9cbfc299334585c793ea28e29ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d3a8dffb86dcf20674f540b13398ae4') in 0.0013996 seconds
+  Time since last request: 564164.707469 seconds.
+  path: Assets/SPUM/Scene/SPUM_Scene.unity
+  artifactKey: Guid(ba9a45dba30244370b4169d16c9f76a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Scene/SPUM_Scene.unity using Guid(ba9a45dba30244370b4169d16c9f76a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a8bf06242dd444c9c19f6f02c485eed') in 0.0107687 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.540207 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 0.png
-  artifactKey: Guid(f6697ed4d6ed151409a1d9f00fab10b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 0.png using Guid(f6697ed4d6ed151409a1d9f00fab10b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a30fc4c2463264aae34389b89c185865') in 0.0172611 seconds
+  Time since last request: 219.778067 seconds.
+  path: Assets/SPUM/Resources/Units
+  artifactKey: Guid(f705c4c1089d0584996477860af37245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Units using Guid(f705c4c1089d0584996477860af37245) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b162c1b676083404c06bc10eacef5d47') in 0.000873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.108706 seconds.
+  path: Assets/SPUM/Resources/Units/SPUM_20250827112259853.prefab
+  artifactKey: Guid(347878a6e023fa64398b81b45afcd106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Units/SPUM_20250827112259853.prefab using Guid(347878a6e023fa64398b81b45afcd106) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9abb1debdc45ed298b99db1ecfd9af04') in 0.4573469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 273
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SPUM/Resources/Units/SPUM_20250827112535174.prefab
+  artifactKey: Guid(928d189fc96113f4ca32b9729ed95a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Units/SPUM_20250827112535174.prefab using Guid(928d189fc96113f4ca32b9729ed95a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52e3e1dd635022a0ad8f5019b6225461') in 0.0570088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 265
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.926080 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_1.png
+  artifactKey: Guid(97dd5eff083df4f76985e690e6d60a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_1.png using Guid(97dd5eff083df4f76985e690e6d60a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d55ffdbd27e3380cecab13409ea7aea') in 0.0531842 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 3.png
-  artifactKey: Guid(cc55895b68d5257478c460a5ff6a7ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 3.png using Guid(cc55895b68d5257478c460a5ff6a7ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b23e52f596506f24d60f40f5078f4b8a') in 0.0186402 seconds
+  Time since last request: 0.000037 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_6.png
+  artifactKey: Guid(f63083452d68c460db811918d4f6f323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_6.png using Guid(f63083452d68c460db811918d4f6f323) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c066af45298bf9dc1e23225e6cd4fec') in 0.0204369 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.017016 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 5.png
-  artifactKey: Guid(93d0f292e87a1b648a54a59031fce6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 5.png using Guid(93d0f292e87a1b648a54a59031fce6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e7c44cf314be2cc4258a52171e955e4') in 0.0139449 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 2.png
-  artifactKey: Guid(b4650f2d3201bd44e84d9e1c9a85badd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 2.png using Guid(b4650f2d3201bd44e84d9e1c9a85badd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b33e9b9a5fd967aa3a15e1cc1a1b0325') in 0.0173417 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 5.png
-  artifactKey: Guid(17310321b69e6ec42a9e42acd00658bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 5.png using Guid(17310321b69e6ec42a9e42acd00658bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69815b44358e7090f6a7dde73bea98ca') in 0.0161757 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 6.png
-  artifactKey: Guid(127117d905366b147a061cb4684bec47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 6.png using Guid(127117d905366b147a061cb4684bec47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e80e878210f37ca15ab32be73f76ea0') in 0.0155185 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 2.png
-  artifactKey: Guid(6e74b1f8108b2a846b27726c2c680f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 2.png using Guid(6e74b1f8108b2a846b27726c2c680f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8d6b557f0c59d0ff26598b82a7af2e7') in 0.0145075 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.521350 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 0.png
-  artifactKey: Guid(f6697ed4d6ed151409a1d9f00fab10b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 0.png using Guid(f6697ed4d6ed151409a1d9f00fab10b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a8a028f68ad9fa405d1458c092c02ee') in 0.0159505 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024087 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 1.png
-  artifactKey: Guid(1ff9b909523e9ca46807c9e40cbed7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 1.png using Guid(1ff9b909523e9ca46807c9e40cbed7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33545bf933f222266ca8e0465e96ebe0') in 0.0164134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 5.png
-  artifactKey: Guid(17310321b69e6ec42a9e42acd00658bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 5.png using Guid(17310321b69e6ec42a9e42acd00658bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b550f2206bc21ec67c20db4e941f5a8') in 0.0182036 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 3.png
-  artifactKey: Guid(a4c3928e39981dc43bc8c834de1a7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 3.png using Guid(a4c3928e39981dc43bc8c834de1a7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f61049b0221acec77ac86a0893c27fe8') in 0.0122687 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 5.png
-  artifactKey: Guid(93d0f292e87a1b648a54a59031fce6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 5.png using Guid(93d0f292e87a1b648a54a59031fce6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99409f47c2f5544d06fc7b92a61929ae') in 0.0185474 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 1.png
-  artifactKey: Guid(9a3010049093b644bbcdbc1120b21825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 1.png using Guid(9a3010049093b644bbcdbc1120b21825) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e63cbdf26ef5ff90662fa68b9dc902a2') in 0.0165878 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 4.png
-  artifactKey: Guid(699154bce732ddf4eac4928c3060dd53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 4.png using Guid(699154bce732ddf4eac4928c3060dd53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1864458e0b0aaddcc06f53ddd571e770') in 0.0160778 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.460842 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 0.png
-  artifactKey: Guid(f6697ed4d6ed151409a1d9f00fab10b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 0.png using Guid(f6697ed4d6ed151409a1d9f00fab10b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a481824196767346e88290a452ff1aa3') in 0.0099019 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027777 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 1.png
-  artifactKey: Guid(1ff9b909523e9ca46807c9e40cbed7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 1.png using Guid(1ff9b909523e9ca46807c9e40cbed7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b2ff52a3f28b6d52ca678aed98d041d') in 0.0095512 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 5.png
-  artifactKey: Guid(17310321b69e6ec42a9e42acd00658bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 5.png using Guid(17310321b69e6ec42a9e42acd00658bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1745ffa958699f27f2f3d8083763698') in 0.0103388 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 3.png
-  artifactKey: Guid(a4c3928e39981dc43bc8c834de1a7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 3.png using Guid(a4c3928e39981dc43bc8c834de1a7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43714e7db122b2c3a89658b02e599dc6') in 0.0084459 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 5.png
-  artifactKey: Guid(93d0f292e87a1b648a54a59031fce6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Big Tree 5.png using Guid(93d0f292e87a1b648a54a59031fce6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b6bebdb7a14348c667c4701865a2a0e') in 0.0094861 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 2.png
-  artifactKey: Guid(b4650f2d3201bd44e84d9e1c9a85badd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 2.png using Guid(b4650f2d3201bd44e84d9e1c9a85badd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ef466852f2c4ecb097f7a6f6b5fb7af') in 0.0079666 seconds
+  Time since last request: 0.000030 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_9.png
+  artifactKey: Guid(2e66bc6c623514a2b954b63b58c44e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_9.png using Guid(2e66bc6c623514a2b954b63b58c44e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5ca88dea317621eda389d5e16371a20') in 0.0213439 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 6.png
-  artifactKey: Guid(127117d905366b147a061cb4684bec47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Graphics/Isometric Environment/Isometric Environment/Yellow Tree/Variant/Variant - Small Tree 6.png using Guid(127117d905366b147a061cb4684bec47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '508f7536293db6ebe2924b7efd1c5dab') in 0.008202 seconds
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_4.png
+  artifactKey: Guid(9926b97e63b2b4f0bb0aaddb7c8d3dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/0_Hair/Hair_4.png using Guid(9926b97e63b2b4f0bb0aaddb7c8d3dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7412f30ff7704f0bb97cf61103cd117d') in 0.0186248 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.597374 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_1.png
+  artifactKey: Guid(296fa0f52e1fd47109c6fb6f17968669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_1.png using Guid(296fa0f52e1fd47109c6fb6f17968669) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b53b89807ae3d0ac0d163379276123b7') in 0.02525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_7.png
+  artifactKey: Guid(d154430219e04402a86a4afa191e57b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_7.png using Guid(d154430219e04402a86a4afa191e57b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36917f231d438b41a3d2f9ea1e3c3369') in 0.0228309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_4.png
+  artifactKey: Guid(96abf63d683f04dee937fa2e2872886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_4.png using Guid(96abf63d683f04dee937fa2e2872886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '397d77a9fea0bfc89623433eaeb0e6d1') in 0.0194457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_5.png
+  artifactKey: Guid(7af5ad218eb4047749e482ba17094655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/4_Helmet/Helmet_5.png using Guid(7af5ad218eb4047749e482ba17094655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82749db001136d4b803d7ae2711153af') in 0.0182683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.678086 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/5_Armor/Armor_2.png
+  artifactKey: Guid(6dc30e5993cb04a47a6845283a352d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/5_Armor/Armor_2.png using Guid(6dc30e5993cb04a47a6845283a352d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db7ee36d7286adbf0702ec5ee6b690ee') in 0.0267758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/5_Armor/Armor_7.png
+  artifactKey: Guid(7f34c450245f5488bac2d54b5fbbae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/5_Armor/Armor_7.png using Guid(7f34c450245f5488bac2d54b5fbbae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80da8293cccf007b38e91e0ce8e4f809') in 0.0203142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.505645 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/3_Pant/Foot_1.png
+  artifactKey: Guid(4f4d6264408da453a8511876ebec8ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/3_Pant/Foot_1.png using Guid(4f4d6264408da453a8511876ebec8ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16055a9296dec513c06f2c3088515a9e') in 0.0240362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.375937 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/7_Back/Back_2.png
+  artifactKey: Guid(130ca4d6a90ce4845ab00448f7e1eb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/7_Back/Back_2.png using Guid(130ca4d6a90ce4845ab00448f7e1eb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a72ce523575fe0108a090ec51d3a033d') in 0.0208556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/7_Back/Soon_Back1.png
+  artifactKey: Guid(a8f1ac045d97fcd42930e42c15011574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/7_Back/Soon_Back1.png using Guid(a8f1ac045d97fcd42930e42c15011574) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '875d2a70c1861ea4999b7ac3129f7301') in 0.0169602 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.473780 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_Body/Elf_1.png
+  artifactKey: Guid(5bc9c55e31d7c4c3380f05786b90bb35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_Body/Elf_1.png using Guid(5bc9c55e31d7c4c3380f05786b90bb35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ab5f60c1365caa2348d424da442d92b') in 0.0317663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_Body/Human_4.png
+  artifactKey: Guid(7f9c604e1b12d455cba1d0e36fbd14f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_Body/Human_4.png using Guid(7f9c604e1b12d455cba1d0e36fbd14f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1443e50f3c3d05a5ab845e2df8735878') in 0.0304037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_Body/Orc_1.png
+  artifactKey: Guid(9f6f74f146203417fae095263bf53e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_Body/Orc_1.png using Guid(9f6f74f146203417fae095263bf53e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a7485f7d372aba36f45356ee6803439') in 0.0273045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.182741 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_FaceHair/FaceHair_2.png
+  artifactKey: Guid(bf396ee22a706a24dba8f20538815062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/1_FaceHair/FaceHair_2.png using Guid(bf396ee22a706a24dba8f20538815062) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c15feadbad2b5330dd1de2933c9ace9') in 0.0193765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.647517 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/2_Cloth/Cloth_2.png
+  artifactKey: Guid(d7a1a0aeecfbf49a2af4eb4ac19f90e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/2_Cloth/Cloth_2.png using Guid(d7a1a0aeecfbf49a2af4eb4ac19f90e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b974ff24db125ac5cea42637f0bf5d48') in 0.0238457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/2_Cloth/Cloth_8.png
+  artifactKey: Guid(8e0564280a4e94fe9ab922abf53543db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/2_Cloth/Cloth_8.png using Guid(8e0564280a4e94fe9ab922abf53543db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb30d3d5046cb3186488925e4cdfb0ed') in 0.0251761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/2_Cloth/Cloth_7.png
+  artifactKey: Guid(06c8d7c33ccef4cf39e374e33835e970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPUM/Resources/Addons/Legacy/0_Unit/0_Sprite/2_Cloth/Cloth_7.png using Guid(06c8d7c33ccef4cf39e374e33835e970) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '177d8038a9bec884c9254fb4019cbecf') in 0.0233422 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
