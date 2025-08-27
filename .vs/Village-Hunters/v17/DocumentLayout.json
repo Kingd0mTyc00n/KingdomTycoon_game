@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|d:\\project\\unity\\kingdom\\village-hunters\\assets\\spum\\core\\script\\data\\spum_prefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|solutionrelative:assets\\spum\\core\\script\\data\\spum_prefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\03.Graphics\\Shinabro\\MiniFantasyCharacters\\Scripts\\SimpleSpineSkinAssigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\03.Graphics\\Shinabro\\MiniFantasyCharacters\\Scripts\\SimpleSpineSkinAssigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|D:\\Project\\Unity\\Kingdom\\Village-Hunters\\assets\\02.scripts\\grid\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scripts\\grid\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|D:\\Project\\Unity\\Kingdom\\Village-Hunters\\assets\\02.scripts\\grid\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scripts\\grid\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|D:\\Project\\Unity\\Kingdom\\Village-Hunters\\assets\\02.scripts\\grid\\so\\gridcellso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B991815C-F04A-125B-155B-F2695E8AA2C7}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scripts\\grid\\so\\gridcellso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SPUM_Prefabs.cs",
+              "DocumentMoniker": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\SPUM\\Core\\Script\\Data\\SPUM_Prefabs.cs",
+              "RelativeDocumentMoniker": "Assets\\SPUM\\Core\\Script\\Data\\SPUM_Prefabs.cs",
+              "ToolTip": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\SPUM\\Core\\Script\\Data\\SPUM_Prefabs.cs",
+              "RelativeToolTip": "Assets\\SPUM\\Core\\Script\\Data\\SPUM_Prefabs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T04:35:39.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SimpleSpineSkinAssigner.cs",
+              "DocumentMoniker": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\03.Graphics\\Shinabro\\MiniFantasyCharacters\\Scripts\\SimpleSpineSkinAssigner.cs",
+              "RelativeDocumentMoniker": "Assets\\03.Graphics\\Shinabro\\MiniFantasyCharacters\\Scripts\\SimpleSpineSkinAssigner.cs",
+              "ToolTip": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\03.Graphics\\Shinabro\\MiniFantasyCharacters\\Scripts\\SimpleSpineSkinAssigner.cs",
+              "RelativeToolTip": "Assets\\03.Graphics\\Shinabro\\MiniFantasyCharacters\\Scripts\\SimpleSpineSkinAssigner.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T15:22:54.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapGenerator.cs",
+              "DocumentMoniker": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\02.Scripts\\Grid\\MapGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scripts\\Grid\\MapGenerator.cs",
+              "ToolTip": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\02.Scripts\\Grid\\MapGenerator.cs",
+              "RelativeToolTip": "Assets\\02.Scripts\\Grid\\MapGenerator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwJMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T06:58:57.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GridCellSO.cs",
+              "DocumentMoniker": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\02.Scripts\\Grid\\SO\\GridCellSO.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scripts\\Grid\\SO\\GridCellSO.cs",
+              "ToolTip": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\02.Scripts\\Grid\\SO\\GridCellSO.cs",
+              "RelativeToolTip": "Assets\\02.Scripts\\Grid\\SO\\GridCellSO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T06:58:53.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GridManager.cs",
+              "DocumentMoniker": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\02.Scripts\\Grid\\GridManager.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scripts\\Grid\\GridManager.cs",
+              "ToolTip": "D:\\Project\\Unity\\Kingdom\\Village-Hunters\\Assets\\02.Scripts\\Grid\\GridManager.cs",
+              "RelativeToolTip": "Assets\\02.Scripts\\Grid\\GridManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T06:58:19.223Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
