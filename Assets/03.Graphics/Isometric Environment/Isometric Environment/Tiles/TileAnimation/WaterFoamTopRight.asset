@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: WaterFoamTopRight
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 6704200049701385784, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: 1331834344, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: -198041376, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: 1019230801, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: 1100591546, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: -682672371, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: 1188040202, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  - {fileID: -345059964, guid: 43249e93d2d6a8743b0a436666c79379, type: 3}
+  m_MinSpeed: 12
+  m_MaxSpeed: 12
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
