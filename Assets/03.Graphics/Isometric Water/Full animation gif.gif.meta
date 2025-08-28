@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Full animation gif_0: 4371931625965045428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
