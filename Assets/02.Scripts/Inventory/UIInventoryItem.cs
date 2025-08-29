@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
+public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
 {
     public ItemSlot ItemSlot;
 
@@ -15,7 +15,7 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHa
     [SerializeField] private TextMeshProUGUI quantityText;
     [SerializeField] private Image outline;
 
-    public event Action<UIInventoryItem> OnItemClicked, OnItemBeginDrag, OnItemEndDrag, OnItemDroppedOn, OnRightMouseBtnClick;
+    public event Action<UIInventoryItem> OnItemClicked;
 
     public bool isEmpty = true;
     public bool isSelected = false;
@@ -24,19 +24,11 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHa
     private void Start()
     {
         ResetData();
-        Deselect();
     }
     public void ResetData()
     {
         item.gameObject.SetActive(false);
         isEmpty = true;
-    }
-
-
-    public void Deselect()
-    {
-        outline.enabled = false;
-        isSelected = false;
     }
 
     public void SetData(ItemStatus itemData, int quantity)
@@ -57,32 +49,9 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHa
         isSelected = true;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        if (isEmpty)
-            return;
-
-        OnItemBeginDrag?.Invoke(this);
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        OnItemEndDrag?.Invoke(this);
-    }
-
-    public void OnDrop(PointerEventData eventData)
-    {
-        OnItemDroppedOn?.Invoke(this);
-        Debug.Log("On Drop " + eventData);
-    }
 
     public void OnPointerClick(PointerEventData pointerData)
     {
-        if (pointerData.button == PointerEventData.InputButton.Right)
-        {
-            OnRightMouseBtnClick?.Invoke(this);
-        }
-        else
         {
             OnItemClicked?.Invoke(this);
         }

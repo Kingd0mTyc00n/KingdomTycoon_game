@@ -3,12 +3,12 @@ using System.Linq;
 
 public class HunterController : MonoBehaviour
 {
-    HunterData hunterData;
+    [SerializeField]  private HunterData hunterData;
 
     [Header("Health")]
-    public float maxHealth = 100f;
-    public float health = 100f;
-    public float healThreshold = 0f;
+    public float maxHealth;
+    public float health;
+    public float healThreshold;
 
     [Header("Movement")]
     public float moveSpeed = 3f;
@@ -25,6 +25,24 @@ public class HunterController : MonoBehaviour
     [Header("Combat")]
     public float attackRange = 1f;
     public float dps = 10f;
+
+    private void Start()
+    {
+        SetHunterData(UserData.UserDeepData.HuntersData[0]);
+    }
+
+    public void SetHunterData(HunterData hunterData)
+    {
+        this.hunterData = hunterData;
+        maxHealth = hunterData.Health;
+        health = hunterData.Health;
+        healThreshold = 0.1f * maxHealth;
+    }
+
+    public void SelectedThisHunter()
+    {
+        Camera.main.GetComponent<CameraFollow>().SetCurrentHunter(gameObject.transform);
+    }
 
     public bool IsHealthLow() => health <= healThreshold;
 
@@ -51,7 +69,7 @@ public class HunterController : MonoBehaviour
 
     public NodeState FindNearestMonster()
     {
-        GameObject[] monsters = GameObject.FindGameObjectsWithTag("Monster");
+        GameObject[] monsters = GameObject.FindGameObjectsWithTag("Enemy");
         if (monsters.Length == 0) 
             return NodeState.Failure;
 
@@ -83,8 +101,7 @@ public class HunterController : MonoBehaviour
         if (currentMonster == null) 
             return NodeState.Failure;
 
-        Enemy enemy = currentMonster.GetComponent<Enemy>();
-        if (enemy == null) 
+        if (!currentMonster.TryGetComponent<Enemy>(out var enemy)) 
             return NodeState.Failure;
 
         float dist = Vector2.Distance(transform.position, currentMonster.position);

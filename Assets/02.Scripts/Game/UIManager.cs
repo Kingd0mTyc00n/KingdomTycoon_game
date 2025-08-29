@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         tabs.Clear();
-        tabs =  new List<Tab>(FindObjectsOfType<Tab>(true));
+        tabs = new List<Tab>(FindObjectsOfType<Tab>(true));
     }
 
     public void OpenTab(Tab tab)

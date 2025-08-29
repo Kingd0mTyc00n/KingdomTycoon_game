@@ -16,19 +16,19 @@ public class Item : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<SpriteRenderer>().sprite = item.Icon;
+        Sprite icon = GameController.instance.items.items[this.item.Id].icon;
+        GetComponent<SpriteRenderer>().sprite = icon;
     }
 
-    public void SetData(ItemStatus item)
+    public void SetData(ItemStatus itemData)
     {
-        this.item = item;
+        item = itemData;
     }
 
     public void DestroyItem()
     {
         GetComponent<Collider2D>().enabled = false;
         StartCoroutine(AnimateItemPickup());
-
     }
 
     private IEnumerator AnimateItemPickup()
