@@ -9,7 +9,6 @@ public class ItemStatus : ItemData, IDestroyableItem, IItemAction
     [SerializeField] public List<ModifierData> modifierData = new List<ModifierData>();
     public string ActionName => "Consume";
 
-    public AudioClip actionSFX {get; private set;}
 
     public bool PerformAction(GameObject character)
     {

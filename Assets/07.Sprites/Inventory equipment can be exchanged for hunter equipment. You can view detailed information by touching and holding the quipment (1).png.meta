@@ -1,0 +1,3546 @@
+fileFormatVersion: 2
+guid: 704426d13fab1f54499ebe9932493ce8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5829585763408555638
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_0
+  - first:
+      213: 4031844028902959983
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_1
+  - first:
+      213: 5538701544616235309
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_2
+  - first:
+      213: 7396324519502656858
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_3
+  - first:
+      213: -262002478369553076
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_4
+  - first:
+      213: 2368146173751673664
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_5
+  - first:
+      213: 2523643402400011046
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_6
+  - first:
+      213: 2858357873350342334
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_7
+  - first:
+      213: -2343905169160458146
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_8
+  - first:
+      213: 6339723236297039124
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_9
+  - first:
+      213: 5332090735364935973
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_10
+  - first:
+      213: -3771956414433000699
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_11
+  - first:
+      213: -5905668756526035080
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_12
+  - first:
+      213: -5941770240288553029
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_13
+  - first:
+      213: -8949145444802485937
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_14
+  - first:
+      213: 4553619778648030895
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_15
+  - first:
+      213: 8888757916248825073
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_16
+  - first:
+      213: 8847687340390354352
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_17
+  - first:
+      213: 5177851220878196297
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_18
+  - first:
+      213: 4863928365350156295
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_19
+  - first:
+      213: -7276875187666982770
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_20
+  - first:
+      213: -7983505678674191976
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_21
+  - first:
+      213: 6759956118637743181
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_22
+  - first:
+      213: 5225142234268201005
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_23
+  - first:
+      213: -3364391645563075631
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_24
+  - first:
+      213: 103347888519633114
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_25
+  - first:
+      213: 940998047057053829
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_26
+  - first:
+      213: 2802710040839572566
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_27
+  - first:
+      213: -2508783022097968451
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_28
+  - first:
+      213: -9064450919564828132
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_29
+  - first:
+      213: -3925932419344029610
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_30
+  - first:
+      213: 9070604921387973783
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_31
+  - first:
+      213: 5279023278414391202
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_32
+  - first:
+      213: -9068205385282525757
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_33
+  - first:
+      213: 7375430370564811203
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_34
+  - first:
+      213: -5263577352730779431
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_35
+  - first:
+      213: 8033511093324749816
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_36
+  - first:
+      213: 3101539816468195305
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_37
+  - first:
+      213: -5976663821588686026
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_38
+  - first:
+      213: 4376005726363955103
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_39
+  - first:
+      213: -1815756104598817477
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_40
+  - first:
+      213: 3997616797003976127
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_41
+  - first:
+      213: 247250406848190898
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_42
+  - first:
+      213: 6804515373324786134
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_43
+  - first:
+      213: -6017767313047228960
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_44
+  - first:
+      213: -7142273028178548961
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_45
+  - first:
+      213: -496530877166911267
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_46
+  - first:
+      213: -2083898626666470913
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_47
+  - first:
+      213: -2763281773255160494
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_48
+  - first:
+      213: 4995869668662065037
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_49
+  - first:
+      213: -2294232959287190207
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_50
+  - first:
+      213: 7314914261453128181
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_51
+  - first:
+      213: -7774439048415404385
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_52
+  - first:
+      213: -8313367888463431237
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_53
+  - first:
+      213: 2395022055904427306
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_54
+  - first:
+      213: -3421037622911635925
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_55
+  - first:
+      213: -3691932886975893228
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_56
+  - first:
+      213: -8443610557162900232
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_57
+  - first:
+      213: 9058641375013296545
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_58
+  - first:
+      213: 6198406868543173536
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_59
+  - first:
+      213: -6213066766761104378
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_60
+  - first:
+      213: -6676126028035982915
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_61
+  - first:
+      213: 8419735918515213468
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_62
+  - first:
+      213: 4217837430622839081
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_63
+  - first:
+      213: 2826286973469092025
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_64
+  - first:
+      213: -5588049580846988
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_65
+  - first:
+      213: 8968397612819817692
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_66
+  - first:
+      213: 1396643936823153054
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_67
+  - first:
+      213: -1107965113566241250
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_68
+  - first:
+      213: -282422501660076711
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_69
+  - first:
+      213: 2731762859795644576
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_70
+  - first:
+      213: 1929046486154603768
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_71
+  - first:
+      213: 7065786159494278595
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_72
+  - first:
+      213: -7116481198847925290
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_73
+  - first:
+      213: -7610103554901678449
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_74
+  - first:
+      213: 5837688570672273561
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_75
+  - first:
+      213: 7574908387289578541
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_76
+  - first:
+      213: -7911784667945017051
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_77
+  - first:
+      213: -3654822091948011422
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_78
+  - first:
+      213: -4352721039705675972
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_79
+  - first:
+      213: -2720491854829266120
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_80
+  - first:
+      213: 571900515216118907
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_81
+  - first:
+      213: -5501838983186978738
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_82
+  - first:
+      213: 141062981567373553
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_83
+  - first:
+      213: -3818607466143880056
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_84
+  - first:
+      213: 4645141947465508635
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_85
+  - first:
+      213: 8643785940197387390
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_86
+  - first:
+      213: 6484999215041577287
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_87
+  - first:
+      213: -4329837628950533915
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_88
+  - first:
+      213: 480939825076267057
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_89
+  - first:
+      213: -6964608152592694438
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_90
+  - first:
+      213: -3112462526904183569
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_91
+  - first:
+      213: -6494125973917016266
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_92
+  - first:
+      213: -2761925814306142411
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_93
+  - first:
+      213: -4448156756201139896
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_94
+  - first:
+      213: -3267570422056180685
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_95
+  - first:
+      213: -4186654225342012876
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_96
+  - first:
+      213: -1433498125010049724
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_97
+  - first:
+      213: 7592470931749437031
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_98
+  - first:
+      213: -4898980332952840926
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_99
+  - first:
+      213: -5935855495277184355
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_100
+  - first:
+      213: -259712003885397738
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_101
+  - first:
+      213: 4386375958220450142
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_102
+  - first:
+      213: -5984941966743207950
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_103
+  - first:
+      213: -467578466859737225
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_104
+  - first:
+      213: 6312220647532594259
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_105
+  - first:
+      213: 3502535196142288225
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_106
+  - first:
+      213: 5567074928383709680
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_107
+  - first:
+      213: 5274307356614352470
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_108
+  - first:
+      213: -2440966436729326197
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_109
+  - first:
+      213: 6050839690536559177
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_110
+  - first:
+      213: -6843145297271021882
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_111
+  - first:
+      213: -6965047103753494314
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_112
+  - first:
+      213: 3728866047238596085
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_113
+  - first:
+      213: 3382230722949819742
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_114
+  - first:
+      213: 1335965049160756277
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_115
+  - first:
+      213: -6542754781953737606
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_116
+  - first:
+      213: -869291966385607983
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_117
+  - first:
+      213: -5760674108332385477
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_118
+  - first:
+      213: -3501141467546243699
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_119
+  - first:
+      213: -9001108010145283115
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_120
+  - first:
+      213: -1343868863681391773
+    second: Inventory equipment can be exchanged for hunter equipment. You can view
+      detailed information by touching and holding the quipment (1)_121
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 28
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81db5872a6291fa0800000000000000
+      internalID: -5829585763408555638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b6a8c58ccf3f730800000000000000
+      internalID: 4031844028902959983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 28
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2112c3a5bb6ddc40800000000000000
+      internalID: 5538701544616235309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55b77c86f505a660800000000000000
+      internalID: 7396324519502656858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 28
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45c282522e2d5cf0800000000000000
+      internalID: -262002478369553076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_5
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 27
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0434ba6e5685dd020800000000000000
+      internalID: 2368146173751673664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6239fcbbd48c50320800000000000000
+      internalID: 2523643402400011046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 28
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6fcf1775deaa720800000000000000
+      internalID: 2858357873350342334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 23
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e503dfccaa6c87fd0800000000000000
+      internalID: -2343905169160458146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d56c1b1b83bf750800000000000000
+      internalID: 6339723236297039124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 23
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521149fe5446ff940800000000000000
+      internalID: 5332090735364935973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503077130a157abc0800000000000000
+      internalID: -3771956414433000699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_12
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 40
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f84263e89da0ea0800000000000000
+      internalID: -5905668756526035080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 28
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb70d9282779a8da0800000000000000
+      internalID: -5941770240288553029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 23
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f412e3fe1af3ec380800000000000000
+      internalID: -8949145444802485937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_15
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 28
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae32840015b13f30800000000000000
+      internalID: 4553619778648030895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_16
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcd37cea363b5b70800000000000000
+      internalID: 8888757916248825073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_17
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd00bf42cc49ca70800000000000000
+      internalID: 8847687340390354352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_18
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 27
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e7440804c6bd740800000000000000
+      internalID: 5177851220878196297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_19
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70874adf315208340800000000000000
+      internalID: 4863928365350156295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 27
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8861444298530b90800000000000000
+      internalID: -7276875187666982770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_21
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8999f4832e3e43190800000000000000
+      internalID: -7983505678674191976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_22
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 27
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c81ac264030dd50800000000000000
+      internalID: 6759956118637743181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_23
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2072769d2f638840800000000000000
+      internalID: 5225142234268201005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_24
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3cbe8af974f41d0800000000000000
+      internalID: -3364391645563075631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_25
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8df776b5a2f6100800000000000000
+      internalID: 103347888519633114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_26
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5880c29fcb81f0d00800000000000000
+      internalID: 940998047057053829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_27
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 28
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cc9a8cee935e620800000000000000
+      internalID: 2802710040839572566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_28
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 27
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2d15d22230f2dd0800000000000000
+      internalID: -2508783022097968451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_29
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1220670ae9943280800000000000000
+      internalID: -9064450919564828132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_30
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 23
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6582fccd3494489c0800000000000000
+      internalID: -3925932419344029610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_31
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c7d3d2e1341ed70800000000000000
+      internalID: 9070604921387973783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 27
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a768e6c3bbd24940800000000000000
+      internalID: 5279023278414391202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_33
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 28
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c563fb5f33472280800000000000000
+      internalID: -9068205385282525757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_34
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 27
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9a42768daca5660800000000000000
+      internalID: 7375430370564811203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_35
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 28
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0e0ba094404f6b0800000000000000
+      internalID: -5263577352730779431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_36
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 28
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb18c8a6c3cc7f60800000000000000
+      internalID: 8033511093324749816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_37
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e72159c702ea0b20800000000000000
+      internalID: 3101539816468195305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_38
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b17448bef9e0da0800000000000000
+      internalID: -5976663821588686026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_39
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 27
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9faff6e502babc30800000000000000
+      internalID: 4376005726363955103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_40
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35f3a271732dc6e0800000000000000
+      internalID: -1815756104598817477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_41
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 28
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd8e8deb436a7730800000000000000
+      internalID: 3997616797003976127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_42
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 27
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9d1ce5fe86e6300800000000000000
+      internalID: 247250406848190898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_43
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 23
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d955bf1eae7e6e50800000000000000
+      internalID: 6804515373324786134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_44
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edecd423889c7ca0800000000000000
+      internalID: -6017767313047228960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_45
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 40
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f176092b58c81ec90800000000000000
+      internalID: -7142273028178548961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_46
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 28
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd004764cc7fb19f0800000000000000
+      internalID: -496530877166911267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_47
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 23
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1ee917d318413e0800000000000000
+      internalID: -2083898626666470913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_48
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 28
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d80d22ed9d6a9d0800000000000000
+      internalID: -2763281773255160494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_49
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 27
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8730c09ef4e45540800000000000000
+      internalID: 4995869668662065037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_50
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 28
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d91b5674f3920e0800000000000000
+      internalID: -2294232959287190207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_51
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 27
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f14a54c3cbc38560800000000000000
+      internalID: 7314914261453128181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e164f40e4ab1490800000000000000
+      internalID: -7774439048415404385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_53
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 27
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb97ff893fbf0ac80800000000000000
+      internalID: -8313367888463431237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_54
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 4
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2db867ded3dc3120800000000000000
+      internalID: 2395022055904427306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_55
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2eea1b48680680d0800000000000000
+      internalID: -3421037622911635925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_56
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4113839999e93ccc0800000000000000
+      internalID: -3691932886975893228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_57
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f431963fe442da80800000000000000
+      internalID: -8443610557162900232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_58
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9d259f552c6bd70800000000000000
+      internalID: 9058641375013296545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_59
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a37bd4d43a250650800000000000000
+      internalID: 6198406868543173536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_60
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 4
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c6b61a1b0c6c9a0800000000000000
+      internalID: -6213066766761104378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_61
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9fc27cfb2a953a0800000000000000
+      internalID: -6676126028035982915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_62
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9452bd4539e8d470800000000000000
+      internalID: 8419735918515213468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_63
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921ee9ccbc4c88a30800000000000000
+      internalID: 4217837430622839081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_64
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 4
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b860fe270df83720800000000000000
+      internalID: 2826286973469092025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_65
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4701fb1d2b52ceff0800000000000000
+      internalID: -5588049580846988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_66
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4269cbc16267c70800000000000000
+      internalID: 8968397612819817692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_67
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 3
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e911c04c240e16310800000000000000
+      internalID: 1396643936823153054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_68
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1edb567997bf90f0800000000000000
+      internalID: -1107965113566241250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_69
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95559f72b32a41cf0800000000000000
+      internalID: -282422501660076711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_70
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a089b4f8db29e520800000000000000
+      internalID: 2731762859795644576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_71
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 4
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fce5720f8955ca10800000000000000
+      internalID: 1929046486154603768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_72
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd278f6317be0260800000000000000
+      internalID: 7065786159494278595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_73
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d36cebed0e2d3d90800000000000000
+      internalID: -7116481198847925290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_74
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86e52a032b736690800000000000000
+      internalID: -7610103554901678449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_75
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998574c53d2a30150800000000000000
+      internalID: 5837688570672273561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_76
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2cb58e6b0b7f1960800000000000000
+      internalID: 7574908387289578541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_77
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 4
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52161cf43c1b33290800000000000000
+      internalID: -7911784667945017051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_78
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2605034eba6774dc0800000000000000
+      internalID: -3654822091948011422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_79
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 4
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3769fda6470893c0800000000000000
+      internalID: -4352721039705675972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_80
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 4
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83bde82621fde3ad0800000000000000
+      internalID: -2720491854829266120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_81
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74d1501d7ccfe700800000000000000
+      internalID: 571900515216118907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_82
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 3
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e486eb3489a85a3b0800000000000000
+      internalID: -5501838983186978738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_83
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0e74bc80825f100800000000000000
+      internalID: 141062981567373553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_84
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ce6dbcdb4910bc0800000000000000
+      internalID: -3818607466143880056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_85
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17a2fd7dfbd67040800000000000000
+      internalID: 4645141947465508635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_86
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c2bff0485e4f770800000000000000
+      internalID: 8643785940197387390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_87
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7418d355d685ff950800000000000000
+      internalID: 6484999215041577287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_88
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8a84fed9359e3c0800000000000000
+      internalID: -4329837628950533915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_89
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 3
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13862080934aca600800000000000000
+      internalID: 480939825076267057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_90
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a534ce809cdb85f90800000000000000
+      internalID: -6964608152592694438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_91
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4592382df4ec4d0800000000000000
+      internalID: -3112462526904183569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_92
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fd90685da30e5a0800000000000000
+      internalID: -6494125973917016266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_93
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 4
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5370d4eea1baba9d0800000000000000
+      internalID: -2761925814306142411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_94
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84190616ff8f442c0800000000000000
+      internalID: -4448156756201139896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_95
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334a4c2730247a2d0800000000000000
+      internalID: -3267570422056180685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_96
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432e915f92406e5c0800000000000000
+      internalID: -4186654225342012876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_97
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4456690ec013b1ce0800000000000000
+      internalID: -1433498125010049724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_98
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e7766f510ed5960800000000000000
+      internalID: 7592470931749437031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_99
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22598b4d753530cb0800000000000000
+      internalID: -4898980332952840926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_100
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 3
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9af3f560ea9f9da0800000000000000
+      internalID: -5935855495277184355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_101
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 4
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6198188fe41556cf0800000000000000
+      internalID: -259712003885397738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_102
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e592b09a1b98fdc30800000000000000
+      internalID: 4386375958220450142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_103
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 4
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff71f6adf631fca0800000000000000
+      internalID: -5984941966743207950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_104
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f143a9cd3d289f0800000000000000
+      internalID: -467578466859737225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_105
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35401104c33899750800000000000000
+      internalID: 6312220647532594259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_106
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d3d5324318b9030800000000000000
+      internalID: 3502535196142288225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_107
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f15b48d629324d40800000000000000
+      internalID: 5567074928383709680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_108
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e5a3ba89a123940800000000000000
+      internalID: 5274307356614352470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_109
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 3
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85f81665f1ff1ed0800000000000000
+      internalID: -2440966436729326197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_110
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 4
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942244bc3a6e8f350800000000000000
+      internalID: 6050839690536559177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_111
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce96c1db934801a0800000000000000
+      internalID: -6843145297271021882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_112
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0e8e0cf8e275f90800000000000000
+      internalID: -6965047103753494314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_113
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5eba0e9e79fb330800000000000000
+      internalID: 3728866047238596085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_114
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d26d53ce810fe20800000000000000
+      internalID: 3382230722949819742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_115
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 4
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c609b422d4a8210800000000000000
+      internalID: 1335965049160756277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_116
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cb829d0377335a0800000000000000
+      internalID: -6542754781953737606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_117
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 4
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da2c71ff87afe3f0800000000000000
+      internalID: -869291966385607983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_118
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bde0a7b69fd00b0800000000000000
+      internalID: -5760674108332385477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_119
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 4
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d24869262796fc0800000000000000
+      internalID: -3501141467546243699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_120
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 3
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d30e5664f3a51380800000000000000
+      internalID: -9001108010145283115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory equipment can be exchanged for hunter equipment. You can view
+        detailed information by touching and holding the quipment (1)_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363109b736e995de0800000000000000
+      internalID: -1343868863681391773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_0: -5829585763408555638
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_1: 4031844028902959983
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_10: 5332090735364935973
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_100: -5935855495277184355
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_101: -259712003885397738
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_102: 4386375958220450142
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_103: -5984941966743207950
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_104: -467578466859737225
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_105: 6312220647532594259
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_106: 3502535196142288225
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_107: 5567074928383709680
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_108: 5274307356614352470
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_109: -2440966436729326197
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_11: -3771956414433000699
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_110: 6050839690536559177
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_111: -6843145297271021882
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_112: -6965047103753494314
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_113: 3728866047238596085
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_114: 3382230722949819742
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_115: 1335965049160756277
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_116: -6542754781953737606
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_117: -869291966385607983
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_118: -5760674108332385477
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_119: -3501141467546243699
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_12: -5905668756526035080
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_120: -9001108010145283115
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_121: -1343868863681391773
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_13: -5941770240288553029
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_14: -8949145444802485937
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_15: 4553619778648030895
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_16: 8888757916248825073
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_17: 8847687340390354352
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_18: 5177851220878196297
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_19: 4863928365350156295
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_2: 5538701544616235309
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_20: -7276875187666982770
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_21: -7983505678674191976
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_22: 6759956118637743181
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_23: 5225142234268201005
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_24: -3364391645563075631
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_25: 103347888519633114
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_26: 940998047057053829
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_27: 2802710040839572566
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_28: -2508783022097968451
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_29: -9064450919564828132
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_3: 7396324519502656858
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_30: -3925932419344029610
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_31: 9070604921387973783
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_32: 5279023278414391202
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_33: -9068205385282525757
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_34: 7375430370564811203
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_35: -5263577352730779431
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_36: 8033511093324749816
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_37: 3101539816468195305
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_38: -5976663821588686026
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_39: 4376005726363955103
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_4: -262002478369553076
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_40: -1815756104598817477
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_41: 3997616797003976127
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_42: 247250406848190898
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_43: 6804515373324786134
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_44: -6017767313047228960
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_45: -7142273028178548961
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_46: -496530877166911267
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_47: -2083898626666470913
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_48: -2763281773255160494
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_49: 4995869668662065037
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_5: 2368146173751673664
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_50: -2294232959287190207
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_51: 7314914261453128181
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_52: -7774439048415404385
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_53: -8313367888463431237
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_54: 2395022055904427306
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_55: -3421037622911635925
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_56: -3691932886975893228
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_57: -8443610557162900232
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_58: 9058641375013296545
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_59: 6198406868543173536
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_6: 2523643402400011046
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_60: -6213066766761104378
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_61: -6676126028035982915
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_62: 8419735918515213468
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_63: 4217837430622839081
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_64: 2826286973469092025
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_65: -5588049580846988
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_66: 8968397612819817692
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_67: 1396643936823153054
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_68: -1107965113566241250
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_69: -282422501660076711
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_7: 2858357873350342334
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_70: 2731762859795644576
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_71: 1929046486154603768
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_72: 7065786159494278595
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_73: -7116481198847925290
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_74: -7610103554901678449
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_75: 5837688570672273561
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_76: 7574908387289578541
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_77: -7911784667945017051
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_78: -3654822091948011422
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_79: -4352721039705675972
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_8: -2343905169160458146
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_80: -2720491854829266120
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_81: 571900515216118907
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_82: -5501838983186978738
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_83: 141062981567373553
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_84: -3818607466143880056
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_85: 4645141947465508635
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_86: 8643785940197387390
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_87: 6484999215041577287
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_88: -4329837628950533915
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_89: 480939825076267057
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_9: 6339723236297039124
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_90: -6964608152592694438
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_91: -3112462526904183569
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_92: -6494125973917016266
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_93: -2761925814306142411
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_94: -4448156756201139896
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_95: -3267570422056180685
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_96: -4186654225342012876
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_97: -1433498125010049724
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_98: 7592470931749437031
+      Inventory equipment can be exchanged for hunter equipment. You can view detailed information by touching and holding the quipment (1)_99: -4898980332952840926
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class ItemInventoryDescription : MonoBehaviour
 {
+    public HunterInventory targetInventory;
+
     [SerializeField]
     private Image item;
     [SerializeField]
@@ -32,7 +34,7 @@ public class ItemInventoryDescription : MonoBehaviour
         description.text = itemData.Description;
         currentSlotIndex = index;
 
-        if (InventoryManager.Instance.IsCharacterSlot(index))
+        if (targetInventory.IsEquipmentSlot(index))
         {
             removeBtn.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "REMOVE";
             removeBtn.gameObject.SetActive(true);
@@ -59,21 +61,19 @@ public class ItemInventoryDescription : MonoBehaviour
 
     public void EquipItem()
     {
-        InventoryManager.Instance.ItemAction(currentSlotIndex);
+        targetInventory.ItemAction(currentSlotIndex);
 
-        InventoryItem inventoryItem = InventoryManager.Instance.GetItemAt(currentSlotIndex);
+        InventoryItem inventoryItem = targetInventory.GetItemAt(currentSlotIndex);
     }
 
     public void RemoveEquipment()
     {
-        InventoryManager.Instance.RemoveAffectCharacterEvent(currentSlotIndex);
+        targetInventory.RemoveAffectCharacterEvent(currentSlotIndex);
 
-        InventoryItem inventoryItem = InventoryManager.Instance.GetItemAt(currentSlotIndex);
-        IDestroyableItem destroyableItem = inventoryItem.ItemStatus as IDestroyableItem;
+        InventoryItem inventoryItem = targetInventory.GetItemAt(currentSlotIndex);
+        IDestroyableItem destroyableItem = inventoryItem.Item as IDestroyableItem;
         if (destroyableItem != null)
-            InventoryManager.Instance.RemoveItem(currentSlotIndex, 1);
-        InventoryManager.Instance.AddItem(UIInventoryPage.Instance.uiItems[currentSlotIndex].ItemSlot.EdibleItem, 1);
-
-        UIInventoryPage.Instance.UpdateStatus();
+            targetInventory.RemoveItem(currentSlotIndex, 1);
+        targetInventory.AddItem(UIInventoryPage.Instance.uiItems[currentSlotIndex].ItemSlot.EdibleItem, 1);
     }
 }

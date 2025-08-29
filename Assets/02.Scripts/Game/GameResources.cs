@@ -19,6 +19,7 @@ public class GameResources : MonoBehaviour
         }
     }
 
+
     [Header("Progress Bar Prefabs")]
     public List<GameObject> progressBars;
 

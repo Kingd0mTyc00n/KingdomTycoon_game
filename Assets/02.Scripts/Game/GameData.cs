@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +6,6 @@ using UnityEngine;
 public interface IItemAction
 {
     public string ActionName { get; }
-    public AudioClip actionSFX { get; }
     bool PerformAction(GameObject character);
     bool RemoveAction(GameObject character);
 }
@@ -30,8 +29,10 @@ public enum EquipmentType
 [System.Serializable]
 public class UserDeepData
 {
-    public HunterData CharacterData;
-    public InventoryData inventoryData;
+    public List<HunterData> HuntersData;
+    public List<ItemStatus> ItemsData;
+    public List<EnemyData> EnemiesData;
+    public int InventorySize;
 
     public int Coins;
 }
@@ -39,12 +40,26 @@ public class UserDeepData
 [System.Serializable]
 public class HunterData
 {
+    public int Id;
     public string Name;
     public float Damage;
     public float Speed;
     public float Armor;
     public float Health;
     public float Hunger;
+    public InventoryData InventoryData;
+}
+
+[System.Serializable]
+public class EnemyData
+{
+    public int Id;
+    public string Name;
+    public float Damage;
+    public float Speed;
+    public float Armor;
+    public float Health;
+    public List<ItemStatus> ItemsIsDrop;
 }
 
 
@@ -55,14 +70,11 @@ public class ItemData
     public string Name;
     public string Detail;
     public string Description;
-    public int SellingPrice;
-    public int PurchasePrice;
     public bool IsStackable;
     public bool IsEdible;
     public bool IsEquippable;
     public EquipmentType EquipmentType;
     public int MaxStackSize;
-    public Sprite Icon;
 }
 
 [System.Serializable]
@@ -87,39 +99,32 @@ public class ItemSlot
 public class InventoryData
 {
     public List<InventoryItem> InventoryItems;
-
-    public int Size;
-
-}
+}   
 
 
 [System.Serializable]
 public struct InventoryItem
 {
     public int Quantity;
-    public ItemStatus ItemStatus;
+    public ItemStatus Item;
     public bool IsEmpty;
 
     public InventoryItem ChangeQuantity(int newQuantity)
     {
-        return new InventoryItem { ItemStatus = this.ItemStatus, Quantity = newQuantity, };
+        return new InventoryItem { Item = this.Item, Quantity = newQuantity, };
     }
 
-    public static InventoryItem GetEmptyItem() => new InventoryItem { ItemStatus = null, Quantity = 0, IsEmpty = true };
+    public static InventoryItem GetEmptyItem() => new InventoryItem { Item = null, Quantity = 0, IsEmpty = true };
 }
 
 
 public class UserData
 {
     public static UserDeepData UserDeepData;
-    public static InventoryData InventoryData;
-    public static DateTime GameDateTime;
 
     public static void SaveData()
     {
         PlayerPrefs.SetString(GameData.PP_USER_DATA, JsonConvert.SerializeObject(UserDeepData));
-        PlayerPrefs.SetString(GameData.PP_INVENTORY_DATA, JsonConvert.SerializeObject(InventoryData));
-        PlayerPrefs.SetString(GameData.PP_DATETIME_DATA, JsonConvert.SerializeObject(GameDateTime));
         PlayerPrefs.Save();
     }
 
@@ -131,22 +136,11 @@ public class UserData
 
         Debug.Log(userJson);
 
-        string inventoryJson = PlayerPrefs.GetString(GameData.PP_INVENTORY_DATA, "{}");
-        InventoryData = JsonConvert.DeserializeObject<InventoryData>(inventoryJson);
-
-        Debug.Log(inventoryJson);
-
-        string dateTimeJson = PlayerPrefs.GetString(GameData.PP_DATETIME_DATA, "{}");
-        GameDateTime = JsonConvert.DeserializeObject<DateTime>(dateTimeJson);
-
-        Debug.Log(dateTimeJson);
     }
 }
 
 public class GameData
 {
     public const string PP_USER_DATA = "UserData";
-    public const string PP_DATETIME_DATA = "DateTimeData";
-    public const string PP_INVENTORY_DATA = "InventoryData";
 }
 
