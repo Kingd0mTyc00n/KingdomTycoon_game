@@ -151,4 +151,9 @@ public class HunterController : MonoBehaviour
     {
         return hunterData;
     }
+
+    private void OnMouseDown()
+    {
+        MenuManager.instance.OpenScreen(this);
+    }
 }

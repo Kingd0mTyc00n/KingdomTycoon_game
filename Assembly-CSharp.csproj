@@ -777,6 +777,10 @@
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Project\Unity\6000.0.29f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
       <Private>False</Private>
@@ -1539,9 +1543,17 @@
       <Project>{A77D612A-3F57-EF69-6E9C-6F829605774B}</Project>
       <Name>ACTk.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{ECC4F6DF-6D51-6B7C-3BC1-A316D25B0A95}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="FishNet.Codegen.Cecil.csproj">
       <Project>{34BA54E6-AA42-5D83-FB06-1761194BF1A1}</Project>
       <Name>FishNet.Codegen.Cecil</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{6FCB645B-51C9-25F4-E54F-58C476044FA0}</Project>
+      <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="FishNet.Runtime.csproj">
       <Project>{730ABAF5-4B82-19CD-0CAC-F13831593E93}</Project>
@@ -1550,6 +1562,10 @@
     <ProjectReference Include="ExtensionsEditor.csproj">
       <Project>{7187948C-D30A-5BAA-875E-BC15947E0A79}</Project>
       <Name>ExtensionsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{7D959FAE-87A4-C45A-7CE5-CE89FE942888}</Project>
+      <Name>PackageToolsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
       <Project>{3C940F83-3AB8-4CB3-3DBD-2E1CA56C9E14}</Project>

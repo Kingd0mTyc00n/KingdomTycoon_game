@@ -63,7 +63,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         Vector2 goalPos = hit.point;
                         _goalObjCircle.transform.position = hit.point;
-                        _nowObj.SetMovePos(goalPos);
+                        //_nowObj.SetMovePos(goalPos);
                     }
                 }
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pathfinding;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,11 @@ public class PlayerObj : MonoBehaviour
     public float _charMS;
     private PlayerState _currentState;
 
-    public Vector3 _goalPos;
+    [SerializeField]
+    private AIPath path;
+
+    public Transform _goalPos;
+    private bool facingRight = false;
     public bool isAction = false;
     public Dictionary<PlayerState, int> IndexPair = new ();
     void Start()
@@ -29,8 +34,8 @@ public class PlayerObj : MonoBehaviour
         {
             IndexPair[state] = 0;
         }
-        //Test Random Move
-        SetMovePos(new Vector2(UnityEngine.Random.Range(-4f,4f), UnityEngine.Random.Range(-4f,4f)));
+        path = GetComponent<AIPath>();
+        SetMovePos(_goalPos);
     }
     public void SetStateAnimationIndex(PlayerState state, int index = 0){
         IndexPair[state] = index;
@@ -42,7 +47,7 @@ public class PlayerObj : MonoBehaviour
     {
         if(isAction) return;
 
-        transform.position = new Vector3(transform.position.x,transform.position.y,transform.localPosition.y * 0.01f);
+        //transform.position = new Vector3(transform.position.x,transform.position.y,transform.localPosition.y * 0.01f);
         switch(_currentState)
         {
             case PlayerState.IDLE:
@@ -59,25 +64,30 @@ public class PlayerObj : MonoBehaviour
 
     void DoMove()
     {
-        Vector3 _dirVec  = _goalPos - transform.position ;
-        Vector3 _disVec = (Vector2)_goalPos - (Vector2)transform.position ;
-        if( _disVec.sqrMagnitude < 0.1f )
-        {
-            _currentState = PlayerState.IDLE;
-            //Test Random Move
-            Vector2 pos = new Vector2(UnityEngine.Random.Range(-4f,4f), UnityEngine.Random.Range(-4f,4f));
-            SetMovePos(pos);
-            return;
-        }
-        Vector3 _dirMVec = _dirVec.normalized;
-        transform.position += _dirMVec * _charMS * Time.deltaTime;
-        
-
-        if(_dirMVec.x > 0 ) _prefabs.transform.localScale = new Vector3(-1,1,1);
-        else if (_dirMVec.x < 0) _prefabs.transform.localScale = new Vector3(1,1,1);
+        path.maxSpeed = _charMS;
+        Flip(_goalPos.position);
+        path.destination = _goalPos.position;
     }
 
-    public void SetMovePos(Vector2 pos)
+    void Flip(Vector3 targetPosition)
+    {
+        if (targetPosition.x < transform.position.x && facingRight)
+        {
+            facingRight = false;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
+        else if (targetPosition.x > transform.position.x && !facingRight)
+        {
+            facingRight = true;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
+    }
+
+    public void SetMovePos(Transform pos)
     {
         isAction = false;
         _goalPos = pos;
