@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager instance;
-    [SerializeField] List<Screen> screens;
+    [SerializeField] List<ScreenUI> screens;
     [SerializeField] List<HUDBar> hUDBars;
 
     void Awake()
@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        screens = new List<Screen>(FindObjectsOfType<Screen>(true));
+        screens = new List<ScreenUI>(FindObjectsOfType<ScreenUI>(true));
         hUDBars = new List<HUDBar>(FindObjectsOfType<HUDBar>(true));
     }
 
@@ -54,14 +54,14 @@ public class MenuManager : MonoBehaviour
         return true;
     }
 
-    public List<Screen> GetMenuList()
+    public List<ScreenUI> GetMenuList()
     {
         return screens;
     }
 
-    public Screen GetScreenByName(string menuName)
+    public ScreenUI GetScreenByName(string menuName)
     {
-        foreach (Screen menu in screens)
+        foreach (ScreenUI menu in screens)
         {
             if (menu.name == menuName)
                 return menu;
@@ -85,7 +85,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void OpenScreen(Screen screen)
+    public void OpenScreen(ScreenUI screen)
     {
         for (int i = 0; i < screens.Count; i++)
         {
@@ -97,7 +97,7 @@ public class MenuManager : MonoBehaviour
         screen.Open();
     }
 
-    public void CloseMenu(Screen screen)
+    public void CloseMenu(ScreenUI screen)
     {
         screen.Close();
     }
