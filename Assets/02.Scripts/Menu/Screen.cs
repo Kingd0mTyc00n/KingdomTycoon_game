@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Screen : Menu
+public class ScreenUI : Menu
 {
     public override void Open()
     {
