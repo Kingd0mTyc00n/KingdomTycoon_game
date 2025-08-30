@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Undead
+  m_EditorClassIdentifier: 
+  m_GroupName: Undead
+  m_GUID: 83298b5f79a2b0648a565c6bef03dce3
+  m_SerializeEntries:
+  - m_GUID: 298a2a2c28bf50044bb13361a43f0005
+    m_Address: Undead2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Undead
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3815558feecfd8b4faf0c067cd13ac40
+    m_Address: UndeadEpic1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UndeadEpic
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4825d1d683023a4c828c666653df2e7
+    m_Address: Undead1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Undead
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4d7910ddd3e6284e88a18765d011583
+    m_Address: Undead3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Undead
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 976f0adafea8536418dc50fc6de45af7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c9b6735d8eb605746bd2aa964c715b96, type: 2}
+    - {fileID: 11400000, guid: add98addf50d2684f8e0d5de964a9e45, type: 2}
