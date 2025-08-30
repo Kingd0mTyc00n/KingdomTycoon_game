@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Monster
   - Enemy
+  - Devil
+  - Goblin
+  - Undead
   layers:
   - Default
   - TransparentFX
