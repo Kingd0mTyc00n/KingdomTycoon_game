@@ -14,6 +14,11 @@ public class CameraFollow : MonoBehaviour
         target = hunter;
     }
 
+    public void CameraFree()
+    {
+        isFollowTarget = false;
+    }
+
     void LateUpdate()
     {
         if (isFollowTarget)

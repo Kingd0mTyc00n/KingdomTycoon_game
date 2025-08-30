@@ -216,4 +216,10 @@ public class CharacterController : MonoBehaviour
     {
         return hunterData;
     }
+
+    public void ClickHunter()
+    {
+        MenuManager.instance.OpenScreen("Diologue");
+        SelectedThisHunter();
+    }
 }
