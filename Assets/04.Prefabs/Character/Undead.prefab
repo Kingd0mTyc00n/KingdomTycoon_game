@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2060758642194764504}
   m_Layer: 0
   m_Name: Undead
-  m_TagString: Player
+  m_TagString: Undead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

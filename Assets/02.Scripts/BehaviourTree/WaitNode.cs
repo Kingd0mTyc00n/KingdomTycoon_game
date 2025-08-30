@@ -13,7 +13,6 @@ public class WaitNode : Node
 
     public override NodeState Tick()
     {
-        Debug.Log("WaitNode Tick:" + (Time.time - startTime));
         if (!started)
         {
             started = true;
