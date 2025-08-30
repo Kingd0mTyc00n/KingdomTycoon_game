@@ -38,20 +38,19 @@ public class UserDeepData
 }
 
 [System.Serializable]
-public class HunterData
+public class HunterData:CharacterData
 {
-    public int Id;
-    public string Name;
-    public float Damage;
-    public float Speed;
-    public float Armor;
-    public float Health;
     public float Hunger;
     public InventoryData InventoryData;
 }
 
 [System.Serializable]
-public class EnemyData
+public class EnemyData: CharacterData
+{
+    public List<ItemStatus> ItemsIsDrop;
+}
+
+public class CharacterData
 {
     public int Id;
     public string Name;
@@ -59,8 +58,7 @@ public class EnemyData
     public float Speed;
     public float Armor;
     public float Health;
-    public List<ItemStatus> ItemsIsDrop;
-}
+}   
 
 
 [System.Serializable]

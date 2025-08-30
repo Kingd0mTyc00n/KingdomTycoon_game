@@ -22,9 +22,9 @@ public class HunterBehaviourBuilder : MonoBehaviour
         var huntSeq = new Sequence(new List<Node> {
             new ActionNode(() => hunter.WaitForMapSelection()),
             new ActionNode(() => hunter.MoveToMapSpawn()),
-            new ActionNode(() => hunter.FindNearestMonster()),
-            new ActionNode(() => hunter.MoveToMonster()),
-            new ActionNode(() => hunter.AttackMonster())
+            new ActionNode(() => hunter.FindNearestEnemy()),
+            new ActionNode(() => hunter.MoveToEnemy()),
+            new ActionNode(() => hunter.AttackEnemy())
         });
 
         runner.Root = new Selector(new List<Node> { healSeq, roamSeq ,huntSeq });

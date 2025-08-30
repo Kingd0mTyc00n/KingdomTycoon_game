@@ -15,9 +15,9 @@ public class MonsterBehaviourBuilder : MonoBehaviour
             new WaitNode(2f)
         });
         var huntSeq = new Sequence(new List<Node> {
-            new ActionNode(() => hunter.FindNearestMonster()),
-            new ActionNode(() => hunter.MoveToMonster()),
-            new ActionNode(() => hunter.AttackMonster())
+            new ActionNode(() => hunter.FindNearestEnemy()),
+            new ActionNode(() => hunter.MoveToEnemy()),
+            new ActionNode(() => hunter.AttackEnemy())
         });
 
         runner.Root = new Selector(new List<Node> {roamSeq ,huntSeq });

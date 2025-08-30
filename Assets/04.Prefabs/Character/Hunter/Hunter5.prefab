@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 4923590108807297962}
   - component: {fileID: 2533665780037987915}
   - component: {fileID: 2060758642194764504}
+  - component: {fileID: 4044399193208753563}
   m_Layer: 0
   m_Name: Hunter5
   m_TagString: Player
@@ -396,7 +397,7 @@ MonoBehaviour:
   moveSpeed: 3
   arriveTolerance: 1
   currentMapSpawn: {fileID: 0}
-  currentMonster: {fileID: 0}
+  currentEnemy: {fileID: 0}
   mapSelected: 0
   townTransform: {fileID: 0}
   attackRange: 1
@@ -481,11 +482,27 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 0.6
   pickNextWaypointDist: 1
-  endReachedDistance: 0.5
+  endReachedDistance: 1
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!114 &4044399193208753563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612195653977975076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8faeedd4c0b1fd4794f0b024d854b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  health: 0
+  spawnRadius: 1.5
+  forceAmount: 5
 --- !u!1001 &3120465170708071584
 PrefabInstance:
   m_ObjectHideFlags: 0

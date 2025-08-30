@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\02.Scripts\Inventory\UIInventoryItem.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\CharacterController.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseStateException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Promise.cs" />
@@ -110,7 +111,6 @@
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationManager.cs" />
     <Compile Include="Assets\SPUM\Sprite_Editor(Beta)\Script\SpriteEyeSync.cs" />
     <Compile Include="Assets\SPUM\Sample\Script\PlayerManager.cs" />
-    <Compile Include="Assets\02.Scripts\BehaviourTree\Enemy.cs" />
     <Compile Include="Assets\02.Scripts\Menu\HUDBar.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_CustomStyleData.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
@@ -119,7 +119,7 @@
     <Compile Include="Assets\SPUM\Core\Script\SPUM_EyeSet.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_PaginationManager.cs" />
     <Compile Include="Assets\03.Graphics\Assets\FishNet\Upgrading\MirrorUpgrade.cs" />
-    <Compile Include="Assets\02.Scripts\Character\TestAnimation.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\Character.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_Button.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_ImprovedStyleData.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\Node.cs" />
@@ -200,7 +200,6 @@
     <Compile Include="Assets\02.Scripts\ScriptableObject\ItemDatabase.cs" />
     <Compile Include="Assets\02.Scripts\ScriptableObject\EnemyDataSO.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\PickUpSystem.cs" />
-    <Compile Include="Assets\02.Scripts\BehaviourTree\HunterController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

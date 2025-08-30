@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public string enemyTag;
+    public string enemyLabel;
     public float spawnInterval = 2f;
     public int totalEnemies = 7;
     public Transform[] spawnPoints;
@@ -28,6 +28,7 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        ObjectPoolAddressable.Instance.SpawnFromPool(enemyTag, point.position, Quaternion.identity);
+        var enemy = ObjectPoolAddressable.Instance.SpawnFromPool(enemyLabel, point.position, Quaternion.identity);
+        enemy.GetComponent<CharacterController>().townTransform = this.gameObject.transform;
     }
 }

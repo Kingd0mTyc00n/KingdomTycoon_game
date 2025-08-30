@@ -18,7 +18,7 @@ public class CharacterController : MonoBehaviour
 
     [Header("Map / Target")]
     public Transform currentMapSpawn;   
-    public Transform currentMonster; 
+    public Transform currentEnemy; 
     public bool mapSelected = false;
 
     [Header("Town")]
@@ -130,26 +130,26 @@ public class CharacterController : MonoBehaviour
         return NodeState.Running;
     }
 
-    public NodeState FindNearestMonster()
+    public NodeState FindNearestEnemy()
     {
-        GameObject[] monsters = GameObject.FindGameObjectsWithTag("Enemy");
-        if (monsters.Length == 0) 
+        GameObject[] Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+        if (Enemys.Length == 0) 
             return NodeState.Failure;
 
-        currentMonster = monsters
+        currentEnemy = Enemys
             .OrderBy(m => Vector2.Distance(transform.position, m.transform.position))
             .First().transform;
 
         return NodeState.Success;
     }
 
-    public NodeState MoveToMonster()
+    public NodeState MoveToEnemy()
     {
-        if (currentMonster == null) return NodeState.Failure;
+        if (currentEnemy == null) return NodeState.Failure;
 
-        characterObj.SetMovePos(currentMonster.position);
+        characterObj.SetMovePos(currentEnemy.position);
 
-        if (Vector2.Distance(transform.position, currentMonster.position) <= arriveTolerance)
+        if (Vector2.Distance(transform.position, currentEnemy.position) <= arriveTolerance)
         {
             characterObj.SetIdle();
             return NodeState.Success;
@@ -158,15 +158,15 @@ public class CharacterController : MonoBehaviour
         return NodeState.Running;
     }
 
-    public NodeState AttackMonster()
+    public NodeState AttackEnemy()
     {
-        if (currentMonster == null) 
+        if (currentEnemy == null) 
             return NodeState.Failure;
 
-        if (!currentMonster.TryGetComponent<Enemy>(out var enemy)) 
+        if (!currentEnemy.TryGetComponent<Character>(out var enemy)) 
             return NodeState.Failure;
 
-        float dist = Vector2.Distance(transform.position, currentMonster.position);
+        float dist = Vector2.Distance(transform.position, currentEnemy.position);
         if (dist > attackRange) 
             return NodeState.Failure;
 
@@ -175,7 +175,7 @@ public class CharacterController : MonoBehaviour
 
         if (enemy.IsDead())
         {
-            currentMonster = null;
+            currentEnemy = null;
             return NodeState.Success;
         }
 

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Character : MonoBehaviour
 {
-    public EnemyData enemyData;
+    public CharacterData characterData;
 
     public float maxHealth = 5;
     public float health;
@@ -17,12 +17,12 @@ public class Enemy : MonoBehaviour
         yield return new WaitUntil(() => PlayerPrefs.HasKey(GameData.PP_USER_DATA));
         SetEnemyData(UserData.UserDeepData.EnemiesData[0]);
     }
-
-    public void SetEnemyData(EnemyData enemyData)
+     
+    public void SetEnemyData(CharacterData characterData)
     {
-        this.enemyData = enemyData;
-        maxHealth = enemyData.Health;
-        health = enemyData.Health;
+        this.characterData = characterData;
+        maxHealth = characterData.Health;
+        health = characterData.Health;
     }
 
     public void TakeDamage(float d)
@@ -39,8 +39,11 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        DropItem(enemyData.ItemsIsDrop);
-        Destroy(gameObject);
+        if (characterData is EnemyData enemyData)
+        {
+            DropItem(enemyData.ItemsIsDrop);
+        }
+        ObjectPoolAddressable.Instance.ReturnToPool(gameObject);
     }
 
     private void DropItem(List<ItemStatus> items)

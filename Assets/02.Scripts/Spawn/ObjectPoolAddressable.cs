@@ -8,57 +8,89 @@ public class ObjectPoolAddressable : MonoBehaviour
     [System.Serializable]
     public class Pool
     {
-        public string tag;
-        public string address;
-        public int size;
+        public string label;  // label in Addressables
+        public int size;      // number of objects per prefab
     }
 
     public static ObjectPoolAddressable Instance;
     private void Awake() => Instance = this;
 
     public List<Pool> pools;
-    private Dictionary<string, Queue<GameObject>> poolDictionary;
+
+    // Flatten dictionary
+    private Dictionary<GameObject, Queue<GameObject>> poolDictionary;
+    private Dictionary<string, List<GameObject>> labelToPrefabs;
+
+    public Transform EnemyParentTransform; // Optional parent for spawned enemies
 
     async void Start()
     {
-        poolDictionary = new Dictionary<string, Queue<GameObject>>();
+        poolDictionary = new Dictionary<GameObject, Queue<GameObject>>();
+        labelToPrefabs = new Dictionary<string, List<GameObject>>();
 
         foreach (Pool pool in pools)
         {
-            Queue<GameObject> objectPool = new Queue<GameObject>();
+            // Load all prefabs with this label
+            AsyncOperationHandle<IList<GameObject>> handle = Addressables.LoadAssetsAsync<GameObject>(
+                pool.label,
+                null
+            );
+            await handle.Task;
 
-            for (int i = 0; i < pool.size; i++)
+            if (handle.Status == AsyncOperationStatus.Succeeded)
             {
-                AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(pool.address);
-                await handle.Task;
+                List<GameObject> prefabList = new List<GameObject>();
+                foreach (var prefab in handle.Result)
+                {
+                    prefabList.Add(prefab);
 
-                if (handle.Status == AsyncOperationStatus.Succeeded)
-                {
-                    GameObject obj = Instantiate(handle.Result);
-                    obj.SetActive(false);
-                    objectPool.Enqueue(obj);
+                    Queue<GameObject> objectPool = new Queue<GameObject>();
+                    for (int i = 0; i < pool.size; i++)
+                    {
+                        GameObject obj = Instantiate(prefab, EnemyParentTransform);
+                        obj.SetActive(false);
+
+                        // attach PoolMember to know original prefab
+                        var member = obj.AddComponent<PoolMember>();
+                        member.OriginalPrefab = prefab;
+
+                        objectPool.Enqueue(obj);
+                    }
+                    poolDictionary[prefab] = objectPool;
                 }
-                else
-                {
-                    Debug.LogError($"Failed to load {pool.address}");
-                }
+                labelToPrefabs[pool.label] = prefabList;
             }
-
-            poolDictionary.Add(pool.tag, objectPool);
+            else
+            {
+                Debug.LogError($"Failed to load label {pool.label}");
+            }
         }
     }
 
-    public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+    public GameObject SpawnFromPool(string label, Vector3 position, Quaternion rotation)
     {
-        if (!poolDictionary.ContainsKey(tag))
+        if (!labelToPrefabs.ContainsKey(label))
         {
+            Debug.LogError($"No pool with label {label}");
             return null;
         }
 
-        Queue<GameObject> queue = poolDictionary[tag];
+        // Random prefab in this label
+        List<GameObject> prefabs = labelToPrefabs[label];
+        GameObject prefab = prefabs[Random.Range(0, prefabs.Count)];
+
+        if (!poolDictionary.ContainsKey(prefab))
+        {
+            Debug.LogError($"No pool created for prefab {prefab.name}");
+            return null;
+        }
+
+        Queue<GameObject> queue = poolDictionary[prefab];
 
         if (queue.Count == 0)
         {
+            // optional: expand pool
+            Debug.LogWarning($"Pool for {prefab.name} is empty! Max objects reached.");
             return null;
         }
 
@@ -66,15 +98,25 @@ public class ObjectPoolAddressable : MonoBehaviour
         obj.SetActive(true);
         obj.transform.position = position;
         obj.transform.rotation = rotation;
-
-        queue.Enqueue(obj); 
-
         return obj;
     }
 
-    public void ReturnToPool(string tag, GameObject obj)
+    public void ReturnToPool(GameObject obj)
     {
+        PoolMember member = obj.GetComponent<PoolMember>();
+        if (member == null || member.OriginalPrefab == null)
+        {
+            Debug.LogWarning($"Object {obj.name} does not belong to any pool");
+            Destroy(obj);
+            return;
+        }
+
         obj.SetActive(false);
-        poolDictionary[tag].Enqueue(obj);
+        poolDictionary[member.OriginalPrefab].Enqueue(obj);
     }
+}
+
+public class PoolMember : MonoBehaviour
+{
+    public GameObject OriginalPrefab; // keep track of the prefab it came from
 }
