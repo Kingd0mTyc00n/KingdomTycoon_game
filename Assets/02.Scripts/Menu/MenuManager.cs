@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] List<ScreenUI> screens;
     [SerializeField] List<HUDBar> hUDBars;
 
-    private HunterController currentHunter;
+    private CharacterController currentHunter;
 
     void Awake()
     {
@@ -71,7 +71,7 @@ public class MenuManager : MonoBehaviour
         return null;
     }
     // Open Diologue screen with specific hunter data
-    public void OpenScreen(HunterController hunter)
+    public void OpenScreen(CharacterController hunter)
     {
         if (currentHunter == hunter) return;
         currentHunter = hunter;

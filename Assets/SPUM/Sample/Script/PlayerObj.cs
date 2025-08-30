@@ -9,14 +9,15 @@ using UnityEngine.Events;
 
 public class PlayerObj : MonoBehaviour
 {
+    [SerializeField]
+    private AIPath path;
+
     public SPUM_Prefabs _prefabs;
     public float _charMS;
     private PlayerState _currentState;
 
-    [SerializeField]
-    private AIPath path;
 
-    public Transform _goalPos;
+    public Vector3 _goalPos;
     private bool facingRight = false;
     public bool isAction = false;
     public Dictionary<PlayerState, int> IndexPair = new ();
@@ -35,7 +36,6 @@ public class PlayerObj : MonoBehaviour
             IndexPair[state] = 0;
         }
         path = GetComponent<AIPath>();
-        SetMovePos(_goalPos);
     }
     public void SetStateAnimationIndex(PlayerState state, int index = 0){
         IndexPair[state] = index;
@@ -45,7 +45,8 @@ public class PlayerObj : MonoBehaviour
     }
     void Update()
     {
-        if(isAction) return;
+        Flip(_goalPos);
+        if (isAction) return;
 
         //transform.position = new Vector3(transform.position.x,transform.position.y,transform.localPosition.y * 0.01f);
         switch(_currentState)
@@ -65,8 +66,8 @@ public class PlayerObj : MonoBehaviour
     void DoMove()
     {
         path.maxSpeed = _charMS;
-        Flip(_goalPos.position);
-        path.destination = _goalPos.position;
+        path.destination = _goalPos;
+        isAction = true;
     }
 
     void Flip(Vector3 targetPosition)
@@ -86,11 +87,25 @@ public class PlayerObj : MonoBehaviour
             transform.localScale = scale;
         }
     }
-
-    public void SetMovePos(Transform pos)
+    public void SetIdle()
+    {
+        isAction = false;
+        _goalPos = transform.position;
+        path.canMove = true;
+        _currentState = PlayerState.IDLE;
+    }
+    public void SetMovePos(Vector3 pos)
     {
         isAction = false;
         _goalPos = pos;
+        path.canMove = true;
         _currentState = PlayerState.MOVE;
+    }
+    public void SetAttack()
+    {
+        isAction = false;
+        _goalPos = transform.position;
+        path.canMove = false;
+        _currentState = PlayerState.ATTACK;
     }
 }

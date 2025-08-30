@@ -67,6 +67,7 @@ public class Selector : Node
     {
         while (current < nodes.Count)
         {
+            Debug.Log("Selector Tick: " + current);
             var result = nodes[current].Tick();
 
             if (result == NodeState.Running)
@@ -75,6 +76,7 @@ public class Selector : Node
                 return state;
             }
 
+            current++;
             if (result == NodeState.Success)
             {
                 current = 0;
@@ -82,7 +84,6 @@ public class Selector : Node
                 state = NodeState.Success;
                 return state;
             }
-            current++;
         }
 
         current = 0;
@@ -101,5 +102,30 @@ public class Selector : Node
         base.Reset();
         current = 0;
         ResetNode();
+    }
+}
+public class Repeater : Node
+{
+    private Node child;
+
+    public Repeater(Node child)
+    {
+        this.child = child;
+    }
+
+    public override NodeState Tick()
+    {
+        var result = child.Tick();
+        if (result != NodeState.Running)
+        {
+            child.Reset();
+        }
+        return NodeState.Running;
+    }
+
+    public override void Reset()
+    {
+        base.Reset();
+        child.Reset();
     }
 }

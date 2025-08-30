@@ -70,6 +70,7 @@
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationController.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\HunterInventory.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\MonsterBehaviourBuilder.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\SPUM\Sprite_Editor(Beta)\Script\SpriteSyncManager.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Worker.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\03.Graphics\Assets\FishNet\Upgrading\EdgegapMenu.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\DemoScene\Scripts\Model\Post.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\WaitNode.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatSpeedModifier.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_HorseSpriteList.cs" />

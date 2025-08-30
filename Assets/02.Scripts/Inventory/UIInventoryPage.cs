@@ -7,7 +7,7 @@ public class UIInventoryPage : MonoBehaviour
 {
     public static UIInventoryPage Instance;
 
-    public HunterController hunterController;
+    public CharacterController hunterController;
 
     private void Awake()
     {
