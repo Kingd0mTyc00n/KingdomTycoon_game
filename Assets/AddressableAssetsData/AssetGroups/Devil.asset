@@ -15,12 +15,6 @@ MonoBehaviour:
   m_GroupName: Devil
   m_GUID: ee020122ad46fab489b491d5a6871841
   m_SerializeEntries:
-  - m_GUID: 00cfd772a76cf0849962d4cdf987701e
-    m_Address: Devil2
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Devil
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 266e139715b8c3b4ca784fc8b10ba616
     m_Address: Devil1
     m_ReadOnly: 0

@@ -15,12 +15,6 @@ MonoBehaviour:
   m_GroupName: Undead
   m_GUID: 83298b5f79a2b0648a565c6bef03dce3
   m_SerializeEntries:
-  - m_GUID: 298a2a2c28bf50044bb13361a43f0005
-    m_Address: Undead2
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Undead
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3815558feecfd8b4faf0c067cd13ac40
     m_Address: UndeadEpic1
     m_ReadOnly: 0

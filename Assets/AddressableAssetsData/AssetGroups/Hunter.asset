@@ -15,6 +15,18 @@ MonoBehaviour:
   m_GroupName: Hunter
   m_GUID: 1e1079e1622dafc4faaf7b1211ce8bae
   m_SerializeEntries:
+  - m_GUID: 00cfd772a76cf0849962d4cdf987701e
+    m_Address: Devil2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Devil
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 298a2a2c28bf50044bb13361a43f0005
+    m_Address: Undead2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Undead
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4bfcec5cee48ba94caa5a096df03d037
     m_Address: Hunter6
     m_ReadOnly: 0
