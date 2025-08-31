@@ -105,7 +105,7 @@ public class HunterInventory : MonoBehaviour
         if (IsEquipmentSlot(itemIndex))
             return;
 
-        if (inventoryItem.Item.IsEdible)
+        if (inventoryItem.Item.ItemType == ItemType.Edible)
         {
             IItemAction itemAction = inventoryItem.Item as IItemAction;
             if (itemAction != null)
@@ -116,9 +116,10 @@ public class HunterInventory : MonoBehaviour
                 RemoveItem(itemIndex, 1);
         }
 
-        if (inventoryItem.Item.IsEquippable)
+        if (inventoryItem.Item.ItemType == ItemType.Equippable)
         {
-            EquipCharacterItem(inventoryItem, itemIndex);
+            var equipment = GameController.instance.items.GetEquipmentById(inventoryItem.Item.Id);
+            EquipCharacterItem(equipment, itemIndex);
 
             IItemAction itemAction = inventoryItem.Item as IItemAction;
             if (itemAction != null)
@@ -180,12 +181,12 @@ public class HunterInventory : MonoBehaviour
     public bool IsInventoryFull() => inventoryData.InventoryItems.Where(item => item.IsEmpty).Any() == false;
 
 
-    public void EquipCharacterItem(InventoryItem item, int itemIndex)
+    public void EquipCharacterItem(Equipment item, int itemIndex)
     {
-        EquipItem(item.Item, itemIndex);
+        EquipItem(item, itemIndex);
     }
 
-    private void EquipItem(ItemStatus itemStatus, int itemIndex)
+    private void EquipItem(Equipment itemStatus, int itemIndex)
     {
         int targetIndex = -1;
 
@@ -229,7 +230,7 @@ public class HunterInventory : MonoBehaviour
         AddItem(item.Item, item.Quantity);
     }
 
-    public int AddItem(ItemStatus newItem, int quantity)
+    public int AddItem(ItemData newItem, int quantity)
     {
         if (!newItem.IsStackable)
         {
@@ -250,7 +251,7 @@ public class HunterInventory : MonoBehaviour
         return quantity;
     }
 
-    private int AddItemToFirstFreeSlot(ItemStatus newItem, int quantity)
+    private int AddItemToFirstFreeSlot(ItemData newItem, int quantity)
     {
         InventoryItem item = new InventoryItem
         {
@@ -269,7 +270,7 @@ public class HunterInventory : MonoBehaviour
         return 0;
     }
 
-    private int AddStackableItem(ItemStatus newItem, int quantity)
+    private int AddStackableItem(ItemData newItem, int quantity)
     {
         for (int i = 6; i < inventoryData.InventoryItems.Count; ++i)
         {

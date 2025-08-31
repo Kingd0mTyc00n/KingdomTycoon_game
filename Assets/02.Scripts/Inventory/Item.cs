@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     [SerializeField]
-    public ItemStatus item;
+    public ItemData item;
 
     [SerializeField]
     public int Quantity;
@@ -20,7 +20,7 @@ public class Item : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = icon;
     }
 
-    public void SetData(ItemStatus itemData)
+    public void SetData(ItemData itemData)
     {
         item = itemData;
     }

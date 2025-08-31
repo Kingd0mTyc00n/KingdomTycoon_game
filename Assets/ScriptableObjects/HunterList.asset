@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: HunterList
   m_EditorClassIdentifier: 
   hunters:
-  - {fileID: 11400000, guid: 9affca4af3558df4fb3fd9900700d98f, type: 2}
+  - Id: Hunter1
+    Name: ORP
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 120
+    Hunger: 100
+    InventoryData:
+      InventoryItems: []

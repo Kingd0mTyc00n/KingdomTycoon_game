@@ -31,13 +31,13 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
         isEmpty = true;
     }
 
-    public void SetData(ItemStatus itemData, int quantity)
+    public void SetData(ItemData itemData, int quantity)
     {
-        ItemSlot.EdibleItem = itemData;
+        ItemSlot.Item = itemData;
         ItemSlot.QuantityOfItem = quantity;
 
         item.gameObject.SetActive(true);
-        item.sprite = GameResources.instance.iconItems[ItemSlot.EdibleItem.Id];
+        item.sprite = GameResources.instance.iconItems[ItemSlot.Item.Id];
         quantityText.text = ItemSlot.QuantityOfItem.ToString();
         isEmpty = false;
 

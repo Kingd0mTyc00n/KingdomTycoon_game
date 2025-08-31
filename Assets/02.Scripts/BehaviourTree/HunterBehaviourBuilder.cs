@@ -9,6 +9,7 @@ public class HunterBehaviourBuilder : MonoBehaviour
     void Start()
     {
         hunter = GetComponent<CharacterController>();
+        hunter.SetCharacterData(GameController.instance.hunters.GetHunterByName("ORP"));
         if (runner == null) runner = GetComponent<BehaviourTreeRunner>();
 
         var healSeq = new Sequence(new List<Node> {
@@ -24,7 +25,7 @@ public class HunterBehaviourBuilder : MonoBehaviour
             new ActionNode(() => hunter.MoveToMapSpawn()),
             new ActionNode(() => hunter.FindNearestEnemy()),
             new ActionNode(() => hunter.MoveToEnemy()),
-            new ActionNode(() => hunter.AttackEnemy())
+            new ActionNode(() => hunter.AttackEnemy()),
         });
 
         runner.Root = new Selector(new List<Node> { healSeq, roamSeq ,huntSeq });

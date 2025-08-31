@@ -47,7 +47,7 @@ public class UIInventoryPage : MonoBehaviour
         
     }
 
-    public void UpdateData(int itemIndex, ItemStatus itemInventoryData, int quantity)
+    public void UpdateData(int itemIndex, ItemData itemInventoryData, int quantity)
     {
         if (uiItems.Count > itemIndex)
         {

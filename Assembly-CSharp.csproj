@@ -95,7 +95,6 @@
     <Compile Include="Assets\03.Graphics\Assets\FishNet\Upgrading\UpgradeFromMirrorMenu.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\SPUM\Script\SaveLoadHandler\IPrefabFileHandler.cs" />
-    <Compile Include="Assets\02.Scripts\ScriptableObject\ItemSO.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatModifier.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\HttpBase.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationStateElement.cs" />
@@ -134,7 +133,6 @@
     <Compile Include="Assets\02.Scripts\Grid\MapGenerator.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_MatchingList.cs" />
     <Compile Include="Assets\SPUM\Sprite_Editor(Beta)\Script\SpriteSync.cs" />
-    <Compile Include="Assets\02.Scripts\ScriptableObject\HunterDataSO.cs" />
     <Compile Include="Assets\02.Scripts\Grid\SO\GridCellSO.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestHelper.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\LeafNodes.cs" />
@@ -198,7 +196,6 @@
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Gif\GifEncoder.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestException.cs" />
     <Compile Include="Assets\02.Scripts\ScriptableObject\ItemDatabase.cs" />
-    <Compile Include="Assets\02.Scripts\ScriptableObject\EnemyDataSO.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\PickUpSystem.cs" />
   </ItemGroup>
   <ItemGroup>

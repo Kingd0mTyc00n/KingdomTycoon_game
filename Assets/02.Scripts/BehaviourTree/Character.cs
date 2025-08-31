@@ -15,10 +15,9 @@ public class Character : MonoBehaviour
     private IEnumerator Start()
     {
         yield return new WaitUntil(() => PlayerPrefs.HasKey(GameData.PP_USER_DATA));
-        SetEnemyData(UserData.UserDeepData.EnemiesData[0]);
     }
      
-    public void SetEnemyData(CharacterData characterData)
+    public void SetCharacterData(CharacterData characterData)
     {
         this.characterData = characterData;
         maxHealth = characterData.Health;
@@ -46,7 +45,7 @@ public class Character : MonoBehaviour
         ObjectPoolAddressable.Instance.ReturnToPool(gameObject);
     }
 
-    private void DropItem(List<ItemStatus> items)
+    private void DropItem(List<ItemData> items)
     {
         for (int i = 0; i < items.Count; i++)
         {

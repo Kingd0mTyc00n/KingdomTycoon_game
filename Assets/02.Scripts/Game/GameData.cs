@@ -15,23 +15,14 @@ public interface IDestroyableItem
     bool PerformAction(GameObject character);
 }
 
-public enum EquipmentType
-{
-    None,
-    Helmet,
-    Armor,
-    Weapon,
-    Necklace,
-    Ring,
-    Boots
-}
+
 
 [System.Serializable]
 public class UserDeepData
 {
     public List<HunterData> HuntersData;
-    public List<ItemStatus> ItemsData;
-    public List<EnemyData> EnemiesData;
+    public List<ItemData> ItemsData;
+    public List<Equipment> EquipmentData;
     public int InventorySize;
 
     public int Coins;
@@ -47,19 +38,18 @@ public class HunterData:CharacterData
 [System.Serializable]
 public class EnemyData: CharacterData
 {
-    public List<ItemStatus> ItemsIsDrop;
+    public List<ItemData> ItemsIsDrop;
 }
 
 public class CharacterData
 {
-    public int Id;
+    public string Id;
     public string Name;
     public float Damage;
     public float Speed;
     public float Armor;
     public float Health;
 }   
-
 
 [System.Serializable]
 public class ItemData
@@ -69,10 +59,16 @@ public class ItemData
     public string Detail;
     public string Description;
     public bool IsStackable;
-    public bool IsEdible;
-    public bool IsEquippable;
-    public EquipmentType EquipmentType;
+    public ItemType ItemType;
     public int MaxStackSize;
+    public Sprite icon;
+}
+
+public enum ItemType
+{
+    Material,
+    Edible,
+    Equippable
 }
 
 [System.Serializable]
@@ -89,7 +85,7 @@ public class ItemSlot
     public int SlotId;
     public EquipmentType EquipmentType;
     public int QuantityOfItem;
-    public ItemStatus EdibleItem;
+    public ItemData Item;
 }
 
 
@@ -104,7 +100,7 @@ public class InventoryData
 public struct InventoryItem
 {
     public int Quantity;
-    public ItemStatus Item;
+    public ItemData Item;
     public bool IsEmpty;
 
     public InventoryItem ChangeQuantity(int newQuantity)

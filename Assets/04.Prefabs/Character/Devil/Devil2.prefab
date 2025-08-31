@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 2081613018285000176}
   m_Layer: 0
   m_Name: Devil2
-  m_TagString: Player
+  m_TagString: Devil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,19 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4771e41dfcf8e4fa6c09338499daf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunterData:
-    Id: 0
-    Name: 
-    Damage: 0
-    Speed: 0
-    Armor: 0
-    Health: 0
-    Hunger: 0
-    InventoryData:
-      InventoryItems: []
   maxHealth: 0
   health: 0
   healThreshold: 0
+  attackDamage: 10
   moveSpeed: 3
   arriveTolerance: 1
   currentMapSpawn: {fileID: 0}
@@ -276,6 +267,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3284970725695841144}
     m_Modifications:
+    - target: {fileID: 2417624887213258136, guid: 16d9d02fb3b9f374b8633527d1303d7a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5355789046040468550, guid: 16d9d02fb3b9f374b8633527d1303d7a, type: 3}
       propertyPath: m_Name
       value: Devil2

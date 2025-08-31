@@ -13,4 +13,52 @@ MonoBehaviour:
   m_Name: ItemList
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 11400000, guid: 6fe44fe57c7acd3489cae119664afe50, type: 2}
+  - Id: 0
+    Name: 
+    Detail: 
+    Description: 
+    IsStackable: 0
+    ItemType: 0
+    MaxStackSize: 0
+    icon: {fileID: 0}
+  equipment:
+  - Id: 0
+    Name: WoodMace
+    Detail: 
+    Description: 
+    IsStackable: 0
+    ItemType: 2
+    MaxStackSize: 0
+    icon: {fileID: 21300000, guid: 7e78ee09ca7abbe45a7fb0c48d97d553, type: 3}
+    EquipmentType: 3
+    modifierData: []
+  - Id: 1
+    Name: RustySword
+    Detail: 
+    Description: 
+    IsStackable: 0
+    ItemType: 2
+    MaxStackSize: 0
+    icon: {fileID: 21300000, guid: ad273a5f6bdc34a6599612d91402f257, type: 3}
+    EquipmentType: 3
+    modifierData: []
+  - Id: 2
+    Name: SkullMace
+    Detail: 
+    Description: 
+    IsStackable: 0
+    ItemType: 2
+    MaxStackSize: 0
+    icon: {fileID: 21300000, guid: f29404a50b4f54c4e8150a66efa354f5, type: 3}
+    EquipmentType: 3
+    modifierData: []
+  - Id: 3
+    Name: SpearAxe
+    Detail: 
+    Description: 
+    IsStackable: 0
+    ItemType: 2
+    MaxStackSize: 0
+    icon: {fileID: 21300000, guid: 0adb7d57e5e60f44f9aa539bac09a043, type: 3}
+    EquipmentType: 3
+    modifierData: []

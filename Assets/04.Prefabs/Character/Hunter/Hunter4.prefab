@@ -381,19 +381,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4771e41dfcf8e4fa6c09338499daf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunterData:
-    Id: 0
-    Name: 
-    Damage: 0
-    Speed: 0
-    Armor: 0
-    Health: 100
-    Hunger: 0
-    InventoryData:
-      InventoryItems: []
   maxHealth: 100
   health: 100
   healThreshold: 0
+  attackDamage: 0
   moveSpeed: 3
   arriveTolerance: 1
   currentMapSpawn: {fileID: 0}
@@ -514,6 +505,10 @@ PrefabInstance:
     - target: {fileID: 3900094335113094814, guid: 5b85301ac1edd61489a29d97b1498576, type: 3}
       propertyPath: m_Name
       value: Hunter4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682041773637607946, guid: 5b85301ac1edd61489a29d97b1498576, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7816258015785009045, guid: 5b85301ac1edd61489a29d97b1498576, type: 3}
       propertyPath: m_Pivot.x

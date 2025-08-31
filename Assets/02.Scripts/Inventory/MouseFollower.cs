@@ -17,7 +17,7 @@ public class MouseFollower : MonoBehaviour
         item = GetComponentInChildren<UIInventoryItem>();
     }
 
-    public void SetItemDataOnDrag(ItemStatus itemInventoryData)
+    public void SetItemDataOnDrag(ItemData itemInventoryData)
     {
         item.SetData(itemInventoryData, 1);
     }

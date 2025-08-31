@@ -44,28 +44,6 @@ public class GameController : MonoBehaviour
     private void InitializeData()
     {
         UserData.UserDeepData = new UserDeepData();
-        UserData.UserDeepData.HuntersData = new List<HunterData>();
-        foreach (var hunter in hunters.hunters)
-        {
-            HunterData newHunter = hunter.hunterData;
-            UserData.UserDeepData.HuntersData.Add(newHunter);
-        }
-
-
-        UserData.UserDeepData.ItemsData = new List<ItemStatus>();
-        foreach (var item in items.items)
-        {
-            ItemStatus newItem = item.itemData;
-            UserData.UserDeepData.ItemsData.Add(newItem);
-        }
-
-        UserData.UserDeepData.EnemiesData = new List<EnemyData>();
-        foreach(var enemy in enemies.enemies)
-        {
-            EnemyData newEnemy = enemy.enemyData;
-            UserData.UserDeepData.EnemiesData.Add(newEnemy);
-        }
-
         UserData.UserDeepData.InventorySize = 15;
         UserData.SaveData();
     }

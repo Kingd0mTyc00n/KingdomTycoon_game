@@ -41,19 +41,19 @@ public class ItemInventoryDescription : MonoBehaviour
         }
         else
         {
-            if (itemData.IsEquippable)
+            if (itemData.ItemType == ItemType.Equippable)
             {
                 removeBtn.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "EQUIP";
                 removeBtn.gameObject.SetActive(true);
             }
         }
-        if (itemData.IsEdible)
+        if (itemData.ItemType == ItemType.Edible)
         {
             removeBtn.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "EAT";
             removeBtn.gameObject.SetActive(true);
         }                                   
         
-        if (!itemData.IsEdible && !itemData.IsEquippable)
+        if (itemData.ItemType == ItemType.Material)
         {
             removeBtn.gameObject.SetActive(false);
         }
@@ -74,6 +74,6 @@ public class ItemInventoryDescription : MonoBehaviour
         IDestroyableItem destroyableItem = inventoryItem.Item as IDestroyableItem;
         if (destroyableItem != null)
             targetInventory.RemoveItem(currentSlotIndex, 1);
-        targetInventory.AddItem(UIInventoryPage.Instance.uiItems[currentSlotIndex].ItemSlot.EdibleItem, 1);
+        targetInventory.AddItem(UIInventoryPage.Instance.uiItems[currentSlotIndex].ItemSlot.Item, 1);
     }
 }

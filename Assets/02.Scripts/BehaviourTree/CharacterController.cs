@@ -1,16 +1,22 @@
 ﻿using Pathfinding;
+using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    [SerializeField]  private HunterData hunterData;
+    [SerializeField]  private CharacterData characterData;
 
     [Header("Health")]
     public float maxHealth;
     public float health;
     public float healThreshold;
+
+    [Header("Attack")]
+    public float attackDamage;
+    public float lastAttackTime = 0f;
+    public float attackSpeed = 1f; // attacks per second
 
     [Header("Movement")]
     public float moveSpeed = 3f;
@@ -41,16 +47,17 @@ public class CharacterController : MonoBehaviour
 
     private void Start()
     {
-        SetHunterData(UserData.UserDeepData.HuntersData[0]);
         characterObj = GetComponent<PlayerObj>();
     }
 
-    public void SetHunterData(HunterData hunterData)
+    public void SetCharacterData(CharacterData hunterData)
     {
-        this.hunterData = hunterData;
+        this.characterData = hunterData;
         maxHealth = hunterData.Health;
         health = hunterData.Health;
+        attackDamage = hunterData.Damage;
         healThreshold = 0.1f * maxHealth;
+        GetComponent<Character>().SetCharacterData(hunterData);
     }
 
     public void SelectedThisHunter()
@@ -132,7 +139,7 @@ public class CharacterController : MonoBehaviour
 
     public NodeState FindNearestEnemy()
     {
-        GameObject[] Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] Enemys = GameObject.FindGameObjectsWithTag("Goblin");
         if (Enemys.Length == 0) 
             return NodeState.Failure;
 
@@ -169,9 +176,12 @@ public class CharacterController : MonoBehaviour
         float dist = Vector2.Distance(transform.position, currentEnemy.position);
         if (dist > attackRange) 
             return NodeState.Failure;
-
-        characterObj.SetAttack();
-        enemy.TakeDamage(dps * Time.deltaTime);
+        if(Time.time - lastAttackTime >= attackSpeed)
+        {
+            characterObj.SetAttack();
+            enemy.TakeDamage(attackDamage);
+            lastAttackTime = Time.time;
+        }
 
         if (enemy.IsDead())
         {
@@ -212,9 +222,9 @@ public class CharacterController : MonoBehaviour
         isMovingByHunter = false;
     }
 
-    public HunterData GetHunterData()
+    public CharacterData GetHunterData()
     {
-        return hunterData;
+        return characterData;
     }
 
     public void ClickHunter()
@@ -222,4 +232,13 @@ public class CharacterController : MonoBehaviour
         MenuManager.instance.OpenScreen("Diologue");
         SelectedThisHunter();
     }
+
+    //IEnumerator DealDamage(Character enemy)
+    //{
+    //    isAttacking = true;
+    //    characterObj.SetAttack();
+    //    yield return new WaitForSeconds(0.5f);
+    //    enemy.TakeDamage(attackDamage);
+    //    isAttacking = false;
+    //}
 }

@@ -13,4 +13,24 @@ MonoBehaviour:
   m_Name: Enemies
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 11400000, guid: 0a0144cd18adde7478d88e92ab963879, type: 2}
+  - Id: Orc
+    Name: Orc
+    Damage: 10
+    Speed: 3
+    Armor: 2
+    Health: 40
+    ItemsIsDrop: []
+  - Id: Undead
+    Name: Undead
+    Damage: 7
+    Speed: 3
+    Armor: 0
+    Health: 60
+    ItemsIsDrop: []
+  - Id: Devil
+    Name: Devil
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 40
+    ItemsIsDrop: []

@@ -4,5 +4,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "HunterList",menuName = "Game/Hunter List")]
 public class HunterDatabase : ScriptableObject
 {
-    public List<HunterDataSO> hunters;
+    public List<HunterData> hunters;
+
+    public HunterData GetHunterByName(string Name)
+    {
+        return hunters.Find(h => h.Name == Name);
+    }
 }
