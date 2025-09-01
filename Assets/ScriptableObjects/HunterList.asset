@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: HunterList
   m_EditorClassIdentifier: 
   hunters:
-  - Id: Hunter1
+  - Id: Hunter 1
     Name: ORP
     Damage: 12
     Speed: 3
     Armor: 5
     Health: 120
     Hunger: 100
+    Class: 0
+    Level: 0
     InventoryData:
       InventoryItems: []

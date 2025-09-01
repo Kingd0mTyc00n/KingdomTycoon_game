@@ -33,15 +33,23 @@ public class MenuManager : MonoBehaviour
         {
             if (hUDBars[i].open)
             {
-                CloseMenu(hUDBars[i]);
+                CloseHUDBar(hUDBars[i]);
             }
         }
         hUD.Open();
     }
 
-    public void CloseMenu(HUDBar hUD)
+    public void CloseHUDBar(HUDBar hUD)
     {
         hUD.Close();
+    }
+
+    public void CloseAllHUDBar()
+    {
+        foreach (var hUD in hUDBars)
+        {
+            hUD.Close();
+        }
     }
 
 

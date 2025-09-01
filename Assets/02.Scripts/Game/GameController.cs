@@ -33,10 +33,10 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             PlayerPrefs.DeleteAll();
-            Debug.Log("data deleted");
+            Debug.LogError("data deleted");
         }
     }
 
@@ -44,6 +44,11 @@ public class GameController : MonoBehaviour
     private void InitializeData()
     {
         UserData.UserDeepData = new UserDeepData();
+        //Test display Hunter 
+        UserData.UserDeepData.HuntersData = new List<HunterData>();
+        HunterData hunter = hunters.hunters[0];
+        UserData.UserDeepData.HuntersData.Add(hunter);
+
         UserData.UserDeepData.InventorySize = 15;
         UserData.SaveData();
     }

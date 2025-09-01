@@ -6,7 +6,7 @@ using Moments.Encoder;
 using ThreadPriority = System.Threading.ThreadPriority;
 using System.Linq;
 [Serializable]
-public class ListItem
+public class List
 {
     public string name;
 	public AnimationClip animationClip;
@@ -26,7 +26,7 @@ public class SPUM_Exporter : MonoBehaviour
 	public bool _advanced;
 
 	public int ImageNumber;
-	public List<ListItem> items = new List<ListItem>();
+	public List<List> items = new List<List>();
     // Start is called before the first frame update
 
     public void CheckObjNow()
@@ -135,7 +135,7 @@ public class SPUM_Exporter : MonoBehaviour
 		}
 		//animationClips = animationClipsList.ToArray();
 
-		items = animationClipsList.Select((clip, index) => new ListItem
+		items = animationClipsList.Select((clip, index) => new List
         {
             name = IndexedClipNames.ElementAtOrDefault(index) ?? "Unnamed",
             animationClip = clip,

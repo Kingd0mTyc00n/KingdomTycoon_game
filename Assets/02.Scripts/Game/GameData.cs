@@ -15,7 +15,11 @@ public interface IDestroyableItem
     bool PerformAction(GameObject character);
 }
 
-
+public enum HunterClass
+{
+    Ranger,
+    Sorcerer,
+}
 
 [System.Serializable]
 public class UserDeepData
@@ -23,20 +27,33 @@ public class UserDeepData
     public List<HunterData> HuntersData;
     public List<ItemData> ItemsData;
     public List<Equipment> EquipmentData;
+
+    public int Gold;
+
     public int InventorySize;
 
     public int Coins;
 }
 
 [System.Serializable]
-public class HunterData:CharacterData
+public class HunterData : CharacterData
 {
     public float Hunger;
+
+    public int Exp;
+    public int DPSParam;
+    public int ATK;
+    public int Defense;
+    public int Crit;
+    public int ATKSPD;
+    public float Evasion;
+    public HunterClass Class;
+    public int Level;
     public InventoryData InventoryData;
 }
 
 [System.Serializable]
-public class EnemyData: CharacterData
+public class EnemyData : CharacterData
 {
     public List<ItemData> ItemsIsDrop;
 }
@@ -49,7 +66,7 @@ public class CharacterData
     public float Speed;
     public float Armor;
     public float Health;
-}   
+}
 
 [System.Serializable]
 public class ItemData
@@ -93,7 +110,7 @@ public class ItemSlot
 public class InventoryData
 {
     public List<InventoryItem> InventoryItems;
-}   
+}
 
 
 [System.Serializable]

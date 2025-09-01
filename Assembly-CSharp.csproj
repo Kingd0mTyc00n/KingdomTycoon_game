@@ -63,11 +63,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\02.Scripts\Inventory\UIInventoryItem.cs" />
+    <Compile Include="Assets\02.Scripts\UIDisplay\HunterUIManager.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\CharacterController.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseStateException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Promise.cs" />
     <Compile Include="Assets\02.Scripts\Game\CameraTouch.cs" />
+    <Compile Include="Assets\02.Scripts\UIDisplay\HunterStatsUI.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Etc\ColorSelect.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationController.cs" />
@@ -193,6 +195,7 @@
     <Compile Include="Assets\02.Scripts\Game\UIManager.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpumTextureData.cs" />
     <Compile Include="Assets\SPUM\Retro UI Set\2_ExtraScript\PageLayout.cs" />
+    <Compile Include="Assets\02.Scripts\UIDisplay\HunterUI.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatArmorModifier.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Gif\GifEncoder.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestException.cs" />
