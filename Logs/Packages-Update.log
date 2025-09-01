@@ -71,3 +71,11 @@ Update Mode: updateDependencies
 
 The following packages were updated:
   com.unity.test-framework from version 1.4.6 to 1.5.1
+
+=== Mon Sep  1 10:14:26 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.test-framework from version 1.4.6 to 1.5.1
