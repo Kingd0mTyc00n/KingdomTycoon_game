@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Devil
+  m_EditorClassIdentifier: 
+  m_GroupName: Devil
+  m_GUID: ee020122ad46fab489b491d5a6871841
+  m_SerializeEntries:
+  - m_GUID: 266e139715b8c3b4ca784fc8b10ba616
+    m_Address: Devil1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Devil
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85d4c6d55b227d947a49acf3166b047f
+    m_Address: DevilEpic1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DevilEpic
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 976f0adafea8536418dc50fc6de45af7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: eee1ed2ce3353954b8fa9e624fab6adf, type: 2}
+    - {fileID: 11400000, guid: 4197a49fa33d594449398d265839f056, type: 2}

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54163c37a1f28f41a20436e97ddd0ed, type: 3}
+  m_Name: Enemies
+  m_EditorClassIdentifier: 
+  enemies:
+  - Id: Orc
+    Name: Orc
+    Damage: 10
+    Speed: 3
+    Armor: 2
+    Health: 40
+    ItemsIsDrop:
+    - Id: 0
+      Name: crystal
+      Detail: 
+      Description: 
+      IsStackable: 1
+      ItemType: 0
+      MaxStackSize: 99
+      icon: {fileID: 525973537, guid: 727f7723cc841fd47919ea35278e8296, type: 3}
+  - Id: Undead
+    Name: Undead
+    Damage: 7
+    Speed: 3
+    Armor: 0
+    Health: 60
+    ItemsIsDrop: []
+  - Id: Devil
+    Name: Devil
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 40
+    ItemsIsDrop: []

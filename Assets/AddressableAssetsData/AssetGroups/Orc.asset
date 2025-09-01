@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Orc
+  m_EditorClassIdentifier: 
+  m_GroupName: Orc
+  m_GUID: 46f8f84d429ead9419b9160e7db7bed8
+  m_SerializeEntries:
+  - m_GUID: 4981da92a95ac85408bdf6a776bf3b0f
+    m_Address: Orc2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Orc
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc6c95ac6abacc04da1c53a8f6bc4a22
+    m_Address: OrcEpic1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - OrcEpic
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdc72ab5a4214d44cab30aa3cd089391
+    m_Address: Orc1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Orc
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 976f0adafea8536418dc50fc6de45af7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6a9407bb2d61a6a488ae1004fd7f68b4, type: 2}
+    - {fileID: 11400000, guid: e47ac29c9a04a724aa79f55c39537b74, type: 2}
