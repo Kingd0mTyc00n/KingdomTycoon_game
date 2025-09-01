@@ -32,7 +32,17 @@ public class UserDeepData
 public class HunterData:CharacterData
 {
     public float Hunger;
+    public HunterType HunterType;
+    public Sprite Icon;
     public InventoryData InventoryData;
+}
+
+public enum  HunterType
+{
+    Common,
+    Rare,
+    Epic,
+    Legendary
 }
 
 [System.Serializable]
