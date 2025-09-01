@@ -19,7 +19,15 @@ MonoBehaviour:
     Speed: 3
     Armor: 2
     Health: 40
-    ItemsIsDrop: []
+    ItemsIsDrop:
+    - Id: 0
+      Name: crystal
+      Detail: 
+      Description: 
+      IsStackable: 1
+      ItemType: 0
+      MaxStackSize: 99
+      icon: {fileID: 525973537, guid: 727f7723cc841fd47919ea35278e8296, type: 3}
   - Id: Undead
     Name: Undead
     Damage: 7

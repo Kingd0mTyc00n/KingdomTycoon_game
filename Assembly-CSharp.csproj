@@ -67,6 +67,7 @@
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseStateException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Promise.cs" />
+    <Compile Include="Assets\02.Scripts\Game\CameraTouch.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Etc\ColorSelect.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationController.cs" />

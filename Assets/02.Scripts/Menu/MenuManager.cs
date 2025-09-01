@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] List<ScreenUI> screens;
     [SerializeField] List<HUDBar> hUDBars;
 
+    public GameObject darkPanel;
     private CharacterController currentHunter;
 
     void Awake()
@@ -92,6 +93,7 @@ public class MenuManager : MonoBehaviour
             if (screens[i].menuName == screen)
             {
                 screens[i].Open();
+                darkPanel.SetActive(false);
 
             }
             if (screens[i].open && screens[i].menuName != screen)
@@ -111,11 +113,13 @@ public class MenuManager : MonoBehaviour
             }
         }
         screen.Open();
+        darkPanel.SetActive(true);
     }
 
     public void CloseMenu(ScreenUI screen)
     {
         screen.Close();
+        darkPanel.SetActive(false);
     }
 
     public void CloseScreen(string screen)
@@ -128,6 +132,8 @@ public class MenuManager : MonoBehaviour
 
             }
         }
+
+        darkPanel.SetActive(false);
     }
 
     public void QuitGame()

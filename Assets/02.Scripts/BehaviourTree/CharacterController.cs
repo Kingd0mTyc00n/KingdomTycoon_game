@@ -45,9 +45,15 @@ public class CharacterController : MonoBehaviour
     private Vector2 currentMoveTarget;
     private bool isMovingByHunter = false;
 
+    [Header("Territory")]
+    public PolygonCollider2D territoryZone;  //check hunter zone
+
+
     private void Start()
     {
         characterObj = GetComponent<PlayerObj>();
+        if (characterData is EnemyData enemy)
+            territoryZone = townTransform.GetComponent<PolygonCollider2D>();
     }
 
     public void SetCharacterData(CharacterData hunterData)
@@ -92,7 +98,7 @@ public class CharacterController : MonoBehaviour
 
     public NodeState IdleMovement()
     {
-        Debug.Log("[Hunter] IdleMovement");
+        Debug.Log($"{gameObject.name} IdleMovement");
         if (hasPlayerCommand || (mapSelected && currentMapSpawn != null))
             return NodeState.Failure;
 
@@ -115,7 +121,7 @@ public class CharacterController : MonoBehaviour
             hasRoamTarget = false;
             isMovingByHunter = false;
             Debug.Log("[Hunter] Arrived roam target");
-            return NodeState.Success;
+            return NodeState.Failure;
         }
 
         return NodeState.Running;
@@ -137,20 +143,48 @@ public class CharacterController : MonoBehaviour
         return NodeState.Running;
     }
 
-    public NodeState FindNearestEnemy()
+    public NodeState FindNearestTarget()
     {
-        GameObject[] Enemys = GameObject.FindGameObjectsWithTag("Goblin");
-        if (Enemys.Length == 0) 
+        GameObject[] Target = new GameObject[] { };
+
+        if (characterData is HunterData hunterData)
+        {
+            switch (currentMapSpawn.name)
+            {
+                case "OrcZone":
+                    Target = GameObject.FindGameObjectsWithTag("Orc");
+                    break;
+                case "UndeadZone":
+                    Target = GameObject.FindGameObjectsWithTag("Undead");
+                    break;
+                case "DevilZone":
+                    Target = GameObject.FindGameObjectsWithTag("Devil");
+                    break;
+            }
+        }
+
+        if (Target.Length == 0)
             return NodeState.Failure;
 
-        currentEnemy = Enemys
+        if (territoryZone != null)
+        {
+            Target = Target
+                .Where(t => territoryZone.OverlapPoint(t.transform.position))
+                .ToArray();
+        }
+
+        if (Target.Length == 0)
+            return NodeState.Failure;
+
+        currentEnemy = Target
             .OrderBy(m => Vector2.Distance(transform.position, m.transform.position))
             .First().transform;
 
         return NodeState.Success;
     }
 
-    public NodeState MoveToEnemy()
+
+    public NodeState MoveToTarget()
     {
         if (currentEnemy == null) return NodeState.Failure;
 
@@ -165,7 +199,7 @@ public class CharacterController : MonoBehaviour
         return NodeState.Running;
     }
 
-    public NodeState AttackEnemy()
+    public NodeState AttackTarget()
     {
         if (currentEnemy == null) 
             return NodeState.Failure;

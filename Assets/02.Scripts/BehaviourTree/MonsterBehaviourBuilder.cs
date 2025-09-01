@@ -4,20 +4,20 @@ using UnityEngine;
 public class MonsterBehaviourBuilder : MonoBehaviour
 {
     public BehaviourTreeRunner runner;
-    private CharacterController hunter;
+    private CharacterController monster;
 
     void Start()
     {
-        hunter = GetComponent<CharacterController>();
+        monster = GetComponent<CharacterController>();
         if (runner == null) runner = GetComponent<BehaviourTreeRunner>();
         var roamSeq = new Sequence(new List<Node> {
-            new ActionNode(() => hunter.IdleMovement()),
+            new ActionNode(() => monster.IdleMovement()),
             new WaitNode(2f)
         });
         var huntSeq = new Sequence(new List<Node> {
-            new ActionNode(() => hunter.FindNearestEnemy()),
-            new ActionNode(() => hunter.MoveToEnemy()),
-            new ActionNode(() => hunter.AttackEnemy())
+            new ActionNode(() => monster.FindNearestTarget()),
+            new ActionNode(() => monster.MoveToTarget()),
+            new ActionNode(() => monster.AttackTarget())
         });
 
         runner.Root = new Selector(new List<Node> {roamSeq ,huntSeq });

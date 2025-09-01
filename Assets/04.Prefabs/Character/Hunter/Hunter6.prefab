@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 665502469519862575}
   m_Layer: 0
   m_Name: Hunter6
-  m_TagString: Player
+  m_TagString: Hunter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,6 +385,8 @@ MonoBehaviour:
   health: 100
   healThreshold: 0
   attackDamage: 0
+  lastAttackTime: 0
+  attackSpeed: 1
   moveSpeed: 3
   arriveTolerance: 1
   currentMapSpawn: {fileID: 0}
@@ -487,7 +489,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8612195653977975076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8faeedd4c0b1fd4794f0b024d854b8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ca27af3a9642de4a863f3451d63260c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5

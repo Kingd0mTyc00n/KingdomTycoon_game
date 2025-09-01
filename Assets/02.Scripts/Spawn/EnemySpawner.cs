@@ -29,6 +29,7 @@ public class EnemySpawner : MonoBehaviour
     {
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
         var enemy = ObjectPoolAddressable.Instance.SpawnFromPool(enemyLabel, point.position, Quaternion.identity);
+        enemy.tag = enemyLabel;
         var controller = enemy.GetComponent<CharacterController>();
         controller.townTransform = this.gameObject.transform;
         controller.SetCharacterData(GameController.instance.enemies.GetEnemyByName(enemyLabel));

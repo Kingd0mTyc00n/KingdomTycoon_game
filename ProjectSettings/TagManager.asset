@@ -9,6 +9,9 @@ TagManager:
   - Devil
   - Goblin
   - Undead
+  - Orc
+  - Hunter
+  - OrcZone
   layers:
   - Default
   - TransparentFX
