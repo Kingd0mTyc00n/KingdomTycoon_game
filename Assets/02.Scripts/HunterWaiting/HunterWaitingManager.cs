@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class HunterWaitingManager : MonoBehaviour
@@ -6,19 +7,43 @@ public class HunterWaitingManager : MonoBehaviour
     public GameObject hunterWaitingUI; // Assign in inspector
     public Transform hunterPanel; // Assign in inspector
 
-    public List<HunterData> hunters; // List of hunters to manage
+
+    public TextMeshProUGUI textHunterCount; // Text to display the count of hunters
+
+    public List<HunterData> hunterDatas; // List of hunters to manage
+    
+    public List<HunterData> hunters;
     private void Start()
     {
-        hunters = GameController.instance.hunters.hunters;
-        hunterPanel.GetComponent<RectTransform>().sizeDelta = new Vector2(0, (hunters.Count / 3) * 400);
-        foreach (var hunter in hunters)
+        hunterDatas = GameController.instance.hunters.hunters;
+        textHunterCount.text = $"({hunters.Count}/100)";
+    }
+
+    public void TestSingleGacha()
+    {
+        int index = Random.RandomRange(0, hunterDatas.Count);
+        var hunter = Instantiate(hunterWaitingUI, hunterPanel);
+        hunter.GetComponent<HunterUIWaiting>().SetHunterData(hunterDatas[index]);
+        hunters.Add(hunterDatas[index]);
+
+        ResizePanel();
+    }
+    public void TestMultiGacha()
+    {
+        for (int i = 0; i < 10; i++)
         {
-            GameObject hunterUI = Instantiate(hunterWaitingUI, hunterPanel);
-            HunterUIWaiting uiComponent = hunterUI.GetComponent<HunterUIWaiting>();
-            if (uiComponent != null)
-            {
-                uiComponent.SetHunterData(hunter);
-            }
+            int index = Random.RandomRange(0, hunterDatas.Count);
+            var hunter = Instantiate(hunterWaitingUI, hunterPanel);
+            hunter.GetComponent<HunterUIWaiting>().SetHunterData(hunterDatas[index]);
+            hunters.Add(hunterDatas[index]);
         }
+
+        ResizePanel();
+    }
+    private void ResizePanel()
+    {
+        var rt = hunterPanel.GetComponent<RectTransform>();
+        textHunterCount.text = $"({hunters.Count}/100)";
+        rt.sizeDelta = new Vector2(rt.sizeDelta.x, (hunters.Count/3) * 400);
     }
 }
