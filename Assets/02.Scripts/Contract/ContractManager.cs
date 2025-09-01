@@ -107,34 +107,34 @@ public class ContractManager : MonoBehaviour
         }
     }
 
-    public async Task<bool> SetGameManager(string gameManagerAddress)
-    {
-        try
-        {
-            var ownerWallet = await CreateAuthorizedWallet();
-            var contract = await ThirdwebManager.Instance.GetContract(
-                address: _contractAddress,
-                chainId: ActiveChainId,
-                abi: _contractAbiJson);
+    // public async Task<bool> SetGameManager(string gameManagerAddress)
+    // {
+    //     try
+    //     {
+    //         var ownerWallet = await CreateAuthorizedWallet();
+    //         var contract = await ThirdwebManager.Instance.GetContract(
+    //             address: _contractAddress,
+    //             chainId: ActiveChainId,
+    //             abi: _contractAbiJson);
 
-            Debug.Log($"Setting game manager to: {gameManagerAddress}");
+    //         Debug.Log($"Setting game manager to: {gameManagerAddress}");
 
-            var transactionReceipt = await contract.Write(
-                ownerWallet,
-                "setGameManager",
-                BigInteger.Zero,
-                new object[] { gameManagerAddress }
-            );
+    //         var transactionReceipt = await contract.Write(
+    //             ownerWallet,
+    //             "setGameManager",
+    //             BigInteger.Zero,
+    //             new object[] { gameManagerAddress }
+    //         );
 
-            Debug.Log($"Game manager set successfully. Tx Hash: {transactionReceipt.TransactionHash}");
-            return true;
-        }
-        catch (Exception e)
-        {
-            Debug.LogError($"Failed to set game manager: {e.Message}");
-            return false;
-        }
-    }
+    //         Debug.Log($"Game manager set successfully. Tx Hash: {transactionReceipt.TransactionHash}");
+    //         return true;
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         Debug.LogError($"Failed to set game manager: {e.Message}");
+    //         return false;
+    //     }
+    // }
 
     public async Task<bool> DiagnosePermissions()
     {
@@ -191,6 +191,8 @@ public class ContractManager : MonoBehaviour
 
     public void Check()
     {
+        //_ = Mint(1);
+
         _ = GetAllCharacterNFT();
     }
 
@@ -230,7 +232,7 @@ public class ContractManager : MonoBehaviour
     }
 
 
-    public async Task<string> Mint()
+    public async Task<string> Mint(int numMint)
     {
         try
         {
@@ -246,26 +248,26 @@ public class ContractManager : MonoBehaviour
             Debug.Log($"Active Wallet: {activeWalletAddress}");
 
             // First diagnose permissions
-            bool hasPermissions = await DiagnosePermissions();
-            if (!hasPermissions)
-            {
-                Debug.LogError("Cannot create character: insufficient permissions");
-                return null;
-            }
+            // bool hasPermissions = await DiagnosePermissions();
+            // if (!hasPermissions)
+            // {
+            //     Debug.LogError("Cannot create character: insufficient permissions");
+            //     return null;
+            // }
 
             var wallet = await CreateAuthorizedWallet();
             string walletAddress = await wallet.GetAddress();
             Debug.Log($"Using Wallet Address: {walletAddress}");
 
             // Auto-set game manager if requested and we have owner permissions
-            if (autoSetGameManager)
-            {
-                bool setGameManagerResult = await SetGameManager(walletAddress);
-                if (!setGameManagerResult)
-                {
-                    Debug.LogWarning("Failed to set game manager, but continuing...");
-                }
-            }
+            // if (autoSetGameManager)
+            // {
+            //     bool setGameManagerResult = await SetGameManager(walletAddress);
+            //     if (!setGameManagerResult)
+            //     {
+            //         Debug.LogWarning("Failed to set game manager, but continuing...");
+            //     }
+            // }
 
             var contract = await ThirdwebManager.Instance.GetContract(
                 address: _contractAddress,
@@ -282,12 +284,12 @@ public class ContractManager : MonoBehaviour
 
             var transactionReceipt = await contract.Write(
                 wallet,
-                "adminMintCharacter",
+                "gachaMint",
                 weiValue,
                 new object[]
                 {
                     activeWalletAddress,
-                    2
+                    numMint
                 }
             );
 
@@ -361,25 +363,4 @@ public class ContractManager : MonoBehaviour
         }
     }
 
-    // Add timeout for WebGL operations
-    public async Task<string> MintWithTimeout(int timeoutSeconds = 30)
-    {
-        if (IsWebGLPlatform())
-        {
-            Debug.Log("Using WebGL-optimized mint process");
-        }
-
-        var mintTask = Mint();
-        var timeoutTask = Task.Delay(timeoutSeconds * 1000);
-
-        var completedTask = await Task.WhenAny(mintTask, timeoutTask);
-
-        if (completedTask == timeoutTask)
-        {
-            Debug.LogError("Mint operation timed out");
-            return null;
-        }
-
-        return await mintTask;
-    }
 }
