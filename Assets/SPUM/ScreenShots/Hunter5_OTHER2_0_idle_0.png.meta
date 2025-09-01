@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hunter5_OTHER2_0_idle_0_0: -7758746854128383423
+      Hunter5_OTHER2_0_idle_0_1: 5251118651882370459
+      Hunter5_OTHER2_0_idle_0_2: -7345376867806310303
+      Hunter5_OTHER2_0_idle_0_3: 468422568936701075
+      Hunter5_OTHER2_0_idle_0_4: 1702274304031831706
+      Hunter5_OTHER2_0_idle_0_5: 59594594824529214
+      Hunter5_OTHER2_0_idle_0_6: 1333041607889397742
+      Hunter5_OTHER2_0_idle_0_7: -3425263391750781004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

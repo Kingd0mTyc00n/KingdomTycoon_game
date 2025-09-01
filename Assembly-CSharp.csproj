@@ -60,6 +60,20 @@
     <Analyzer Include="D:\Project\Unity\6000.0.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="D:\Project\Unity\6000.0.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
     <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\03.Graphics\Assets\FishNet\Runtime\Plugins\CodeAnalysis\FishNet.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\ru\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\ko\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\Microsoft.Extensions.Logging.Generators.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\de\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\tr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\es\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hant\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hans\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\pl\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\pt-BR\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\it\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\cs\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\fr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Analyzer Include="D:\Project\Unity\KingdomTycoon_game\Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\analyzers\dotnet\roslyn4.0\cs\ja\Microsoft.Extensions.Logging.Generators.resources.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\02.Scripts\Inventory\UIInventoryItem.cs" />
@@ -105,6 +119,7 @@
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\RestClientPromise.cs" />
     <Compile Include="Assets\02.Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpumPackage.cs" />
+    <Compile Include="Assets\02.Scripts\Contract\WalletConnect.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_SpriteButtonST.cs" />
     <Compile Include="Assets\SPUM\Core\Preset\Script\SPUM_PresetData.cs" />
     <Compile Include="Assets\02.Scripts\Spawn\ObjectPoolAddressable.cs" />
@@ -184,6 +199,7 @@
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_Prefabs.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Common.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatHealthModifier.cs" />
+    <Compile Include="Assets\02.Scripts\Contract\ContractManager.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_UIManager.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\MouseFollower.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
@@ -724,8 +740,20 @@
       <HintPath>D:\Project\Unity\6000.0.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Nethereum.Model">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Model.4.19.0\lib\netstandard2.0\Nethereum.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Web3">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Web3.4.14.0\lib\netstandard2.0\Nethereum.Web3.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\Plugins\Bin\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Util">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Util.4.19.0\lib\netstandard2.0\Nethereum.Util.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sirenix.Reflection.Editor">
@@ -736,6 +764,14 @@
       <HintPath>Library\PackageCache\com.unity.collections\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Nethereum.KeyStore">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.KeyStore.4.14.0\lib\netstandard2.0\Nethereum.KeyStore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.BlockchainProcessing">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.BlockchainProcessing.4.14.0\lib\netstandard2.0\Nethereum.BlockchainProcessing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit\net40\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
@@ -744,8 +780,28 @@
       <HintPath>Assets\03.Graphics\Assets\FishNet\Runtime\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Nethereum.RPC">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.RPC.4.19.0\lib\netstandard2.0\Nethereum.RPC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="zxing.unity">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\zxing\zxing.unity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Accounts">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Accounts.4.14.0\lib\netstandard2.0\Nethereum.Accounts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>Assets\03.Graphics\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\External\Microsoft.IdentityModel.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.Client">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.JsonRpc.Client.4.19.0\lib\netstandard2.0\Nethereum.JsonRpc.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sirenix.Serialization.Config">
@@ -756,32 +812,124 @@
       <HintPath>Assets\03.Graphics\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Portable.BouncyCastle.1.9.0\lib\netstandard2.0\BouncyCastle.Crypto.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Core">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Signer.EIP712">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Signer.EIP712.4.19.0\lib\netstandard2.0\Nethereum.Signer.EIP712.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.RpcClient">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.JsonRpc.RpcClient.4.14.0\lib\netstandard2.0\Nethereum.JsonRpc.RpcClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Signer">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Signer.4.19.0\lib\netstandard2.0\Nethereum.Signer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
       <HintPath>Assets\03.Graphics\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Crypto">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Crypto.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sirenix.Utilities">
       <HintPath>Assets\03.Graphics\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\External\Microsoft.IdentityModel.Tokens.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.HdWallet">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.HdWallet.4.14.0\lib\netstandard2.0\Nethereum.HdWallet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Sign">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Sign.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ADRaffy.ENSNormalize">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\ADRaffy.ENSNormalize.0.1.5\lib\netstandard2.0\ADRaffy.ENSNormalize.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Merkle.Patricia">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Merkle.Patricia.4.19.0\lib\netstandard2.0\Nethereum.Merkle.Patricia.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Nethereum.Hex">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Hex.4.19.0\lib\netstandard2.0\Nethereum.Hex.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\ThreadingPatcher\Plugins\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Common">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Network">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Network.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\External\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>Assets\03.Graphics\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
+    <Reference Include="NBitcoin">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\NBitcoin.7.0.6\lib\netstandard2.1\NBitcoin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.ABI">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.ABI.4.19.0\lib\netstandard2.0\Nethereum.ABI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Storage">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Storage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.Contracts">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.Contracts.4.19.0\lib\netstandard2.0\Nethereum.Contracts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Microsoft.Extensions.Logging.Abstractions.6.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thirdweb">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Thirdweb.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
       <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WalletConnectSharp.Network.Websocket">
+      <HintPath>Assets\06.SDK\Thirdweb\Plugins\WalletConnectUnity\com.walletconnect.core\Runtime\WalletConnectSharp\WalletConnectSharp.Network.Websocket.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nethereum.RLP">
+      <HintPath>Assets\06.SDK\Thirdweb\Runtime\NET\Nethereum.RLP.4.19.0\lib\netstandard2.0\Nethereum.RLP.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -1328,16 +1476,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.ResourceManager">
       <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
@@ -1594,6 +1742,10 @@
       <Project>{7187948C-D30A-5BAA-875E-BC15947E0A79}</Project>
       <Name>ExtensionsEditor</Name>
     </ProjectReference>
+    <ProjectReference Include="Thirdweb.Unity.csproj">
+      <Project>{E9506811-4AF5-0DBD-A984-6B6BD6D56EC3}</Project>
+      <Name>Thirdweb.Unity</Name>
+    </ProjectReference>
     <ProjectReference Include="PackageToolsEditor.csproj">
       <Project>{7D959FAE-87A4-C45A-7CE5-CE89FE942888}</Project>
       <Name>PackageToolsEditor</Name>
@@ -1606,6 +1758,10 @@
       <Project>{BB49F0BE-1AD4-005B-4325-673DBB6932E2}</Project>
       <Name>Pools</Name>
     </ProjectReference>
+    <ProjectReference Include="Thirdweb.Examples.csproj">
+      <Project>{FBC04784-2289-CDC0-E7FC-A048962D0A1E}</Project>
+      <Name>Thirdweb.Examples</Name>
+    </ProjectReference>
     <ProjectReference Include="GameKit.Dependencies.csproj">
       <Project>{71FCBFF3-0E07-74D3-94AB-4261C5687F65}</Project>
       <Name>GameKit.Dependencies</Name>
@@ -1617,6 +1773,10 @@
     <ProjectReference Include="ACTk.Examples.Genuine.Runtime.csproj">
       <Project>{C1074290-3D8A-3432-F142-CF9DA6EC60AB}</Project>
       <Name>ACTk.Examples.Genuine.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Thirdweb.Plugins.csproj">
+      <Project>{531C9B97-1C84-AAC5-872B-975AB9D92591}</Project>
+      <Name>Thirdweb.Plugins</Name>
     </ProjectReference>
     <ProjectReference Include="ACTk.Runtime.csproj">
       <Project>{A061E7DA-7A8A-F50E-1CBC-2C9E866CB06D}</Project>
@@ -1633,6 +1793,10 @@
     <ProjectReference Include="FishNet.Demos.csproj">
       <Project>{529D9441-C2CC-8048-3DC0-1CA9647AE327}</Project>
       <Name>FishNet.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="Thirdweb.Editor.csproj">
+      <Project>{45F73255-4578-6A58-1B1F-62BDF539CBF6}</Project>
+      <Name>Thirdweb.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
