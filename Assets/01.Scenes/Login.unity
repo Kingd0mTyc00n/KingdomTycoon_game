@@ -4129,8 +4129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaa929354ba40e45adba719519da7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownerPrivateKey: 41f1a7bf3ce7d3cb7a72edb826460ffd103f2a751c374a77486e5247f12282f7
-  authorizedPrivateKey: 41f1a7bf3ce7d3cb7a72edb826460ffd103f2a751c374a77486e5247f12282f7
+  ownerPrivateKey: 710899143d0e93ddc3a35c6fa325a510424946ef69efb5b1ca59776302cd8981
+  authorizedPrivateKey: 710899143d0e93ddc3a35c6fa325a510424946ef69efb5b1ca59776302cd8981
   autoSetGameManager: 0
 --- !u!4 &1739526597
 Transform:
