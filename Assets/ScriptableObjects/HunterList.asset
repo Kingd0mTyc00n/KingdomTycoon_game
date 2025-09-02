@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HunterList
   m_EditorClassIdentifier: 
   hunters:
-  - Id: Hunter1
+  - Id: 0
     Name: ORP
     Damage: 12
     Speed: 3
@@ -24,58 +24,267 @@ MonoBehaviour:
     Icon: {fileID: -7719392153373229951, guid: c8d6749ebdc9ee94890b72f5a7d455a7, type: 3}
     InventoryData:
       InventoryItems: []
-  - Id: Hunter2
+  - Id: 1
     Name: Mist
     Damage: 15
     Speed: 3
     Armor: 5
     Health: 150
     Hunger: 100
-    HunterType: 1
+    HunterType: 0
     Icon: {fileID: 8282521386867847287, guid: 2f5001c6a7a9c5e43ad83a153ae483a4, type: 3}
     InventoryData:
       InventoryItems: []
-  - Id: Hunter3
+  - Id: 2
     Name: Fat
     Damage: 20
     Speed: 3
     Armor: 5
     Health: 120
     Hunger: 100
-    HunterType: 1
+    HunterType: 0
     Icon: {fileID: 5117912454936174338, guid: 8e87bbc8aa4604c4b80ae9814e66013b, type: 3}
     InventoryData:
       InventoryItems: []
-  - Id: Hunter4
+  - Id: 3
     Name: Nigger
     Damage: 18
     Speed: 3
     Armor: 5
     Health: 140
     Hunger: 100
-    HunterType: 1
+    HunterType: 0
     Icon: {fileID: 8018785926138829714, guid: 93188935a0e303a4c992f74638d28dcf, type: 3}
     InventoryData:
       InventoryItems: []
-  - Id: Hunter5
+  - Id: 4
     Name: V
-    Damage: 12
+    Damage: 20
     Speed: 3
     Armor: 5
     Health: 250
     Hunger: 100
+    HunterType: 2
+    Icon: {fileID: 7382223593762686257, guid: d7e82affcac28b040a9fa61a5030ff49, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 5
+    Name: Oman
+    Damage: 22
+    Speed: 3
+    Armor: 5
+    Health: 240
+    Hunger: 50
+    HunterType: 2
+    Icon: {fileID: -2083330022350640976, guid: 4f00d0c6633c6724f87820941de39412, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 6
+    Name: KingMist
+    Damage: 30
+    Speed: 3
+    Armor: 5
+    Health: 300
+    Hunger: 100
+    HunterType: 3
+    Icon: {fileID: 1798349632136030288, guid: 41d15c933505fa14e87c77beb7bc04de, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 7
+    Name: VKola
+    Damage: 14
+    Speed: 3
+    Armor: 5
+    Health: 200
+    Hunger: 100
     HunterType: 1
+    Icon: {fileID: -5785563204807544224, guid: 37de90feb25a77c40b78dde90422b08b, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 8
+    Name: AngrySmurf
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 210
+    Hunger: 100
+    HunterType: 1
+    Icon: {fileID: -647057122771526015, guid: 5b70554adb4a2434d92b08328830eb5e, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 9
+    Name: OrcSlayer
+    Damage: 20
+    Speed: 3
+    Armor: 5
+    Health: 120
+    Hunger: 100
+    HunterType: 1
+    Icon: {fileID: -4635556121127716430, guid: ad28bd6757f8d8c4d817f3a0e035a8a6, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 10
+    Name: Lancer
+    Damage: 24
+    Speed: 3
+    Armor: 5
+    Health: 180
+    Hunger: 100
+    HunterType: 1
+    Icon: {fileID: -3929971065995353442, guid: a147ed2d76c0fdd428208509ebcab160, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 11
+    Name: Ron
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 150
+    Hunger: 100
+    HunterType: 0
     Icon: {fileID: -7758746854128383423, guid: cbcc93ee92bb4b7489fb00c1e2b747a9, type: 3}
     InventoryData:
       InventoryItems: []
-  - Id: Hunter6
-    Name: Oman
+  - Id: 12
+    Name: Rat
+    Damage: 9
+    Speed: 3
+    Armor: 5
+    Health: 200
+    Hunger: 100
+    HunterType: 0
+    Icon: {fileID: 7989047930064856448, guid: 76ee6bfb62310654fb8c38821ea3be07, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 13
+    Name: Miller
+    Damage: 22
+    Speed: 3
+    Armor: 5
+    Health: 80
+    Hunger: 100
+    HunterType: 0
+    Icon: {fileID: 4382998144132584790, guid: 4bf96cfda5f559a4c8f5ab1d7f320983, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 14
+    Name: Mimic
+    Damage: 16
+    Speed: 3
+    Armor: 0
+    Health: 100
+    Hunger: 100
+    HunterType: 0
+    Icon: {fileID: -3575758605379374931, guid: ebec8673873f7a14799a429f6d124caf, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 15
+    Name: Luck
+    Damage: 13
+    Speed: 3
+    Armor: 5
+    Health: 130
+    Hunger: 100
+    HunterType: 0
+    Icon: {fileID: -5214216649692565533, guid: 6e36fe80dc299e14c952e53c1e49253c, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 16
+    Name: Braw
+    Damage: 23
+    Speed: 3
+    Armor: 5
+    Health: 200
+    Hunger: 100
+    HunterType: 2
+    Icon: {fileID: -6748839929222994242, guid: ecc18b9c7e661264ea64c5fe482d7ee5, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 17
+    Name: DarkKnight
     Damage: 25
     Speed: 3
     Armor: 5
     Health: 180
-    Hunger: 50
+    Hunger: 100
     HunterType: 2
-    Icon: {fileID: 7989047930064856448, guid: 76ee6bfb62310654fb8c38821ea3be07, type: 3}
+    Icon: {fileID: 9035328368258743237, guid: 9a9e24aa4d9e05b46b2f913097122cfe, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 18
+    Name: AxeSo
+    Damage: 25
+    Speed: 3
+    Armor: 5
+    Health: 200
+    Hunger: 100
+    HunterType: 2
+    Icon: {fileID: -1831613953496812415, guid: 06748bdab5944fc45b4c4dbaa763cfd8, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 19
+    Name: Shu
+    Damage: 18
+    Speed: 3
+    Armor: 5
+    Health: 300
+    Hunger: 100
+    HunterType: 2
+    Icon: {fileID: 3387969046991200082, guid: 07104f8913b1e374baa7aa26d60152a4, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 20
+    Name: Timmy
+    Damage: 29
+    Speed: 3
+    Armor: 4
+    Health: 200
+    Hunger: 100
+    HunterType: 1
+    Icon: {fileID: -7417626198580794364, guid: 33a71d6b653fe2e48b638fac6d035a99, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 21
+    Name: Butcher
+    Damage: 16
+    Speed: 3
+    Armor: 5
+    Health: 210
+    Hunger: 100
+    HunterType: 1
+    Icon: {fileID: 2220967965608194933, guid: 1943d4eec91f6df4da0b9848a17e814f, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 22
+    Name: Six
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 120
+    Hunger: 100
+    HunterType: 0
+    Icon: {fileID: 745956622737571519, guid: 533aaed93d190fb4994b21c2c333d276, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 23
+    Name: Lich
+    Damage: 23
+    Speed: 3
+    Armor: 3
+    Health: 230
+    Hunger: 100
+    HunterType: 1
+    Icon: {fileID: 5779439265331746078, guid: 1773a2e7b399f3d418f85c17ac3c2546, type: 3}
+    InventoryData:
+      InventoryItems: []
+  - Id: 24
+    Name: Shovel
+    Damage: 12
+    Speed: 3
+    Armor: 5
+    Health: 120
+    Hunger: 100
+    HunterType: 0
+    Icon: {fileID: -899254571267873379, guid: 7ab253441daa0264d9cfd18674dc58c4, type: 3}
     InventoryData:
       InventoryItems: []

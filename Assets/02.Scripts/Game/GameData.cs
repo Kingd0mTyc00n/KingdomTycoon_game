@@ -53,7 +53,7 @@ public class EnemyData: CharacterData
 
 public class CharacterData
 {
-    public string Id;
+    public int Id;
     public string Name;
     public float Damage;
     public float Speed;
