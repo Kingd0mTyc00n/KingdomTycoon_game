@@ -194,8 +194,8 @@
     <Compile Include="Assets\03.Graphics\Assets\RestClient\DemoScene\Scripts\MainScript.cs" />
     <Compile Include="Assets\02.Scripts\Game\UIManager.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpumTextureData.cs" />
-    <Compile Include="Assets\SPUM\Retro UI Set\2_ExtraScript\PageLayout.cs" />
     <Compile Include="Assets\02.Scripts\UIDisplay\HunterUI.cs" />
+    <Compile Include="Assets\SPUM\Retro UI Set\2_ExtraScript\PageLayout.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatArmorModifier.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Gif\GifEncoder.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestException.cs" />
