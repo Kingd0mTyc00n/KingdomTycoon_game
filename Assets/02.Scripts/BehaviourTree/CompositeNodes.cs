@@ -67,7 +67,6 @@ public class Selector : Node
     {
         while (current < nodes.Count)
         {
-            Debug.Log("Selector Tick: " + current);
             var result = nodes[current].Tick();
 
             if (result == NodeState.Running)

@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class HunterInventory : MonoBehaviour
 {
+    public static HunterInventory CurrentSelectedHunter;
+
     public InventoryData inventoryData;
 
     [SerializeField] private UIInventoryPage inventoryUI;
@@ -18,37 +20,33 @@ public class HunterInventory : MonoBehaviour
     private IEnumerator Start()
     {
         yield return new WaitUntil(() => PlayerPrefs.HasKey(GameData.PP_USER_DATA));
-        InitialzeInventory();
-        SetInventoryData(UserData.UserDeepData.HuntersData[0].InventoryData);
-        SetupInventory();
-        PrepareInventoryData();
+        inventoryUI = UIInventoryPage.Instance;
+        SetInventoryData(GetComponent<CharacterController>().GetHunterData().InventoryData);
+        //PrepareInventoryData();
+    }
 
-        items = inventoryData.InventoryItems;
+    public void SelectThisHunter()
+    {
+        CurrentSelectedHunter = this;
     }
 
     public void SetInventoryData(InventoryData inventoryData)
     {
         this.inventoryData = inventoryData;
-        inventoryUI.InitInventoryUI(UserData.UserDeepData.InventorySize);
         //inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
-        inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+        //inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+        LoadInventoryData();
     }
 
 
-    private void SetupInventory()
+    public void LoadInventoryData()
     {
-        
-    }
-
-
-    public void InitialzeInventory()
-    {
-        inventoryData.InventoryItems = new List<InventoryItem>();
-
-        for (int i = 0; i < UserData.UserDeepData.InventorySize; i++)
+        for (int i = inventoryData.InventoryItems.Count; i < UserData.UserDeepData.InventorySize; i++)
         {
             inventoryData.InventoryItems.Add(InventoryItem.GetEmptyItem());
         }
+
+        items = inventoryData.InventoryItems;
     }
 
 
@@ -60,22 +58,9 @@ public class HunterInventory : MonoBehaviour
 
     public void PrepareInventoryData()
     {
-        OnInventoryChanged += ChangeInventoryUI;
-        foreach (InventoryItem item in items)
-        {
-            if (item.IsEmpty)
-                continue;
-            AddInventoryItem(item);
-        }
+       
     }
 
-    private void ChangeInventoryUI(Dictionary<int, InventoryItem> inventoryState)
-    {
-        foreach (var item in inventoryState)
-        {
-            inventoryUI.UpdateData(item.Key, item.Value.Item, item.Value.Quantity);
-        }
-    }
 
 
     #region EVENT METHODS
@@ -234,7 +219,7 @@ public class HunterInventory : MonoBehaviour
     {
         if (!newItem.IsStackable)
         {
-            for (int i = 6; i < inventoryData.InventoryItems.Count; i++)
+            for (int i = 0; i < inventoryData.InventoryItems.Count; i++)
             {
                 if (IsInventoryFull())
                     return quantity;
@@ -259,7 +244,7 @@ public class HunterInventory : MonoBehaviour
             Quantity = quantity
         };
 
-        for (int i = 6; i < inventoryData.InventoryItems.Count; i++)
+        for (int i = 0; i < inventoryData.InventoryItems.Count; i++)
         {
             if (inventoryData.InventoryItems[i].IsEmpty)
             {
@@ -272,7 +257,7 @@ public class HunterInventory : MonoBehaviour
 
     private int AddStackableItem(ItemData newItem, int quantity)
     {
-        for (int i = 6; i < inventoryData.InventoryItems.Count; ++i)
+        for (int i = 0; i < inventoryData.InventoryItems.Count; ++i)
         {
             if (inventoryData.InventoryItems[i].IsEmpty)
                 continue;

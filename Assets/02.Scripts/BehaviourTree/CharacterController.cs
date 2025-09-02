@@ -1,17 +1,16 @@
 ﻿using Pathfinding;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    [SerializeField]  private CharacterData characterData;
+    [SerializeField] private CharacterData characterData;
 
-    [Header("Health")]
-    public float maxHealth;
-    public float health;
-    public float healThreshold;
+    [SerializeField] private HealthBar healthBar;
+
 
     [Header("Attack")]
     public float attackDamage;
@@ -45,6 +44,9 @@ public class CharacterController : MonoBehaviour
     private Vector2 currentMoveTarget;
     private bool isMovingByHunter = false;
 
+    public float spawnRadius = 1.5f;
+    public float forceAmount = 5f;
+
     [Header("Territory")]
     public PolygonCollider2D territoryZone;  //check hunter zone
 
@@ -59,10 +61,8 @@ public class CharacterController : MonoBehaviour
     public void SetCharacterData(CharacterData hunterData)
     {
         this.characterData = hunterData;
-        maxHealth = hunterData.Health;
-        health = hunterData.Health;
+        healthBar.SetMaxHealth(characterData.Health);
         attackDamage = hunterData.Damage;
-        healThreshold = 0.1f * maxHealth;
         GetComponent<Character>().SetCharacterData(hunterData);
     }
 
@@ -71,7 +71,7 @@ public class CharacterController : MonoBehaviour
         Camera.main.GetComponent<CameraFollow>().SetCurrentHunter(gameObject.transform);
     }
 
-    public bool IsHealthLow() => health <= healThreshold;
+    public bool IsHealthLow() => healthBar.IsHealthLow();
 
     public NodeState WaitForMapSelection()
     {
@@ -94,6 +94,11 @@ public class CharacterController : MonoBehaviour
         }
         point = default;
         return false;
+    }
+
+    public void DisplayItemsToUI(HunterInventory hunterInventory)
+    {
+        UIInventoryPage.Instance.ShowInventory(hunterInventory);
     }
 
     public NodeState IdleMovement()
@@ -129,7 +134,8 @@ public class CharacterController : MonoBehaviour
 
     public NodeState MoveToMapSpawn()
     {
-        if (currentMapSpawn == null) return NodeState.Failure;
+        if (currentMapSpawn == null) 
+            return NodeState.Failure;
 
         characterObj.SetMovePos(currentMapSpawn.position);
 
@@ -145,6 +151,12 @@ public class CharacterController : MonoBehaviour
 
     public NodeState FindNearestTarget()
     {
+        if (hasPlayerCommand && mapSelected && currentMapSpawn != null)
+        {
+            currentEnemy = null;
+            return NodeState.Failure;
+        }
+
         GameObject[] Target = new GameObject[] { };
 
         if (characterData is HunterData hunterData)
@@ -186,6 +198,12 @@ public class CharacterController : MonoBehaviour
 
     public NodeState MoveToTarget()
     {
+        if (hasPlayerCommand && mapSelected && currentMapSpawn != null)
+        {
+            currentEnemy = null;
+            return NodeState.Failure; 
+        }
+
         if (currentEnemy == null) return NodeState.Failure;
 
         characterObj.SetMovePos(currentEnemy.position);
@@ -201,10 +219,16 @@ public class CharacterController : MonoBehaviour
 
     public NodeState AttackTarget()
     {
+        if (hasPlayerCommand && mapSelected && currentMapSpawn != null)
+        {
+            currentEnemy = null;
+            return NodeState.Failure; 
+        }
+
         if (currentEnemy == null) 
             return NodeState.Failure;
 
-        if (!currentEnemy.TryGetComponent<Character>(out var enemy)) 
+        if (!currentEnemy.TryGetComponent<CharacterController>(out var enemy)) 
             return NodeState.Failure;
 
         float dist = Vector2.Distance(transform.position, currentEnemy.position);
@@ -238,7 +262,10 @@ public class CharacterController : MonoBehaviour
 
         if (Vector2.Distance(transform.position, townTransform.position) <= arriveTolerance)
         {
-            health = maxHealth;
+            if (healthBar.maxHealth < characterData.Health)
+            {
+                healthBar.Heal(5);
+            }
             mapSelected = false;
             characterObj.SetIdle();
             return NodeState.Success;
@@ -256,9 +283,61 @@ public class CharacterController : MonoBehaviour
         isMovingByHunter = false;
     }
 
-    public CharacterData GetHunterData()
+    public void TakeDamage(float damage)
     {
-        return characterData;
+        healthBar.currentHealth -= damage;
+        if (healthBar.currentHealth <= 0)
+        {
+            healthBar.currentHealth = 0;
+            Die();
+        }
+
+        healthBar.UpdateProgressBar();
+    }
+
+
+    private void Die()
+    {
+        if (characterData is EnemyData enemyData)
+        {
+            DropItem(enemyData.ItemsIsDrop);
+            var spawner = townTransform?.GetComponent<EnemySpawner>();
+            if (spawner != null)
+            {
+                spawner.OnEnemyDied();
+            }
+
+        }
+
+
+        ObjectPoolAddressable.Instance.ReturnToPool(gameObject);
+    }
+
+
+    public bool IsDead() => healthBar.currentHealth <= 0;
+
+
+    private void DropItem(List<ItemData> items)
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            GameObject item = Instantiate(GameResources.instance.dropItem, transform.position, Quaternion.identity);
+            item.GetComponent<Item>().SetData(items[i]);
+            Vector2 randomDirection = UnityEngine.Random.insideUnitCircle.normalized;
+
+            Rigidbody2D rb = item.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.AddForce(randomDirection * forceAmount, ForceMode2D.Impulse);
+                rb.linearDamping = 3f;
+            }
+        }
+
+    }
+
+    public HunterData GetHunterData()
+    {
+        return characterData as HunterData;
     }
 
     public void ClickHunter()

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public interface IItemAction
 {
@@ -29,12 +30,51 @@ public class UserDeepData
 }
 
 [System.Serializable]
-public class HunterData:CharacterData
+public class HunterData : CharacterData
 {
     public float Hunger;
+
+    public int Exp;
+    public int DPSParam;
+    public int ATK;
+    public int Defense;
+    public int Crit;
+    public int ATKSPD;
+    public float Evasion;
     public HunterType HunterType;
+    public int Level;
+
+    [System.NonSerialized]
     public Sprite Icon;
     public InventoryData InventoryData;
+
+    public static HunterData CreateFromSO(HunterData template)
+    {
+        return new HunterData
+        {
+            Id = template.Id,
+            Name = template.Name,
+            Damage = template.Damage,
+            Speed = template.Speed,
+            Armor = template.Armor,
+            Health = template.Health,
+
+            Hunger = template.Hunger,
+            Exp = 0,
+            DPSParam = template.DPSParam,
+            ATK = template.ATK,
+            Defense = template.Defense,
+            Crit = template.Crit,
+            ATKSPD = template.ATKSPD,
+            Evasion = template.Evasion,
+            HunterType = template.HunterType,
+            Level = 1,
+
+            Icon = template.Icon,
+
+            InventoryData = new InventoryData()
+        };
+    }
 }
 
 public enum  HunterType
@@ -102,7 +142,7 @@ public class ItemSlot
 [System.Serializable]
 public class InventoryData
 {
-    public List<InventoryItem> InventoryItems;
+    public List<InventoryItem> InventoryItems = new List<InventoryItem>();
 }   
 
 

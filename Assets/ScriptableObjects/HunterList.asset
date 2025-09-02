@@ -20,8 +20,15 @@ MonoBehaviour:
     Armor: 5
     Health: 120
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: -7719392153373229951, guid: c8d6749ebdc9ee94890b72f5a7d455a7, type: 3}
+    Level: 0
     InventoryData:
       InventoryItems: []
   - Id: Hunter2
@@ -31,8 +38,15 @@ MonoBehaviour:
     Armor: 5
     Health: 150
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: 8282521386867847287, guid: 2f5001c6a7a9c5e43ad83a153ae483a4, type: 3}
+    Level: 0
     InventoryData:
       InventoryItems: []
   - Id: Hunter3
@@ -42,8 +56,15 @@ MonoBehaviour:
     Armor: 5
     Health: 120
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: 5117912454936174338, guid: 8e87bbc8aa4604c4b80ae9814e66013b, type: 3}
+    Level: 0
     InventoryData:
       InventoryItems: []
   - Id: Hunter4
@@ -53,8 +74,15 @@ MonoBehaviour:
     Armor: 5
     Health: 140
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: 8018785926138829714, guid: 93188935a0e303a4c992f74638d28dcf, type: 3}
+    Level: 0
     InventoryData:
       InventoryItems: []
   - Id: Hunter5
@@ -64,8 +92,15 @@ MonoBehaviour:
     Armor: 5
     Health: 250
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: -7758746854128383423, guid: cbcc93ee92bb4b7489fb00c1e2b747a9, type: 3}
+    Level: 0
     InventoryData:
       InventoryItems: []
   - Id: Hunter6
@@ -75,7 +110,14 @@ MonoBehaviour:
     Armor: 5
     Health: 180
     Hunger: 50
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: 7989047930064856448, guid: 76ee6bfb62310654fb8c38821ea3be07, type: 3}
+    Level: 0
     InventoryData:
       InventoryItems: []

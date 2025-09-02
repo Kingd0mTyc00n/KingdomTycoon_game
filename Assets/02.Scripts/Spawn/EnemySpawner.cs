@@ -25,6 +25,14 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
+    public void OnEnemyDied()
+    {
+        numEnemies--;
+        if (numEnemies < 0) 
+            numEnemies = 0;
+    }
+
+
     void SpawnEnemy()
     {
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];

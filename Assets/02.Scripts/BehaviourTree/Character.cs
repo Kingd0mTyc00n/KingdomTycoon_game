@@ -32,6 +32,7 @@ public class Character : MonoBehaviour
             health = 0;
             Die();
         }
+
     }
 
     public bool IsDead() => health <= 0;

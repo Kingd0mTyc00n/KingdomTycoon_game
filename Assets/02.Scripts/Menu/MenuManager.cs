@@ -39,6 +39,14 @@ public class MenuManager : MonoBehaviour
         hUD.Open();
     }
 
+    public void CloseAllHUDBar()
+    {
+        foreach (var hUD in hUDBars)
+        {
+            hUD.Close();
+        }
+    }
+
     public void CloseMenu(HUDBar hUD)
     {
         hUD.Close();

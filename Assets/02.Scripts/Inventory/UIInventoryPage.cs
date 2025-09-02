@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,11 +8,14 @@ public class UIInventoryPage : MonoBehaviour
 {
     public static UIInventoryPage Instance;
 
-    public CharacterController hunterController;
+    public HunterInventory hunterInventory;
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
     [Header("UI Inventory Page")]
@@ -23,10 +27,38 @@ public class UIInventoryPage : MonoBehaviour
     public event Action<int> OnDescriptionRequested, OnItemActionRequested;
 
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitUntil(() => PlayerPrefs.HasKey(GameData.PP_USER_DATA));
+        InitInventoryUI(UserData.UserDeepData.InventorySize);
         gameObject.SetActive(false);
     }
+
+    public void OpenSelectedHunterInventory()
+    {
+        if (HunterInventory.CurrentSelectedHunter == null)
+        {
+            Debug.LogWarning("No hunter selected!");
+            return;
+        }
+
+        ShowInventory(HunterInventory.CurrentSelectedHunter);
+    }
+
+    public void ShowInventory(HunterInventory hunter)
+    {
+        gameObject.SetActive(true);
+
+        uiItems.ForEach(item => item.ResetData()); 
+
+        hunterInventory = hunter;
+
+        foreach (var item in hunter.GetCurrentInventoryState())
+        {
+            UpdateData(item.Key, item.Value.Item, item.Value.Quantity);
+        }
+    }
+
 
 
     public void InitInventoryUI(int inventorySize)

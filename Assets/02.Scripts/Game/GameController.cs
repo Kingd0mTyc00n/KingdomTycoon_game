@@ -44,6 +44,12 @@ public class GameController : MonoBehaviour
     private void InitializeData()
     {
         UserData.UserDeepData = new UserDeepData();
+        HunterData newHunter = HunterData.CreateFromSO(hunters.hunters[0]);
+
+        UserData.UserDeepData.HuntersData = new List<HunterData>
+        {
+            newHunter
+        };
         UserData.UserDeepData.InventorySize = 15;
         UserData.SaveData();
     }

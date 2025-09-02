@@ -6,16 +6,15 @@ public class PickUpSystem : MonoBehaviour
 {
     public static PickUpSystem instance;
 
-    [SerializeField] private HunterInventory inventoryData;
+    [SerializeField] private HunterInventory hunterInventory;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision: " + collision.name);
         Item item = collision.GetComponent<Item>();
         if (item != null )
         {
             Debug.Log("Pickup item : "+ item.name);
-            int reminder = inventoryData.AddItem(item.item, item.Quantity);
+            int reminder = hunterInventory.AddItem(item.item, item.Quantity);
             if (reminder == 0)
                 item.DestroyItem();
             else
@@ -27,7 +26,7 @@ public class PickUpSystem : MonoBehaviour
     {
         if (item != null)
         {
-            int reminder = inventoryData.AddItem(item.item, item.Quantity);
+            int reminder = hunterInventory.AddItem(item.item, item.Quantity);
             if (reminder == 0)
                 item.DestroyItem();
             else

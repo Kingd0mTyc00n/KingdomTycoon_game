@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "HunterList",menuName = "Game/Hunter List")]
 public class HunterDatabase : ScriptableObject
 {
-    public List<HunterData> hunters;
+    public List<HunterData> hunters = new List<HunterData>();
 
     public HunterData GetHunterByName(string Name)
     {
