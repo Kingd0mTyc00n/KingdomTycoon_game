@@ -49,7 +49,17 @@ public class HunterData : CharacterData
     public float Evasion;
     public HunterClass Class;
     public int Level;
+    public HunterType HunterType;
+    public Sprite Icon;
     public InventoryData InventoryData;
+}
+
+public enum HunterType
+{
+    Common,
+    Rare,
+    Epic,
+    Legendary
 }
 
 [System.Serializable]
