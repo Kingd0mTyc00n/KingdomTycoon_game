@@ -10,4 +10,6 @@ public class HunterDatabase : ScriptableObject
     {
         return hunters.Find(h => h.Name == Name);
     }
+
+    
 }

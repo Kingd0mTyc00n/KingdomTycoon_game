@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 1e1079e1622dafc4faaf7b1211ce8bae
   m_currentHash:
     serializedVersion: 2
-    Hash: 770edf40a4ffd381708939ec675ae8a6
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
   m_GroupAssets:
   - {fileID: 11400000, guid: 0573641e0e3811041af0bb3c72b5bb29, type: 2}
   - {fileID: 11400000, guid: f333aff1174379f4aa6c547342fbeb3f, type: 2}
+  - {fileID: 11400000, guid: bae54f956025ede45950fc33f156b4b3, type: 2}
   - {fileID: 11400000, guid: 3c85edc22a72bf74fb43fcff097b35e4, type: 2}
   - {fileID: 11400000, guid: 61c8ffe9b49636f4c8c59794185e9570, type: 2}
   - {fileID: 11400000, guid: e76927e85ea16cc4f9fe852754c5d493, type: 2}
@@ -111,6 +112,7 @@ MonoBehaviour:
     - UndeadEpic
     - Undead
     - UndeadEpic
+    - Scene
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 4831b258ba2bdb14c9866973fce3dff3, type: 2}

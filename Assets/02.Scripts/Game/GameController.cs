@@ -53,6 +53,5 @@ public class GameController : MonoBehaviour
         UserData.UserDeepData.InventorySize = 15;
         UserData.SaveData();
     }
-
-
+    
 }

@@ -1,7 +1,9 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
 using Thirdweb;
@@ -195,8 +197,10 @@ public class ContractManager : MonoBehaviour
 
         _ = GetAllCharacterNFT();
     }
-
-    public async Task GetAllCharacterNFT()
+    public void LoadGame(){
+        SceneAddressableManager.Instance.LoadScene("MainGameScene");
+    }
+    public async Task<Dictionary<int, int>> GetAllCharacterNFT()
     {
         try
         {
@@ -204,30 +208,49 @@ public class ContractManager : MonoBehaviour
             if (activeWallet == null)
             {
                 Debug.LogError("No active wallet found");
-                return;
+                return new Dictionary<int, int>();
             }
 
             string activeWalletAddress = await activeWallet.GetAddress();
             Debug.Log($"Active Wallet: {activeWalletAddress}");
 
-            // foreach (var character in GameManager.Instance.CharacterCardData.CharacterCardsList)
-            // {
-            //     if(character.id == "26")
-            //     {
-            //         await CreateCharacter(character);
-            //     }
-            // }
+            object result = await ReadContract(_contractAddress, _contractAbiJson, "getUserNFTs", new object[] { activeWalletAddress });
 
-            var result = await ReadContract(_contractAddress, _contractAbiJson, "getUserNFTIds", new object[] { activeWalletAddress });
-            //var result = await ReadContract(_contractAddress, _contractAbiJson, "getCharacter", new object[] { 2 });
+            Debug.Log($"Raw result type: {result?.GetType()}  value: {result}");
 
-            //var result = await Mint();
+            object[] arr = null;
+            if (result is object[] tmp) arr = tmp;
+            else if (result is IEnumerable en && !(result is string))
+            {
+                arr = en.Cast<object>().ToArray();
+            }
 
-            //print(result.ToString());
+            if (arr == null || arr.Length < 2)
+            {
+                Debug.LogWarning("Unexpected contract result format — expected two arrays: [ids[], amounts[]]");
+                return new Dictionary<int, int>();
+            }
+
+            var ids = ToIntList(arr[0]);
+            var amounts = ToIntList(arr[1]);
+
+            Debug.Log("Parsed IDs: " + string.Join(",", ids));
+            Debug.Log("Parsed Amounts: " + string.Join(",", amounts));
+
+            var dict = new Dictionary<int, int>();
+            int n = Math.Min(ids.Count, amounts.Count);
+            for (int i = 0; i < n; i++)
+            {
+                dict[ids[i]] = amounts[i];
+            }
+
+            Debug.Log($"GetAllCharacterNFT -> parsed {dict.Count} entries");
+            return dict;
         }
-        catch (System.Exception e)
+        catch (Exception e)
         {
-            Debug.LogError($"Error in GetAllCharacterNFT: {e.Message}");
+            Debug.LogError($"Error in GetAllCharacterNFT: {e}");
+            return new Dictionary<int, int>();
         }
     }
 
@@ -363,4 +386,68 @@ public class ContractManager : MonoBehaviour
         }
     }
 
+
+    private List<int> ToIntList(object input)
+    {
+        var list = new List<int>();
+        if (input == null) return list;
+
+        // If it's already object[]
+        if (input is object[] objArr)
+        {
+            foreach (var o in objArr) if (TryConvertToInt(o, out var v)) list.Add(v);
+            return list;
+        }
+
+        // If it's any IEnumerable (List<object>, BigInteger[], JArray, etc.), but not a string
+        if (input is IEnumerable enumerable && !(input is string))
+        {
+            foreach (var o in enumerable)
+                if (TryConvertToInt(o, out var v))
+                    list.Add(v);
+            return list;
+        }
+
+        // Single scalar value
+        if (TryConvertToInt(input, out var single)) list.Add(single);
+        return list;
+    }
+
+    private bool TryConvertToInt(object o, out int value)
+    {
+        value = 0;
+        if (o == null) return false;
+        try
+        {
+            switch (o)
+            {
+                case int i: value = i; return true;
+                case long l: value = Convert.ToInt32(l); return true;
+                case uint ui: value = Convert.ToInt32(ui); return true;
+                case ulong ul: value = Convert.ToInt32(ul); return true;
+                case short s: value = s; return true;
+                case byte b: value = b; return true;
+                case BigInteger bi: value = (int)bi; return true; // watch overflow
+                case string s when int.TryParse(s, out var si): value = si; return true;
+            }
+
+            // handle JSON-like objects by parsing ToString()
+            var tname = o.GetType().Name;
+            if (tname.StartsWith("J") || tname.Contains("Json"))
+            {
+                if (int.TryParse(o.ToString(), out var parsed)) { value = parsed; return true; }
+            }
+
+            // fallback
+            value = Convert.ToInt32(o);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogWarning($"TryConvertToInt failed for '{o}' ({o?.GetType()}): {ex.Message}");
+            return false;
+        }
+    }
 }
+
+

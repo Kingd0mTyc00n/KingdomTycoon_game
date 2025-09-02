@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemies
   m_EditorClassIdentifier: 
   enemies:
-  - Id: Orc
+  - Id: 0
     Name: Orc
     Damage: 10
     Speed: 3
@@ -28,14 +28,14 @@ MonoBehaviour:
       ItemType: 0
       MaxStackSize: 99
       icon: {fileID: 525973537, guid: 727f7723cc841fd47919ea35278e8296, type: 3}
-  - Id: Undead
+  - Id: 1
     Name: Undead
     Damage: 7
     Speed: 3
     Armor: 0
     Health: 60
     ItemsIsDrop: []
-  - Id: Devil
+  - Id: 2
     Name: Devil
     Damage: 12
     Speed: 3
