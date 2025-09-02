@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HunterList
   m_EditorClassIdentifier: 
   hunters:
-  - Id: Hunter1
+  - Id: Hunter 1
     Name: ORP
     Damage: 12
     Speed: 3

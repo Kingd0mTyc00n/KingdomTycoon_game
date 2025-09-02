@@ -33,10 +33,10 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             PlayerPrefs.DeleteAll();
-            Debug.Log("data deleted");
+            Debug.LogError("data deleted");
         }
     }
 
