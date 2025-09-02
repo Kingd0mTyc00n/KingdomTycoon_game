@@ -51,7 +51,6 @@ public class HunterData : CharacterData
     public HunterType HunterType;
     public int Level;
 
-    [System.NonSerialized]
     public Sprite Icon;
     public InventoryData InventoryData;
 
