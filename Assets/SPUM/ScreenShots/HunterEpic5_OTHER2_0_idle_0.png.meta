@@ -143,6 +143,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -335,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HunterEpic5_OTHER2_0_idle_0_0: -6748839929222994242
+      HunterEpic5_OTHER2_0_idle_0_1: -8815855374854425216
+      HunterEpic5_OTHER2_0_idle_0_2: 2970617589834069157
+      HunterEpic5_OTHER2_0_idle_0_3: 8357805608812930965
+      HunterEpic5_OTHER2_0_idle_0_4: 3216831188493584542
+      HunterEpic5_OTHER2_0_idle_0_5: 2665252559222686780
+      HunterEpic5_OTHER2_0_idle_0_6: -8160963379111390722
+      HunterEpic5_OTHER2_0_idle_0_7: 3942360937077014250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -33,14 +33,13 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
 
     public void SetData(ItemData itemData, int quantity)
     {
-        item.gameObject.SetActive(true);
         ItemSlot.Item = itemData;
         ItemSlot.QuantityOfItem = quantity;
 
+        item.gameObject.SetActive(true);
         item.sprite = GameResources.instance.iconItems[ItemSlot.Item.Id];
         quantityText.text = ItemSlot.QuantityOfItem.ToString();
         isEmpty = false;
-
     }
 
     public void Select()
