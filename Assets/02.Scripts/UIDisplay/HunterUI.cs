@@ -28,7 +28,7 @@ public class HunterUI : MonoBehaviour
         hunterLevelText.text = $"Lv.{hunterData.Level} <color=#00FF00>{hunterData.HunterType}</color>";
     }
 
-    private void OpenStats()
+    public void OpenStats()
     {
         var menuIns = MenuManager.instance;
         menuIns.OpenScreen("HunterStats");

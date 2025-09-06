@@ -21,10 +21,6 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
     public bool isSelected = false;
 
 
-    private void Start()
-    {
-        ResetData();
-    }
     public void ResetData()
     {
         item.gameObject.SetActive(false);

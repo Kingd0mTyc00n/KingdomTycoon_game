@@ -29,6 +29,7 @@ MonoBehaviour:
     Evasion: 0
     HunterType: 0
     Level: 0
+    SpritePath: ORP
     InventoryData:
       InventoryItems: []
   - Id: 1
@@ -38,8 +39,16 @@ MonoBehaviour:
     Armor: 5
     Health: 150
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: 8282521386867847287, guid: 2f5001c6a7a9c5e43ad83a153ae483a4, type: 3}
+    Level: 0
+    SpritePath: Mist
     InventoryData:
       InventoryItems: []
   - Id: 2
@@ -49,8 +58,16 @@ MonoBehaviour:
     Armor: 5
     Health: 120
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: 5117912454936174338, guid: 8e87bbc8aa4604c4b80ae9814e66013b, type: 3}
+    Level: 0
+    SpritePath: Fat
     InventoryData:
       InventoryItems: []
   - Id: 3
@@ -60,8 +77,16 @@ MonoBehaviour:
     Armor: 5
     Health: 140
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: 8018785926138829714, guid: 93188935a0e303a4c992f74638d28dcf, type: 3}
+    Level: 0
+    SpritePath: Nigger
     InventoryData:
       InventoryItems: []
   - Id: 4
@@ -71,8 +96,16 @@ MonoBehaviour:
     Armor: 5
     Health: 250
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: 7382223593762686257, guid: d7e82affcac28b040a9fa61a5030ff49, type: 3}
+    Level: 0
+    SpritePath: V
     InventoryData:
       InventoryItems: []
   - Id: 5
@@ -82,8 +115,16 @@ MonoBehaviour:
     Armor: 5
     Health: 240
     Hunger: 50
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: -2083330022350640976, guid: 4f00d0c6633c6724f87820941de39412, type: 3}
+    Level: 0
+    SpritePath: Oman
     InventoryData:
       InventoryItems: []
   - Id: 6
@@ -93,8 +134,16 @@ MonoBehaviour:
     Armor: 5
     Health: 300
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 3
-    Icon: {fileID: 1798349632136030288, guid: 41d15c933505fa14e87c77beb7bc04de, type: 3}
+    Level: 0
+    SpritePath: KingMist
     InventoryData:
       InventoryItems: []
   - Id: 7
@@ -104,8 +153,16 @@ MonoBehaviour:
     Armor: 5
     Health: 200
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: -5785563204807544224, guid: 37de90feb25a77c40b78dde90422b08b, type: 3}
+    Level: 0
+    SpritePath: Vkola
     InventoryData:
       InventoryItems: []
   - Id: 8
@@ -115,8 +172,16 @@ MonoBehaviour:
     Armor: 5
     Health: 210
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: -647057122771526015, guid: 5b70554adb4a2434d92b08328830eb5e, type: 3}
+    Level: 0
+    SpritePath: AngrySmurf
     InventoryData:
       InventoryItems: []
   - Id: 9
@@ -126,8 +191,16 @@ MonoBehaviour:
     Armor: 5
     Health: 120
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: -4635556121127716430, guid: ad28bd6757f8d8c4d817f3a0e035a8a6, type: 3}
+    Level: 0
+    SpritePath: OrcSlayer
     InventoryData:
       InventoryItems: []
   - Id: 10
@@ -137,8 +210,16 @@ MonoBehaviour:
     Armor: 5
     Health: 180
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: -3929971065995353442, guid: a147ed2d76c0fdd428208509ebcab160, type: 3}
+    Level: 0
+    SpritePath: Lancer
     InventoryData:
       InventoryItems: []
   - Id: 11
@@ -148,8 +229,16 @@ MonoBehaviour:
     Armor: 5
     Health: 150
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: -7758746854128383423, guid: cbcc93ee92bb4b7489fb00c1e2b747a9, type: 3}
+    Level: 0
+    SpritePath: Ron
     InventoryData:
       InventoryItems: []
   - Id: 12
@@ -159,8 +248,16 @@ MonoBehaviour:
     Armor: 5
     Health: 200
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: 7989047930064856448, guid: 76ee6bfb62310654fb8c38821ea3be07, type: 3}
+    Level: 0
+    SpritePath: Rat
     InventoryData:
       InventoryItems: []
   - Id: 13
@@ -170,8 +267,16 @@ MonoBehaviour:
     Armor: 5
     Health: 80
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: 4382998144132584790, guid: 4bf96cfda5f559a4c8f5ab1d7f320983, type: 3}
+    Level: 0
+    SpritePath: Miller
     InventoryData:
       InventoryItems: []
   - Id: 14
@@ -181,8 +286,16 @@ MonoBehaviour:
     Armor: 0
     Health: 100
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: -3575758605379374931, guid: ebec8673873f7a14799a429f6d124caf, type: 3}
+    Level: 0
+    SpritePath: Mimic
     InventoryData:
       InventoryItems: []
   - Id: 15
@@ -192,8 +305,16 @@ MonoBehaviour:
     Armor: 5
     Health: 130
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: -5214216649692565533, guid: 6e36fe80dc299e14c952e53c1e49253c, type: 3}
+    Level: 0
+    SpritePath: Luck
     InventoryData:
       InventoryItems: []
   - Id: 16
@@ -203,8 +324,16 @@ MonoBehaviour:
     Armor: 5
     Health: 200
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: -6748839929222994242, guid: ecc18b9c7e661264ea64c5fe482d7ee5, type: 3}
+    Level: 0
+    SpritePath: Braw
     InventoryData:
       InventoryItems: []
   - Id: 17
@@ -214,8 +343,16 @@ MonoBehaviour:
     Armor: 5
     Health: 180
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: 9035328368258743237, guid: 9a9e24aa4d9e05b46b2f913097122cfe, type: 3}
+    Level: 0
+    SpritePath: DarkKnight
     InventoryData:
       InventoryItems: []
   - Id: 18
@@ -225,8 +362,16 @@ MonoBehaviour:
     Armor: 5
     Health: 200
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: -1831613953496812415, guid: 06748bdab5944fc45b4c4dbaa763cfd8, type: 3}
+    Level: 0
+    SpritePath: AxeSo
     InventoryData:
       InventoryItems: []
   - Id: 19
@@ -236,8 +381,16 @@ MonoBehaviour:
     Armor: 5
     Health: 300
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 2
-    Icon: {fileID: 3387969046991200082, guid: 07104f8913b1e374baa7aa26d60152a4, type: 3}
+    Level: 0
+    SpritePath: Shu
     InventoryData:
       InventoryItems: []
   - Id: 20
@@ -247,8 +400,16 @@ MonoBehaviour:
     Armor: 4
     Health: 200
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: -7417626198580794364, guid: 33a71d6b653fe2e48b638fac6d035a99, type: 3}
+    Level: 0
+    SpritePath: Timmy
     InventoryData:
       InventoryItems: []
   - Id: 21
@@ -258,8 +419,16 @@ MonoBehaviour:
     Armor: 5
     Health: 210
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: 2220967965608194933, guid: 1943d4eec91f6df4da0b9848a17e814f, type: 3}
+    Level: 0
+    SpritePath: Butcher
     InventoryData:
       InventoryItems: []
   - Id: 22
@@ -269,8 +438,16 @@ MonoBehaviour:
     Armor: 5
     Health: 120
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: 745956622737571519, guid: 533aaed93d190fb4994b21c2c333d276, type: 3}
+    Level: 0
+    SpritePath: Six
     InventoryData:
       InventoryItems: []
   - Id: 23
@@ -280,8 +457,16 @@ MonoBehaviour:
     Armor: 3
     Health: 230
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 1
-    Icon: {fileID: 5779439265331746078, guid: 1773a2e7b399f3d418f85c17ac3c2546, type: 3}
+    Level: 0
+    SpritePath: Lich
     InventoryData:
       InventoryItems: []
   - Id: 24
@@ -291,7 +476,15 @@ MonoBehaviour:
     Armor: 5
     Health: 120
     Hunger: 100
+    Exp: 0
+    DPSParam: 0
+    ATK: 0
+    Defense: 0
+    Crit: 0
+    ATKSPD: 0
+    Evasion: 0
     HunterType: 0
-    Icon: {fileID: -899254571267873379, guid: 7ab253441daa0264d9cfd18674dc58c4, type: 3}
+    Level: 0
+    SpritePath: Shovel
     InventoryData:
       InventoryItems: []

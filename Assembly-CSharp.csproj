@@ -1,21 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project>
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
+    <BaseIntermediateOutputPath>Temp\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
   </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <ItemGroup>
+    <ProjectCapability Include="Unity" />
+  </ItemGroup>
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <LangVersion>9.0</LangVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{83CF3F2E-E179-1B65-3960-2C63784D8234}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup>
@@ -23,39 +26,23 @@
     <DefineConstants>UNITY_6000_0_56;UNITY_6000_0;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_AMD;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;FISHNET;FISHNET_V4;DOTWEEN;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>Temp\bin\Debug\</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>Temp\bin\Release\</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
   <PropertyGroup>
-    <NoConfig>true</NoConfig>
+    <NoStandardLibraries>true</NoStandardLibraries>
     <NoStdLib>true</NoStdLib>
-    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
-    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+    <NoConfig>true</NoConfig>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <MSBuildWarningsAsMessages>MSB3277</MSBuildWarningsAsMessages>
   </PropertyGroup>
   <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.23</UnityProjectGeneratorVersion>
-    <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
+    <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>6000.0.56f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\ADMIN\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Unity\6000.0.56f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Unity\6000.0.56f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Unity\6000.0.56f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -81,6 +68,8 @@
     <Compile Include="Assets\02.Scripts\BehaviourTree\CharacterController.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseStateException.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseException.cs" />
+    <Compile Include="Assets\02.Scripts\LongSegmentPathfinding.cs" />
+    <Compile Include="Assets\02.Scripts\SmoothOrthogonalPath.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Promise.cs" />
     <Compile Include="Assets\02.Scripts\Game\CameraTouch.cs" />
     <Compile Include="Assets\02.Scripts\UIDisplay\HunterStatsUI.cs" />
@@ -88,8 +77,8 @@
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationController.cs" />
     <Compile Include="Assets\02.Scripts\HealthBar\HealthBar.cs" />
+    <Compile Include="Assets\02.Scripts\AbilitySystem\Projectile.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\HunterInventory.cs" />
-    <Compile Include="Assets\02.Scripts\BehaviourTree\MonsterBehaviourBuilder.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\SPUM\Sprite_Editor(Beta)\Script\SpriteSyncManager.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Worker.cs" />
@@ -97,7 +86,9 @@
     <Compile Include="Assets\03.Graphics\Assets\FishNet\Upgrading\EdgegapMenu.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\DemoScene\Scripts\Model\Post.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\NewHunterController.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\WaitNode.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\EnemyController.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatSpeedModifier.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_HorseSpriteList.cs" />
@@ -107,6 +98,7 @@
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Gif\LzwEncoder.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\ItemStatus.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Extensions.cs" />
+    <Compile Include="Assets\02.Scripts\UIDisplay\GameSharedUI.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_ImprovedClassData.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpritePos.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\DemoScene\Scripts\Model\Todo.cs" />
@@ -118,12 +110,14 @@
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationStateElement.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_AnimationData.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\02.Scripts\AbilitySystem\AbilityInstance.cs" />
     <Compile Include="Assets\SPUM\Sample\Script\PlayerObj.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\RestClientPromise.cs" />
     <Compile Include="Assets\02.Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpumPackage.cs" />
     <Compile Include="Assets\02.Scripts\Contract\WalletConnect.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_SpriteButtonST.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\EnemyBehaviourBuilder.cs" />
     <Compile Include="Assets\SPUM\Core\Preset\Script\SPUM_PresetData.cs" />
     <Compile Include="Assets\02.Scripts\Spawn\ObjectPoolAddressable.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationManager.cs" />
@@ -138,6 +132,8 @@
     <Compile Include="Assets\SPUM\Core\Script\SPUM_PaginationManager.cs" />
     <Compile Include="Assets\03.Graphics\Assets\FishNet\Upgrading\MirrorUpgrade.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\Character.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\BaseCharacterController.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\Player.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_Button.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_ImprovedStyleData.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\Node.cs" />
@@ -157,6 +153,7 @@
     <Compile Include="Assets\02.Scripts\BehaviourTree\LeafNodes.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_PackagePanel.cs" />
     <Compile Include="Assets\SPUM\Sprite_SheetExporter(Beta)\Script\SPUM_Exporter.cs" />
+    <Compile Include="Assets\02.Scripts\PathfindingConfig.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\PromiseTimer.cs" />
     <Compile Include="Assets\02.Scripts\Game\GameController.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Gif\NeuQuant.cs" />
@@ -164,32 +161,40 @@
     <Compile Include="Assets\SPUM\Core\SoonsoonData\SoonsoonData.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\HunterBehaviourBuilder.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\ItemInventoryDescription.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\NewEnemyBehaviourBuilder.cs" />
     <Compile Include="Assets\02.Scripts\BehaviourTree\CompositeNodes.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationStatePanel.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\Gif\GifFrame.cs" />
     <Compile Include="Assets\02.Scripts\Game\Tab.cs" />
     <Compile Include="Assets\02.Scripts\ScriptableObject\EnemyDatabase.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Promise_NonGeneric.cs" />
+    <Compile Include="Assets\02.Scripts\OrthogonalPathProcessor.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\DemoScene\Scripts\Model\User.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\Tuple.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\RSG.Promise\EnumerableExt.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpumAnimationClip.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Plugin\Moments Recorder\Scripts\MinAttribute.cs" />
     <Compile Include="Assets\02.Scripts\Game\GameData.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\NewEnemyController.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatDamageModifier.cs" />
     <Compile Include="Assets\02.Scripts\Menu\Screen.cs" />
+    <Compile Include="Assets\02.Scripts\AbilitySystem\DestroyParticale.cs" />
     <Compile Include="Assets\02.Scripts\Spawn\EnemySpawner.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\ResponseHelper.cs" />
+    <Compile Include="Assets\02.Scripts\Game\SelectedHunter.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\StaticCoroutine.cs" />
     <Compile Include="Assets\SPUM\Retro UI Set\2_ExtraScript\IconLayout.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestHelperExtension.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\EnemyController.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationPackagePanel.cs" />
     <Compile Include="Assets\02.Scripts\ScriptableObject\HunterDatabase.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_PreviewItem.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_PreviewMatchingList.cs" />
+    <Compile Include="Assets\02.Scripts\Spawn\HunterSpawner.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationControllerPanel.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_LoadPrefabPanel.cs" />
+    <Compile Include="Assets\02.Scripts\AbilitySystem\Ability.cs" />
     <Compile Include="Assets\SPUM\Core\Script\MultiSelectDropdown.cs" />
     <Compile Include="Assets\02.Scripts\Grid\GridManager.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_ImprovedTagManager.cs" />
@@ -197,20 +202,29 @@
     <Compile Include="Assets\02.Scripts\BehaviourTree\BehaviourTreeRunner.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_AnimationPreset.cs" />
     <Compile Include="Assets\02.Scripts\HunterWaiting\HunterUIWaiting.cs" />
+    <Compile Include="Assets\02.Scripts\CustomOrthogonalMovement.cs" />
     <Compile Include="Assets\02.Scripts\Game\GameResources.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\UIInventoryPage.cs" />
+    <Compile Include="Assets\02.Scripts\PathfindingCustomizer.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\NewHunterBehaviourBuilder.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SPUM_Prefabs.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Common.cs" />
+    <Compile Include="Assets\02.Scripts\OrthogonalMovementController.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\PlayerCOntroller.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\Modifier\StatHealthModifier.cs" />
     <Compile Include="Assets\02.Scripts\Contract\ContractManager.cs" />
+    <Compile Include="Assets\02.Scripts\AbilitySystem\CharacterCombat.cs" />
     <Compile Include="Assets\SPUM\Core\Script\SPUM_UIManager.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\HunterController.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\MouseFollower.cs" />
     <Compile Include="Assets\03.Graphics\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\Packages\Proyecto26.RestClient\RestClient.cs" />
     <Compile Include="Assets\02.Scripts\GeneratorIsoMap.cs" />
     <Compile Include="Assets\02.Scripts\Menu\MenuManager.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\NewBaseCharacterController.cs" />
     <Compile Include="Assets\03.Graphics\Assets\RestClient\DemoScene\Scripts\MainScript.cs" />
     <Compile Include="Assets\02.Scripts\Game\UIManager.cs" />
+    <Compile Include="Assets\02.Scripts\Controllers\BaseCharacterController.cs" />
     <Compile Include="Assets\SPUM\Core\Script\Data\SpumTextureData.cs" />
     <Compile Include="Assets\02.Scripts\UIDisplay\HunterUI.cs" />
     <Compile Include="Assets\SPUM\Retro UI Set\2_ExtraScript\PageLayout.cs" />
@@ -221,6 +235,7 @@
     <Compile Include="Assets\02.Scripts\ScriptableObject\ItemDatabase.cs" />
     <Compile Include="Assets\02.Scripts\SceneAddressableManager.cs" />
     <Compile Include="Assets\02.Scripts\Inventory\PickUpSystem.cs" />
+    <Compile Include="Assets\02.Scripts\BehaviourTree\HunterController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -1727,98 +1742,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ACTk.Editor.csproj">
-      <Project>{A77D612A-3F57-EF69-6E9C-6F829605774B}</Project>
-      <Name>ACTk.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{ECC4F6DF-6D51-6B7C-3BC1-A316D25B0A95}</Project>
-      <Name>AstarPathfindingProjectEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Codegen.Cecil.csproj">
-      <Project>{34BA54E6-AA42-5D83-FB06-1761194BF1A1}</Project>
-      <Name>FishNet.Codegen.Cecil</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{6FCB645B-51C9-25F4-E54F-58C476044FA0}</Project>
-      <Name>AstarPathfindingProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Runtime.csproj">
-      <Project>{730ABAF5-4B82-19CD-0CAC-F13831593E93}</Project>
-      <Name>FishNet.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.Unity.Addressables.csproj">
-      <Project>{BE393804-62F4-4170-1567-71284848D1BF}</Project>
-      <Name>Sirenix.OdinInspector.Modules.Unity.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="ExtensionsEditor.csproj">
-      <Project>{7187948C-D30A-5BAA-875E-BC15947E0A79}</Project>
-      <Name>ExtensionsEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Thirdweb.Unity.csproj">
-      <Project>{E9506811-4AF5-0DBD-A984-6B6BD6D56EC3}</Project>
-      <Name>Thirdweb.Unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{7D959FAE-87A4-C45A-7CE5-CE89FE942888}</Project>
-      <Name>PackageToolsEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
-      <Project>{3C940F83-3AB8-4CB3-3DBD-2E1CA56C9E14}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Pools.csproj">
-      <Project>{BB49F0BE-1AD4-005B-4325-673DBB6932E2}</Project>
-      <Name>Pools</Name>
-    </ProjectReference>
-    <ProjectReference Include="Thirdweb.Examples.csproj">
-      <Project>{FBC04784-2289-CDC0-E7FC-A048962D0A1E}</Project>
-      <Name>Thirdweb.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="GameKit.Dependencies.csproj">
-      <Project>{71FCBFF3-0E07-74D3-94AB-4261C5687F65}</Project>
-      <Name>GameKit.Dependencies</Name>
-    </ProjectReference>
-    <ProjectReference Include="ACTk.Examples.Runtime.csproj">
-      <Project>{9AD7FB2B-7505-28CF-6416-19692A3451C4}</Project>
-      <Name>ACTk.Examples.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="ACTk.Examples.Genuine.Runtime.csproj">
-      <Project>{C1074290-3D8A-3432-F142-CF9DA6EC60AB}</Project>
-      <Name>ACTk.Examples.Genuine.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Thirdweb.Plugins.csproj">
-      <Project>{531C9B97-1C84-AAC5-872B-975AB9D92591}</Project>
-      <Name>Thirdweb.Plugins</Name>
-    </ProjectReference>
-    <ProjectReference Include="ACTk.Runtime.csproj">
-      <Project>{A061E7DA-7A8A-F50E-1CBC-2C9E866CB06D}</Project>
-      <Name>ACTk.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="ACTk.Examples.Genuine.Editor.csproj">
-      <Project>{3E200930-CD35-4BD1-EDBA-13BE92005B3E}</Project>
-      <Name>ACTk.Examples.Genuine.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Extensions.csproj">
-      <Project>{25A69AC2-2B0B-B5E6-47B1-AB1AD57FB0E3}</Project>
-      <Name>Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Demos.csproj">
-      <Project>{529D9441-C2CC-8048-3DC0-1CA9647AE327}</Project>
-      <Name>FishNet.Demos</Name>
-    </ProjectReference>
-    <ProjectReference Include="Thirdweb.Editor.csproj">
-      <Project>{45F73255-4578-6A58-1B1F-62BDF539CBF6}</Project>
-      <Name>Thirdweb.Editor</Name>
-    </ProjectReference>
+    <ProjectReference Include="ACTk.Editor.csproj" />
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj" />
+    <ProjectReference Include="FishNet.Codegen.Cecil.csproj" />
+    <ProjectReference Include="AstarPathfindingProject.csproj" />
+    <ProjectReference Include="FishNet.Runtime.csproj" />
+    <ProjectReference Include="Sirenix.OdinInspector.Modules.Unity.Addressables.csproj" />
+    <ProjectReference Include="ExtensionsEditor.csproj" />
+    <ProjectReference Include="Thirdweb.Unity.csproj" />
+    <ProjectReference Include="PackageToolsEditor.csproj" />
+    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" />
+    <ProjectReference Include="Pools.csproj" />
+    <ProjectReference Include="Thirdweb.Examples.csproj" />
+    <ProjectReference Include="GameKit.Dependencies.csproj" />
+    <ProjectReference Include="ACTk.Examples.Runtime.csproj" />
+    <ProjectReference Include="ACTk.Examples.Genuine.Runtime.csproj" />
+    <ProjectReference Include="Thirdweb.Plugins.csproj" />
+    <ProjectReference Include="ACTk.Runtime.csproj" />
+    <ProjectReference Include="ACTk.Examples.Genuine.Editor.csproj" />
+    <ProjectReference Include="Extensions.csproj" />
+    <ProjectReference Include="FishNet.Demos.csproj" />
+    <ProjectReference Include="Thirdweb.Editor.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <ItemGroup>
+    <ProjectCapability Remove="LaunchProfiles" />
+    <ProjectCapability Remove="SharedProjectReferences" />
+    <ProjectCapability Remove="ReferenceManagerSharedProjects" />
+    <ProjectCapability Remove="ReferenceManagerProjects" />
+    <ProjectCapability Remove="COMReferences" />
+    <ProjectCapability Remove="ReferenceManagerCOM" />
+    <ProjectCapability Remove="AssemblyReferences" />
+    <ProjectCapability Remove="ReferenceManagerAssemblies" />
+  </ItemGroup>
 </Project>

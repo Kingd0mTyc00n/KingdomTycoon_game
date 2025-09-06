@@ -4,13 +4,15 @@ using UnityEngine;
 public class HunterBehaviourBuilder : MonoBehaviour
 {
     public BehaviourTreeRunner runner;
-    private CharacterController hunter;
+    private HunterController hunter;
 
     void Start()
     {
-        hunter = GetComponent<CharacterController>();
-        hunter.SetCharacterData(GameController.instance.hunters.GetHunterByName("ORP"));
-        if (runner == null) runner = GetComponent<BehaviourTreeRunner>();
+        if (runner == null)
+            runner = GetComponent<BehaviourTreeRunner>();
+
+        // Initialize hunter reference
+        hunter = GetComponent<HunterController>();
 
         var healSeq = new Sequence(new List<Node> {
             new ConditionNode(() => hunter.IsHealthLow()),
@@ -23,11 +25,11 @@ public class HunterBehaviourBuilder : MonoBehaviour
         var huntSeq = new Sequence(new List<Node> {
             new ActionNode(() => hunter.WaitForMapSelection()),
             new ActionNode(() => hunter.MoveToMapSpawn()),
-            new ActionNode(() => hunter.FindNearestTarget()),
+            new ActionNode(() => hunter.FindTarget()),
             new ActionNode(() => hunter.MoveToTarget()),
             new ActionNode(() => hunter.AttackTarget()),
         });
 
-        runner.Root = new Selector(new List<Node> { healSeq, roamSeq ,huntSeq });
+        runner.Root = new Selector(new List<Node> { healSeq, roamSeq, huntSeq });
     }
 }

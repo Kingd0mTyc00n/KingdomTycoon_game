@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: HunterSprite
+  m_EditorClassIdentifier: 
+  m_GroupName: HunterSprite
+  m_GUID: 261f4d6d9ff815e4f86a63b4eddea4f4
+  m_SerializeEntries:
+  - m_GUID: 06748bdab5944fc45b4c4dbaa763cfd8
+    m_Address: Mist
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07104f8913b1e374baa7aa26d60152a4
+    m_Address: Nigger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1773a2e7b399f3d418f85c17ac3c2546
+    m_Address: Vkola
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1943d4eec91f6df4da0b9848a17e814f
+    m_Address: Six
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f5001c6a7a9c5e43ad83a153ae483a4
+    m_Address: AxeSo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33a71d6b653fe2e48b638fac6d035a99
+    m_Address: V
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37de90feb25a77c40b78dde90422b08b
+    m_Address: Timmy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41d15c933505fa14e87c77beb7bc04de
+    m_Address: Rat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bf96cfda5f559a4c8f5ab1d7f320983
+    m_Address: KingMist
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f00d0c6633c6724f87820941de39412
+    m_Address: Oman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 533aaed93d190fb4994b21c2c333d276
+    m_Address: Miller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b70554adb4a2434d92b08328830eb5e
+    m_Address: Shu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e36fe80dc299e14c952e53c1e49253c
+    m_Address: Lich
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76ee6bfb62310654fb8c38821ea3be07
+    m_Address: Fat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ab253441daa0264d9cfd18674dc58c4
+    m_Address: Luck
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e87bbc8aa4604c4b80ae9814e66013b
+    m_Address: Braw
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93188935a0e303a4c992f74638d28dcf
+    m_Address: Butcher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a9e24aa4d9e05b46b2f913097122cfe
+    m_Address: ORP
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a147ed2d76c0fdd428208509ebcab160
+    m_Address: Ron
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad28bd6757f8d8c4d817f3a0e035a8a6
+    m_Address: Shovel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8d6749ebdc9ee94890b72f5a7d455a7
+    m_Address: ORP
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbcc93ee92bb4b7489fb00c1e2b747a9
+    m_Address: DarkKnight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7e82affcac28b040a9fa61a5030ff49
+    m_Address: Mimic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebec8673873f7a14799a429f6d124caf
+    m_Address: Lancer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ecc18b9c7e661264ea64c5fe482d7ee5
+    m_Address: OrcSlayer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 976f0adafea8536418dc50fc6de45af7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 58bd2fbd157d4a044830ad0283ccf5ef, type: 2}
+    - {fileID: 11400000, guid: d45f6c84a29e71a4eb81f813569c83e0, type: 2}

@@ -19,14 +19,16 @@ public class PlayerObj : MonoBehaviour
 
     public Vector3 _goalPos;
     private bool facingRight = false;
+    private Vector3 lastPosition;
     public bool isAction = false;
-    public Dictionary<PlayerState, int> IndexPair = new ();
+    public Dictionary<PlayerState, int> IndexPair = new();
     void Start()
     {
-        if(_prefabs == null )
+        if (_prefabs == null)
         {
             _prefabs = transform.GetChild(0).GetComponent<SPUM_Prefabs>();
-            if(!_prefabs.allListsHaveItemsExist()){
+            if (!_prefabs.allListsHaveItemsExist())
+            {
                 _prefabs.PopulateAnimationLists();
             }
         }
@@ -36,28 +38,31 @@ public class PlayerObj : MonoBehaviour
             IndexPair[state] = 0;
         }
         path = GetComponent<AIPath>();
+        lastPosition = transform.position;
     }
-    public void SetStateAnimationIndex(PlayerState state, int index = 0){
+    public void SetStateAnimationIndex(PlayerState state, int index = 0)
+    {
         IndexPair[state] = index;
     }
-    public void PlayStateAnimation(PlayerState state){
+    public void PlayStateAnimation(PlayerState state)
+    {
         _prefabs.PlayAnimation(state, IndexPair[state]);
     }
     void Update()
     {
-        Flip(_goalPos);
+        FlipBasedOnMovement();
+
         if (isAction) return;
 
-        //transform.position = new Vector3(transform.position.x,transform.position.y,transform.localPosition.y * 0.01f);
-        switch(_currentState)
+        switch (_currentState)
         {
             case PlayerState.IDLE:
-            
-            break;
+
+                break;
 
             case PlayerState.MOVE:
-            DoMove();
-            break;
+                DoMove();
+                break;
         }
         PlayStateAnimation(_currentState);
 
@@ -70,22 +75,49 @@ public class PlayerObj : MonoBehaviour
         isAction = true;
     }
 
-    void Flip(Vector3 targetPosition)
+    // void Flip(Vector3 targetPosition)
+    // {
+    //     if (targetPosition.x < transform.position.x && facingRight)
+    //     {
+    //         facingRight = false;
+    //         Vector3 scale = transform.localScale;
+    //         scale.x *= -1;
+    //         transform.localScale = scale;
+    //     }
+    //     else if (targetPosition.x > transform.position.x && !facingRight)
+    //     {
+    //         facingRight = true;
+    //         Vector3 scale = transform.localScale;
+    //         scale.x *= -1;
+    //         transform.localScale = scale;
+    //     }
+    // }
+
+    void FlipBasedOnMovement()
     {
-        if (targetPosition.x < transform.position.x && facingRight)
+        Vector3 currentPosition = transform.position;
+        float movementThreshold = 0.01f;
+
+        if (Vector3.Distance(currentPosition, lastPosition) > movementThreshold)
         {
-            facingRight = false;
-            Vector3 scale = transform.localScale;
-            scale.x *= -1;
-            transform.localScale = scale;
+            if (currentPosition.x < lastPosition.x && facingRight)
+            {
+                facingRight = false;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
+            else if (currentPosition.x > lastPosition.x && !facingRight)
+            {
+                facingRight = true;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
         }
-        else if (targetPosition.x > transform.position.x && !facingRight)
-        {
-            facingRight = true;
-            Vector3 scale = transform.localScale;
-            scale.x *= -1;
-            transform.localScale = scale;
-        }
+
+        // Cập nhật vị trí cuối
+        lastPosition = currentPosition;
     }
     public void SetIdle()
     {

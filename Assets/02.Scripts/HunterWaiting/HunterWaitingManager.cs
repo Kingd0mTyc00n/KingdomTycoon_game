@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,19 +24,57 @@ public class HunterWaitingManager : ScreenUI
 
     public async void SingleGacha()
     {
+        int roll = UnityEngine.Random.Range(1, 2); // 1 → 25
+        HunterData hunter = GetHunterByNumber(roll);
+
+        AddHunterToUI(hunter);
+
+
+        HunterSpawner.Instance.AddHunterFromGacha(hunter);
         await ContractManager.Instance.Mint(1);
         await LoadFromContract();
     }
     public async void MultiGacha()
     {
+        for (int i = 0; i < 10; i++)
+        {
+            int roll = UnityEngine.Random.Range(1, 26);
+            HunterData hunter = GetHunterByNumber(roll);
+
+            AddHunterToUI(hunter);
+
+            HunterSpawner.Instance.AddHunterFromGacha(hunter);
+        }
         await ContractManager.Instance.Mint(10);
         await LoadFromContract();
     }
+
+    private void AddHunterToUI(HunterData hunterData)
+    {
+        HunterUIWaiting hunterUI = null;
+
+        var inactive = hunters.FirstOrDefault(h => !h.gameObject.activeSelf);
+        if (inactive != null)
+        {
+            hunterUI = inactive;
+            hunterUI.gameObject.SetActive(true);
+        }
+        else
+        {
+            var prefab = Instantiate(hunterWaitingUI, hunterPanel);
+            hunterUI = prefab.GetComponent<HunterUIWaiting>();
+            hunters.Add(hunterUI);
+        }
+
+        hunterUI.SetHunterData(hunterData);
+        ResizePanel();
+    }
+
     private void ResizePanel()
     {
         var rt = hunterPanel.GetComponent<RectTransform>();
         textHunterCount.text = $"({hunters.Count}/100)";
-        rt.sizeDelta = new Vector2(rt.sizeDelta.x, (hunters.Count/3) * 400);
+        rt.sizeDelta = new Vector2(rt.sizeDelta.x, (hunters.Count / 3) * 400);
     }
 
     private async Task LoadFromContract()
@@ -126,7 +164,7 @@ public class HunterWaitingManager : ScreenUI
     public HunterData GetHunterByType(HunterType type)
     {
         List<HunterData> matchedHunters = hunterDatas.FindAll(h => h.HunterType == type);
-        int randomIndex = UnityEngine.Random.Range(0, matchedHunters.Count);
+        int randomIndex = UnityEngine.Random.Range(0, 1);//matchedHunters.Count
         return matchedHunters[randomIndex];
     }
 }

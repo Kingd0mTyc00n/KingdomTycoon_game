@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private CharacterData characterData;
 
     [SerializeField] private HealthBar healthBar;
+    private CharacterCombat characterCombat;
 
 
     [Header("Attack")]
@@ -22,8 +23,8 @@ public class CharacterController : MonoBehaviour
     public float arriveTolerance = 0.1f;
 
     [Header("Map / Target")]
-    public Transform currentMapSpawn;   
-    public Transform currentEnemy; 
+    public Transform currentMapSpawn;
+    public Transform currentEnemy;
     public bool mapSelected = false;
 
     [Header("Town")]
@@ -50,20 +51,33 @@ public class CharacterController : MonoBehaviour
     [Header("Territory")]
     public PolygonCollider2D territoryZone;  //check hunter zone
 
+    public List<AbilityInstance> skills = new List<AbilityInstance>();
 
     private void Start()
     {
+        healthBar = GetComponentInChildren<HealthBar>();
         characterObj = GetComponent<PlayerObj>();
-        if (characterData is EnemyData enemy)
+        characterCombat = GetComponent<CharacterCombat>();
+        if (characterCombat != null)
+        {
+            skills = characterCombat.GetAbilityInstances();
+        }
+
+        if (characterData is EnemyData)
             territoryZone = townTransform.GetComponent<PolygonCollider2D>();
     }
 
     public void SetCharacterData(CharacterData hunterData)
     {
-        this.characterData = hunterData;
+        characterData = hunterData;
         healthBar.SetMaxHealth(characterData.Health);
         attackDamage = hunterData.Damage;
         GetComponent<Character>().SetCharacterData(hunterData);
+    }
+
+    public void SetTown(Transform town)
+    {
+        townTransform = town;
     }
 
     public void SelectedThisHunter()
@@ -103,7 +117,6 @@ public class CharacterController : MonoBehaviour
 
     public NodeState IdleMovement()
     {
-        Debug.Log($"{gameObject.name} IdleMovement");
         if (hasPlayerCommand || (mapSelected && currentMapSpawn != null))
             return NodeState.Failure;
 
@@ -130,11 +143,11 @@ public class CharacterController : MonoBehaviour
         }
 
         return NodeState.Running;
-    } 
+    }
 
     public NodeState MoveToMapSpawn()
     {
-        if (currentMapSpawn == null) 
+        if (currentMapSpawn == null)
             return NodeState.Failure;
 
         characterObj.SetMovePos(currentMapSpawn.position);
@@ -159,7 +172,7 @@ public class CharacterController : MonoBehaviour
 
         GameObject[] Target = new GameObject[] { };
 
-        if (characterData is HunterData hunterData)
+        if (characterData is HunterData)
         {
             switch (currentMapSpawn.name)
             {
@@ -175,8 +188,11 @@ public class CharacterController : MonoBehaviour
             }
         }
 
-        if (Target.Length == 0)
-            return NodeState.Failure;
+        if (characterData is EnemyData)
+        {
+            Target = GameObject.FindGameObjectsWithTag("Hunter");
+        }
+
 
         if (territoryZone != null)
         {
@@ -201,7 +217,7 @@ public class CharacterController : MonoBehaviour
         if (hasPlayerCommand && mapSelected && currentMapSpawn != null)
         {
             currentEnemy = null;
-            return NodeState.Failure; 
+            return NodeState.Failure;
         }
 
         if (currentEnemy == null) return NodeState.Failure;
@@ -214,6 +230,15 @@ public class CharacterController : MonoBehaviour
             return NodeState.Success;
         }
 
+        if (territoryZone != null)
+        {
+            if (!territoryZone.OverlapPoint(currentEnemy.position))
+            {
+                currentEnemy = null;
+                return NodeState.Failure;
+            }
+        }
+
         return NodeState.Running;
     }
 
@@ -222,22 +247,37 @@ public class CharacterController : MonoBehaviour
         if (hasPlayerCommand && mapSelected && currentMapSpawn != null)
         {
             currentEnemy = null;
-            return NodeState.Failure; 
+            return NodeState.Failure;
         }
 
-        if (currentEnemy == null) 
+        if (currentEnemy == null)
             return NodeState.Failure;
 
-        if (!currentEnemy.TryGetComponent<CharacterController>(out var enemy)) 
+        if (!currentEnemy.TryGetComponent<CharacterController>(out var enemy))
             return NodeState.Failure;
 
         float dist = Vector2.Distance(transform.position, currentEnemy.position);
-        if (dist > attackRange) 
+        if (dist > attackRange)
             return NodeState.Failure;
-        if(Time.time - lastAttackTime >= attackSpeed)
+
+        if (Time.time - lastAttackTime >= attackSpeed)
         {
+            if (characterData is HunterData && skills.Count > 0)
+            {
+                int index = Random.Range(0, skills.Count);
+                AbilityInstance skill = skills[index];
+
+                if (skill.CanUse())
+                {
+                    skill.Use(transform, currentEnemy.transform);
+                    lastAttackTime = Time.time;
+                    return NodeState.Running;
+                }
+            }
+
             characterObj.SetAttack();
             enemy.TakeDamage(attackDamage);
+            healthBar.UpdateProgressBar();
             lastAttackTime = Time.time;
         }
 
@@ -247,11 +287,13 @@ public class CharacterController : MonoBehaviour
             return NodeState.Success;
         }
 
-        if (IsHealthLow()) 
+        if (IsHealthLow())
             return NodeState.Failure;
 
         return NodeState.Running;
     }
+
+
 
     public NodeState GoToTownAndHeal()
     {
@@ -331,6 +373,7 @@ public class CharacterController : MonoBehaviour
                 rb.AddForce(randomDirection * forceAmount, ForceMode2D.Impulse);
                 rb.linearDamping = 3f;
             }
+            currentEnemy.GetComponent<PickUpSystem>().PickUpItem(item.GetComponent<Item>());
         }
 
     }
@@ -344,14 +387,6 @@ public class CharacterController : MonoBehaviour
     {
         MenuManager.instance.OpenScreen("Diologue");
         SelectedThisHunter();
+        //SelectedHunter.Instance.SelectedHunterObj(this);
     }
-
-    //IEnumerator DealDamage(Character enemy)
-    //{
-    //    isAttacking = true;
-    //    characterObj.SetAttack();
-    //    yield return new WaitForSeconds(0.5f);
-    //    enemy.TakeDamage(attackDamage);
-    //    isAttacking = false;
-    //}
 }

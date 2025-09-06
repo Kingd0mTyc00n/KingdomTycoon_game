@@ -237,10 +237,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 8823151401195768726, guid: 045b984b7fcd9b141aabba185eec3974, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -312,10 +312,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 8823151401195768726, guid: 045b984b7fcd9b141aabba185eec3974, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -334,11 +334,11 @@ GameObject:
   - component: {fileID: 8349382427723758004}
   - component: {fileID: 504102754263760649}
   - component: {fileID: 1167725648657636626}
-  - component: {fileID: 2007158739314901940}
-  - component: {fileID: 777548510971507603}
   - component: {fileID: 2533665780037987915}
   - component: {fileID: 2060758642194764504}
   - component: {fileID: -8067562492213854736}
+  - component: {fileID: -7581544999578766221}
+  - component: {fileID: -7894621908337297817}
   m_Layer: 0
   m_Name: UndeadEpic1
   m_TagString: Undead
@@ -456,46 +456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cc572592831f8428b6fd12794cf270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2007158739314901940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8612195653977975076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab4771e41dfcf8e4fa6c09338499daf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 6757757995664460948}
-  attackDamage: 10
-  lastAttackTime: 0
-  attackSpeed: 1
-  moveSpeed: 3
-  arriveTolerance: 1
-  currentMapSpawn: {fileID: 0}
-  currentEnemy: {fileID: 0}
-  mapSelected: 0
-  townTransform: {fileID: 0}
-  attackRange: 1
-  dps: 10
-  characterObj: {fileID: 504102754263760649}
-  hasPlayerCommand: 0
-  territoryZone: {fileID: 0}
---- !u!114 &777548510971507603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8612195653977975076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c73c49977af39a44da0e7abd7aa4dd69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runner: {fileID: 1167725648657636626}
 --- !u!114 &2533665780037987915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,8 +519,8 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 1
+  slowdownDistance: 0.24
+  pickNextWaypointDist: 0.3
   endReachedDistance: 1
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
@@ -582,6 +542,44 @@ MonoBehaviour:
   health: 0
   spawnRadius: 1.5
   forceAmount: 5
+--- !u!114 &-7581544999578766221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612195653977975076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96935dde6a71154cbfea12d481f0d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  attackDamage: 0
+  lastAttackTime: 0
+  attackSpeed: 1
+  moveSpeed: 3
+  arriveTolerance: 0.1
+  attackRange: 1
+  currentTarget: {fileID: 0}
+  characterObj: {fileID: 0}
+  spawnRadius: 1.5
+  forceAmount: 5
+  townTransform: {fileID: 0}
+  territoryZone: {fileID: 0}
+--- !u!114 &-7894621908337297817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612195653977975076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf234557cd241894fb427dd42bbd0671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runner: {fileID: 1167725648657636626}
 --- !u!1 &9120145430817224853
 GameObject:
   m_ObjectHideFlags: 0

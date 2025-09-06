@@ -21,7 +21,17 @@ public class HunterInventory : MonoBehaviour
     {
         yield return new WaitUntil(() => PlayerPrefs.HasKey(GameData.PP_USER_DATA));
         inventoryUI = UIInventoryPage.Instance;
-        SetInventoryData(GetComponent<CharacterController>().GetHunterData().InventoryData);
+
+        // Try to get HunterController từ folder Controllers mới
+        var newHunter = GetComponent<HunterController>();
+        if (newHunter != null)
+        {
+            SetInventoryData(newHunter.GetHunterData().InventoryData);
+        }
+        else
+        {
+            Debug.LogError("[HunterInventory] Không tìm thấy HunterController mới!");
+        }
         //PrepareInventoryData();
     }
 
@@ -58,7 +68,7 @@ public class HunterInventory : MonoBehaviour
 
     public void PrepareInventoryData()
     {
-       
+
     }
 
 

@@ -15,6 +15,7 @@ public class HunterUIManager : MonoBehaviour
 
     private void OnEnable()
     {
+        huntersUI.Clear();
         InitializeListHunterUI(UserData.UserDeepData.HuntersData);
     }
 

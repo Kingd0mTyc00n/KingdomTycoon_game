@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public int totalEnemies = 7;
     public Transform[] spawnPoints;
 
-    private int numEnemies = 0;
+    public int numEnemies = 0;
     private float timer;
 
     void Update()
@@ -28,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
     public void OnEnemyDied()
     {
         numEnemies--;
-        if (numEnemies < 0) 
+        if (numEnemies < 0)
             numEnemies = 0;
     }
 
@@ -38,8 +38,8 @@ public class EnemySpawner : MonoBehaviour
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
         var enemy = ObjectPoolAddressable.Instance.SpawnFromPool(enemyLabel, point.position, Quaternion.identity);
         enemy.tag = enemyLabel;
-        var controller = enemy.GetComponent<CharacterController>();
-        controller.townTransform = this.gameObject.transform;
+        var controller = enemy.GetComponent<EnemyController>();
+        controller.SetTown(transform);
         controller.SetCharacterData(GameController.instance.enemies.GetEnemyByName(enemyLabel));
     }
 }

@@ -8,8 +8,8 @@ public class ObjectPoolAddressable : MonoBehaviour
     [System.Serializable]
     public class Pool
     {
-        public string label;  // label in Addressables
-        public int size;      // number of objects per prefab
+        public string label;
+        public int size;
     }
 
     public static ObjectPoolAddressable Instance;
@@ -17,11 +17,10 @@ public class ObjectPoolAddressable : MonoBehaviour
 
     public List<Pool> pools;
 
-    // Flatten dictionary
     private Dictionary<GameObject, Queue<GameObject>> poolDictionary;
     private Dictionary<string, List<GameObject>> labelToPrefabs;
 
-    public Transform EnemyParentTransform; // Optional parent for spawned enemies
+    public Transform DefaultParent;
 
     async void Start()
     {
@@ -30,7 +29,6 @@ public class ObjectPoolAddressable : MonoBehaviour
 
         foreach (Pool pool in pools)
         {
-            // Load all prefabs with this label
             AsyncOperationHandle<IList<GameObject>> handle = Addressables.LoadAssetsAsync<GameObject>(
                 pool.label,
                 null
@@ -47,10 +45,9 @@ public class ObjectPoolAddressable : MonoBehaviour
                     Queue<GameObject> objectPool = new Queue<GameObject>();
                     for (int i = 0; i < pool.size; i++)
                     {
-                        GameObject obj = Instantiate(prefab, EnemyParentTransform);
+                        GameObject obj = Instantiate(prefab, DefaultParent);
                         obj.SetActive(false);
 
-                        // attach PoolMember to know original prefab
                         var member = obj.AddComponent<PoolMember>();
                         member.OriginalPrefab = prefab;
 
@@ -60,40 +57,22 @@ public class ObjectPoolAddressable : MonoBehaviour
                 }
                 labelToPrefabs[pool.label] = prefabList;
             }
-            else
-            {
-                Debug.LogError($"Failed to load label {pool.label}");
-            }
         }
     }
 
     public GameObject SpawnFromPool(string label, Vector3 position, Quaternion rotation)
     {
-        if (!labelToPrefabs.ContainsKey(label))
-        {
-            Debug.LogError($"No pool with label {label}");
-            return null;
-        }
-
-        // Random prefab in this label
+        if (!labelToPrefabs.ContainsKey(label)) return null;
         List<GameObject> prefabs = labelToPrefabs[label];
         GameObject prefab = prefabs[Random.Range(0, prefabs.Count)];
+        return SpawnFromPool(label, prefab, position, rotation);
+    }
 
-        if (!poolDictionary.ContainsKey(prefab))
-        {
-            Debug.LogError($"No pool created for prefab {prefab.name}");
-            return null;
-        }
-
-        Queue<GameObject> queue = poolDictionary[prefab];
-
-        if (queue.Count == 0)
-        {
-            // optional: expand pool
-            Debug.LogWarning($"Pool for {prefab.name} is empty! Max objects reached.");
-            return null;
-        }
-
+    public GameObject SpawnFromPool(string label, GameObject prefabOverride, Vector3 position, Quaternion rotation)
+    {
+        if (!poolDictionary.ContainsKey(prefabOverride)) return null;
+        Queue<GameObject> queue = poolDictionary[prefabOverride];
+        if (queue.Count == 0) return null;
         GameObject obj = queue.Dequeue();
         obj.SetActive(true);
         obj.transform.position = position;
@@ -101,16 +80,20 @@ public class ObjectPoolAddressable : MonoBehaviour
         return obj;
     }
 
+    public GameObject GetPrefabByName(string label, string prefabName)
+    {
+        if (!labelToPrefabs.ContainsKey(label)) return null;
+        return labelToPrefabs[label].Find(p => p.name == prefabName);
+    }
+
     public void ReturnToPool(GameObject obj)
     {
         PoolMember member = obj.GetComponent<PoolMember>();
         if (member == null || member.OriginalPrefab == null)
         {
-            Debug.LogWarning($"Object {obj.name} does not belong to any pool");
             Destroy(obj);
             return;
         }
-
         obj.SetActive(false);
         poolDictionary[member.OriginalPrefab].Enqueue(obj);
     }
@@ -118,5 +101,5 @@ public class ObjectPoolAddressable : MonoBehaviour
 
 public class PoolMember : MonoBehaviour
 {
-    public GameObject OriginalPrefab; // keep track of the prefab it came from
+    public GameObject OriginalPrefab;
 }

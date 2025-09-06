@@ -29,11 +29,15 @@ public class UserDeepData
     public List<ItemData> ItemsData;
     public List<Equipment> EquipmentData;
 
-    public int Gold;
-
     public int InventorySize;
 
     public int Coins;
+    public int Gems;
+    public int Soul;
+    public int Fool;
+    public int Shard;
+
+    public int HuntersNum;
 }
 
 [System.Serializable]
@@ -50,9 +54,7 @@ public class HunterData : CharacterData
     public float Evasion;
     public HunterType HunterType;
     public int Level;
-
-    [System.NonSerialized]
-    public Sprite Icon;
+    public string SpritePath;
     public InventoryData InventoryData;
 
     public static HunterData CreateFromSO(HunterData template)
@@ -77,7 +79,7 @@ public class HunterData : CharacterData
             HunterType = template.HunterType,
             Level = 1,
 
-            Icon = template.Icon,
+            SpritePath = template.SpritePath,
 
             InventoryData = new InventoryData()
         };

@@ -13,59 +13,136 @@ MonoBehaviour:
   m_Name: Hunter
   m_EditorClassIdentifier: 
   m_GroupName: Hunter
-  m_GUID: 1e1079e1622dafc4faaf7b1211ce8bae
+  m_GUID: de08c1e6b97574a49a238a3f14635e81
   m_SerializeEntries:
-  - m_GUID: 00cfd772a76cf0849962d4cdf987701e
-    m_Address: Devil2
+  - m_GUID: 048b1f5da49ec1348a55dfcb410a71e5
+    m_Address: Nigger
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Devil
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 298a2a2c28bf50044bb13361a43f0005
-    m_Address: Undead2
+  - m_GUID: 1032ad791e5a28c4b84ddb30363cd61f
+    m_Address: V
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Undead
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 412554dacc5decd408e32678ff5d8bdd
+    m_Address: AngrySmurf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4bfcec5cee48ba94caa5a096df03d037
-    m_Address: Hunter6
+    m_Address: DarkKnight
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Hunter
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 543aa4438b07b414681bdca50fb10537
+    m_Address: Braw
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5576d55346f61c843bdf6979eb8a8eda
+    m_Address: VKola.
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86458cd2d8865f84d84b9d2d46364367
+    m_Address: KingMist
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ac6448e869474a44ad4eb1977c8d5b7
+    m_Address: Fat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cd4941b84c27a24aa66684407b7922e
+    m_Address: Rat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 987f70897a22d0145af2704fcdb8fed2
-    m_Address: Hunter5
+    m_Address: Miller
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Hunter
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e1e1a7364b5a6944b67d1a228807483
-    m_Address: Hunter3
+    m_Address: Oman
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Hunter
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a0d7d79fc85c3c94bbf63d6e704f1c3d
-    m_Address: Hunter4
+    m_Address: OrcSlayer
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Hunter
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a20bbc6d75ab6bf48bba4125ba55fe5a
+    m_Address: Timmy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa98b7b3051cb644f8f13fdb58e854e5
+    m_Address: Lich
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac15b2af2e5b6d140ba4fddb6b85a0e4
+    m_Address: Six
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ace010a908ee39c429ebd88cc28f636a
+    m_Address: Lancer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b51d6c5b210f73e4caf6f4c3c9198cde
-    m_Address: Hunter2
+    m_Address: Mist
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Hunter
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8b9743f87fc876438502a2e6d7fbd83
+    m_Address: Ron
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf769cf146e6d2c4eb108e9ab1e4265b
+    m_Address: AxeSo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf8abc3840bb4f54bb7a2b25542dfad9
+    m_Address: Luck
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7027613533975d48a550d4c4d5ad8b5
+    m_Address: Shu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c89d9df9c20fc3d40b47528032f39875
+    m_Address: Mimic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5f44722065530c499732e689d3c6f10
+    m_Address: Butcher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e568be255ec7f0143b4135e79cf970aa
+    m_Address: Shovel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: effc8e297f94c364d835b3b8aee93f14
-    m_Address: Hunter1
+    m_Address: ORP
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Hunter
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 976f0adafea8536418dc50fc6de45af7, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 1c3417ca3622d8e43a3484e26800a707, type: 2}
-    - {fileID: 11400000, guid: ab2ebde7e63883e4ba8cc470626b0139, type: 2}
+    - {fileID: 11400000, guid: ac4908539b9c8fc4fbe37a0e1c14e158, type: 2}
+    - {fileID: 11400000, guid: e410da49deaf3e741bf8d367fe2b247e, type: 2}

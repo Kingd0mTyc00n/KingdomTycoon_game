@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
             instance = this;
         else
             Destroy(instance);
+
+        InitializeData();
     }
 
     public HunterDatabase hunters;
@@ -19,16 +21,7 @@ public class GameController : MonoBehaviour
     public EnemyDatabase enemies;
     private void Start()
     {
-        if (!PlayerPrefs.HasKey(GameData.PP_USER_DATA))
-        {
-            InitializeData();
-            Debug.Log("Created new data !!!");
-        }
-        else
-        {
-            Debug.Log("Load data");
-            UserData.LoadData();
-        }
+
     }
 
     private void Update()
@@ -43,15 +36,34 @@ public class GameController : MonoBehaviour
 
     private void InitializeData()
     {
-        UserData.UserDeepData = new UserDeepData();
-        HunterData newHunter = HunterData.CreateFromSO(hunters.hunters[0]);
-
-        UserData.UserDeepData.HuntersData = new List<HunterData>
+        if (!PlayerPrefs.HasKey(GameData.PP_USER_DATA))
         {
-            newHunter
-        };
-        UserData.UserDeepData.InventorySize = 15;
-        UserData.SaveData();
+            UserData.UserDeepData = new UserDeepData();
+            HunterData newHunter = HunterData.CreateFromSO(hunters.hunters[0]);
+
+            UserData.UserDeepData.HuntersData = new List<HunterData>
+            {
+                newHunter
+            };
+
+            //initialize user datas
+            UserData.UserDeepData.Coins = 0;
+            UserData.UserDeepData.Gems = 0;
+            UserData.UserDeepData.Soul = 0;
+            UserData.UserDeepData.Fool = 0;
+            UserData.UserDeepData.Shard = 0;
+
+            UserData.UserDeepData.HuntersNum = 0;
+
+            UserData.UserDeepData.InventorySize = 15;
+            UserData.SaveData();
+        }
+        else
+        {
+            Debug.Log("Load data");
+            UserData.LoadData();
+        }
+
     }
-    
+
 }

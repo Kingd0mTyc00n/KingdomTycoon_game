@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8c90abf2681234d9cbad100b37d42b, type: 3}
+  m_Name: Slash
+  m_EditorClassIdentifier: 
+  abilityName: Slash
+  damage: 7
+  cooldown: 5
+  effectPrefab: {fileID: 3286003072511813407, guid: 636b930a3b19abd4a9935c68ae993a80, type: 3}
+  spawnType: 0

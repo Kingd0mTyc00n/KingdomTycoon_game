@@ -2,6 +2,10 @@ using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using System;
+
 
 public class HunterUIWaiting : MonoBehaviour
 {
@@ -11,14 +15,26 @@ public class HunterUIWaiting : MonoBehaviour
     public TextMeshProUGUI textNameHunter;
     public TextMeshProUGUI textInfoHunter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     public void SetHunterData(HunterData hunterData)
     {
         data = hunterData;
-        iconHunter.sprite = data.Icon;
+        LoadHunterSprite(data.SpritePath, sprite =>
+        {
+            iconHunter.sprite = sprite;
+        });
         textNameHunter.text = data.Name;
         textInfoHunter.text = data.HunterType.ToString();
         SwitchHunterType();
+    }
+
+    public void LoadHunterSprite(string address, Action<Sprite> onLoaded)
+    {
+        Addressables.LoadAssetAsync<Sprite>(address).Completed += handle =>
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+                onLoaded?.Invoke(handle.Result);
+        };
     }
 
     public void SwitchHunterType()
