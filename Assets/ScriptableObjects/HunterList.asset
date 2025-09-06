@@ -31,7 +31,172 @@ MonoBehaviour:
     Level: 0
     SpritePath: ORP
     InventoryData:
-      InventoryItems: []
+      InventoryItems:
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
+      - Quantity: 0
+        Item:
+          Id: 0
+          Name: 
+          Detail: 
+          Description: 
+          IsStackable: 0
+          ItemType: 0
+          MaxStackSize: 0
+          icon: {fileID: 0}
+        IsEmpty: 1
   - Id: 1
     Name: Mist
     Damage: 15
@@ -409,11 +574,11 @@ MonoBehaviour:
     Evasion: 0
     HunterType: 1
     Level: 0
+<<<<<<< HEAD
     SpritePath: Timmy
+=======
+    Icon: {fileID: -7417626198580794364, guid: 33a71d6b653fe2e48b638fac6d035a99, type: 3}
     InventoryData:
-      InventoryItems: []
-  - Id: 21
-    Name: Butcher
     Damage: 16
     Speed: 3
     Armor: 5
@@ -428,7 +593,11 @@ MonoBehaviour:
     Evasion: 0
     HunterType: 1
     Level: 0
+<<<<<<< HEAD
     SpritePath: Butcher
+=======
+    Icon: {fileID: 2220967965608194933, guid: 1943d4eec91f6df4da0b9848a17e814f, type: 3}
+>>>>>>> a633042ae997477c9002344d788a16856ffbf51e
     InventoryData:
       InventoryItems: []
   - Id: 22
@@ -447,7 +616,11 @@ MonoBehaviour:
     Evasion: 0
     HunterType: 0
     Level: 0
+<<<<<<< HEAD
     SpritePath: Six
+=======
+    Icon: {fileID: 745956622737571519, guid: 533aaed93d190fb4994b21c2c333d276, type: 3}
+>>>>>>> a633042ae997477c9002344d788a16856ffbf51e
     InventoryData:
       InventoryItems: []
   - Id: 23
@@ -466,7 +639,11 @@ MonoBehaviour:
     Evasion: 0
     HunterType: 1
     Level: 0
+<<<<<<< HEAD
     SpritePath: Lich
+=======
+    Icon: {fileID: 5779439265331746078, guid: 1773a2e7b399f3d418f85c17ac3c2546, type: 3}
+>>>>>>> a633042ae997477c9002344d788a16856ffbf51e
     InventoryData:
       InventoryItems: []
   - Id: 24
@@ -485,6 +662,10 @@ MonoBehaviour:
     Evasion: 0
     HunterType: 0
     Level: 0
+<<<<<<< HEAD
     SpritePath: Shovel
+=======
+    Icon: {fileID: -899254571267873379, guid: 7ab253441daa0264d9cfd18674dc58c4, type: 3}
+>>>>>>> a633042ae997477c9002344d788a16856ffbf51e
     InventoryData:
       InventoryItems: []

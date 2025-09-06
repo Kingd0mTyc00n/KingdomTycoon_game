@@ -58,7 +58,6 @@ public class MenuManager : MonoBehaviour
     }
 
 
-
     public bool AllMenuIsClose()
     {
         foreach (var menu in screens)
