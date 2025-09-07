@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.U2D.Sprites;
+#endif
 
 [ExecuteInEditMode]
 public class SPUM_SpriteEditManager : MonoBehaviour
 {
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     public SPUM_SpriteList _spriteObj;
     // public Sprite _hair;
     // public Sprite _mustache;
@@ -85,25 +87,25 @@ public class SPUM_SpriteEditManager : MonoBehaviour
 
     public void SyncPivotProcess(SpriteRenderer SR)
     {
-        if(SR.sprite!=null) SetPivot(SR);
+        if (SR.sprite != null) SetPivot(SR);
     }
     public void ResetPivot(SpriteRenderer SR)
     {
-        if(SR.sprite!=null) SetPivot(SR, true);
+        if (SR.sprite != null) SetPivot(SR, true);
     }
     public void SetMultiple(Texture2D sp, Sprite ttSP, string nameCode)
     {
-        if(sp==null) return;
+        if (sp == null) return;
 
-        string spritePath = AssetDatabase.GetAssetPath( sp );
+        string spritePath = AssetDatabase.GetAssetPath(sp);
         Object[] sprites = AssetDatabase.LoadAllAssetsAtPath(spritePath);
 
-        foreach(object obj in sprites)
+        foreach (object obj in sprites)
         {
-            if(obj.GetType() == typeof(Sprite))
+            if (obj.GetType() == typeof(Sprite))
             {
                 Sprite tSP = (Sprite)obj;
-                if(tSP.name == nameCode)
+                if (tSP.name == nameCode)
                 {
                     ttSP = tSP;
                 }
@@ -113,12 +115,12 @@ public class SPUM_SpriteEditManager : MonoBehaviour
 
     public void SetWeapon(Sprite sp, int Type)
     {
-        if(sp!=null)
+        if (sp != null)
         {
             string tRWName = sp.name;
-            if(Type == 0) //오른쪽
+            if (Type == 0) //오른쪽
             {
-                if(tRWName.Contains("Shield"))
+                if (tRWName.Contains("Shield"))
                 {
                     //방패
                     _syncList[12].GetComponent<SpriteSync>()._nowSprite = null;
@@ -132,7 +134,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
             }
             else //오른쪽
             {
-                if(tRWName.Contains("Shield"))
+                if (tRWName.Contains("Shield"))
                 {
                     //방패
                     _syncList[14].GetComponent<SpriteSync>()._nowSprite = null;
@@ -144,17 +146,17 @@ public class SPUM_SpriteEditManager : MonoBehaviour
                     _syncList[15].GetComponent<SpriteSync>()._nowSprite = null;
                 }
             }
-            
+
         }
     }
 
     public void EmptyAllSprite()
     {
-        for(var i = 0 ; i < _syncList.Count;i++)
+        for (var i = 0; i < _syncList.Count; i++)
         {
             _syncList[i].sprite = null;
             _syncList[i].GetComponent<SpriteSync>()._nowSprite = null;
-        }        
+        }
     }
     //Reset all sprite added.
 
@@ -162,7 +164,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
     // {
     //     if( _sprite.transform.localPosition.x ==0 && _sprite.transform.localPosition.y ==0) return;
     //     string path = AssetDatabase.GetAssetPath(_sprite.sprite.texture);
-        
+
 
     //     TextureImporter ti = (TextureImporter)AssetImporter.GetAtPath(path);
     //     if(ti.spritesheet.Length > 1 )
@@ -194,7 +196,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
 
     //         ti.spritesheet = newData.ToArray();
     //         AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
-            
+
     //         ti.isReadable = false;
     //     }
     //     else
@@ -295,7 +297,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
         normalizedNewPivot.y = Mathf.Clamp01(normalizedNewPivot.y);
 
         spriteRect.alignment = SpriteAlignment.Custom;
-        spriteRect.pivot =  Reset ? Vector2.one * .5f : normalizedNewPivot;
+        spriteRect.pivot = Reset ? Vector2.one * .5f : normalizedNewPivot;
 
         Debug.Log($"Updated pivot for sprite '{_sprite.sprite.name}' from {currentPivot} to {normalizedNewPivot} {Reset}");
     }
@@ -309,5 +311,5 @@ public class SPUM_SpriteEditManager : MonoBehaviour
         dataProvider.InitSpriteEditorDataProvider();
         return dataProvider;
     }
-    #endif
+#endif
 }
