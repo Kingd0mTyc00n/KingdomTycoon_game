@@ -543,7 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 2060758642194764504}
   _prefabs: {fileID: 0}
-  _charMS: 1
+  _charMS: 1.5
   _goalPos: {x: 0, y: 0, z: 0}
   isAction: 0
 --- !u!114 &1167725648657636626
@@ -669,6 +669,7 @@ MonoBehaviour:
   forceAmount: 5
   townTransform: {fileID: 0}
   territoryZone: {fileID: 0}
+  currentAttacker: {fileID: 0}
 --- !u!114 &-479638035717666908
 MonoBehaviour:
   m_ObjectHideFlags: 0

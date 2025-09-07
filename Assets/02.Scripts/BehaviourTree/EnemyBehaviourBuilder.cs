@@ -26,6 +26,7 @@ public class EnemyBehaviourBuilder : MonoBehaviour
         });
 
         var patrolSeq = new Sequence(new List<Node> {
+            new ActionNode(() => enemy.HasTarget()),
             new ActionNode(() => enemy.IdleMovement()),
             new WaitNode(3f) // Wait longer between patrol points
         });

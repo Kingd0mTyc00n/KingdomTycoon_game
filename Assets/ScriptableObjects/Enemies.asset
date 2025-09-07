@@ -34,11 +34,27 @@ MonoBehaviour:
     Speed: 3
     Armor: 0
     Health: 60
-    ItemsIsDrop: []
+    ItemsIsDrop:
+    - Id: 1
+      Name: Ruby
+      Detail: 
+      Description: 
+      IsStackable: 1
+      ItemType: 0
+      MaxStackSize: 99
+      icon: {fileID: -1494199905, guid: 727f7723cc841fd47919ea35278e8296, type: 3}
   - Id: 2
     Name: Devil
     Damage: 12
     Speed: 3
     Armor: 5
     Health: 40
-    ItemsIsDrop: []
+    ItemsIsDrop:
+    - Id: 2
+      Name: Silver
+      Detail: 
+      Description: 
+      IsStackable: 1
+      ItemType: 0
+      MaxStackSize: 99
+      icon: {fileID: -911519329, guid: 727f7723cc841fd47919ea35278e8296, type: 3}

@@ -37,6 +37,12 @@ public class EnemyController : BaseCharacterController
     }
 
     #region Patrol Movement
+
+    public NodeState HasTarget()
+    {
+        return currentTarget != null ? NodeState.Success : NodeState.Failure;
+    }
+
     public override NodeState IdleMovement()
     {
         if (townTransform == null) return NodeState.Failure;
